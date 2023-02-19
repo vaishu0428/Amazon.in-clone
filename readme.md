@@ -11,3 +11,20 @@
 3. Chaudhri Vaishnavi Surykant
 4. Prashant kumar
 5. Asif Alisher Shaikh
+
+
+## Dependencies Installed
+
+1. redux
+2. react-redux
+3. react-router-dom
+4. redux-thunk
+5. axios
+6. chakra-ui
+7. material ui
+8. react-icons
+
+
+## backends
+1. nodemon
+2. 
