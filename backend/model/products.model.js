@@ -1,17 +1,21 @@
+const mongoose= require("mongoose")
 
+const productSchema = mongoose.Schema({
+    title: String,
+    price: Number,
+    brand: String,
+    disc: String,
+    rating: Number,  
+    category: String,
+    subCategory: String,
+    image: [{
+      url: String
+    }]
+  },
+  { versionKey: false });
 
-const productSchema=({
-    title:{},
-    price:{},
-    desc:{},
-    images:[imag1,imag2,imag3],
-    category:{},
-    quantity:{},
-    rating:{},
-   
-})
+  // model of the products document
 
-// category mobile, 10 products
-// categry men 10 products
-// category women 10 products
-// category books 10 products
+  const productModel= mongoose.model("product",productSchema);
+
+  module.exports=productModel
