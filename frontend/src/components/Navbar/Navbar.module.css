@@ -1,0 +1,30 @@
+.navbar1{
+    width: 100%;
+    height: 70px;
+    background-color: #131921;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 90%;
+
+}
+.navbar1>div{
+    display: flex;
+}
+.navbar1>div>input{
+    padding: 3% 60%;
+}
+.navbar>div>button{
+    text-align: center;
+}
+.navbar2{
+ width: 100%;
+ height: 30px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ background-color:#232f3e ;
+ color: white;
+ font-size: 70%;
+}
