@@ -9,7 +9,7 @@ const userRoutes = express.Router();
 
 userRoutes.get("/", getAllusers);
 userRoutes.post("/register", registerUser);
-userRoutes.post("login", userLogin);
+userRoutes.post("/login", userLogin);
 
 module.exports = {
   userRoutes,

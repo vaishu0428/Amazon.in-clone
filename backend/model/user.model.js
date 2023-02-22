@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const userSchema = mongoose.Schema(
   {
     name: { type: String, required: true },
@@ -6,19 +7,26 @@ const userSchema = mongoose.Schema(
     pass: { type: String, required: true },
     isActive: { type: Boolean, default: false },
     userType: { type: String, enum: ["user", "admin"], default: "user" },
-    Image: { type: String },
-    Mobile: { type: Number },
-    created: {
-      type: Date,
-      default: Date.now,
+    image: { type: String, default: "" },
+    mobile: {
+      type: Number,
+      default: 1234567890,
+      min: 1000000000,
+      max: 9999999999,
     },
     address: [
       {
         city: { type: String },
         area: { type: String },
-        pinCode: { type: Number },
+        district: { type: String },
+        state: { type: String },
+        pinCode: { type: Number, min: 100000, max: 999999 },
       },
     ],
+    created: {
+      type: Date,
+      default: Date.now,
+    },
   },
   { versionKey: false }
 );
