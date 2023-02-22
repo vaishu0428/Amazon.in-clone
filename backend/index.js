@@ -5,8 +5,7 @@ dotenv.config()
 const cors = require("cors");
 const ConnectDb = require("./config/db.connect");
 const productRouter = require("./routes/products.route");
-
-
+const { userRoutes } = require("./routes/user.route");
 
 const app = express()
 app.use(express.json())
@@ -21,6 +20,7 @@ app.get("/", (req,res)=>{
 /* import all routes */
 
 app.use("/product",productRouter)
+app.use("/user",userRoutes)
 
 
 
