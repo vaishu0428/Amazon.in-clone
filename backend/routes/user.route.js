@@ -1,4 +1,5 @@
 const express = require("express");
+const {validateUserData}=require("../middleware/userFieldAnalyzer.middleware")
 const {
   registerUser,
   getAllusers,
@@ -8,7 +9,7 @@ const {
 const userRoutes = express.Router();
 
 userRoutes.get("/", getAllusers);
-userRoutes.post("/register", registerUser);
+userRoutes.post("/register",validateUserData, registerUser);
 userRoutes.post("/login", userLogin);
 
 module.exports = {

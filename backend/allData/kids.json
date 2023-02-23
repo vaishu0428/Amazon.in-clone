@@ -1,267 +1,278 @@
 [
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
     "image": "https://www.jcrew.com/s7-img-facade/BG280_KF4708?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
     "title": "Boys' short-sleeve Rolling Stones T-shirt",
     "description": "More graphic tees, please! Made from comfy, machine-washable cotton, our cool, colorful graphic T-shirts let them show their personality without saying a word.",
-    "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-    "price": 34.5,
-    "discounted_price": 26.99,
     "type": "clothing",
+    "brand": "levis",
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 102,
     "image": "https://www.jcrew.com/s7-img-facade/AZ940_WY2481?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
     "title": "Boys' cozy pajama pant",
     "description": "Pj's. Jammies. Jam-jams. Sleepy suits. No matter what you call them, our supersoft and cozy pajamas feel like a dream.",
-    "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-    "price": 39.5,
-    "discounted_price": 31.99,
     "type": "clothing",
+    "brand": "levis",
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 103,
     "image": "https://www.jcrew.com/s7-img-facade/BC454_BL7286?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
     "title": "Kids' short in towel terry",
     "description": "Perfect for warm-weather getaways (or any day), these shorts are made from cozy terry cloth that feels like your softest beach towel. The best part? We made a matching hoodie!",
-    "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-    "price": 39.5,
-    "discounted_price": 31.99,
     "type": "clothing",
+    "brand": "denim",
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 104,
     "image": "https://www.jcrew.com/s7-img-facade/BF676_EE0404?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
     "title": "Girls' snap-clip pack",
     "description": "Bad hair days? Never heard of 'em. Add these cute snap clips to make any do extra-cute.",
-    "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-    "price": 29.5,
-    "discounted_price": 17.99,
     "type": "accessories",
+    "brand": "woodland",
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 105,
     "image": "https://www.jcrew.com/s7-img-facade/BD570_EB8633?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
     "title": "Girls' spring-forward earrings pack",
     "description": "Fun for Valentine's Day (and everyday), this sweet pack of three earring pairs includes hearts that say \"love\" and \"ya\" plus tiny beaded hoops.",
-    "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-    "price": 24.5,
-    "discounted_price": 18.99,
     "type": "accessories",
+    "brand": "puma",
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 106,
     "image": "https://www.jcrew.com/s7-img-facade/BF675_EB3333?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
     "title": "Girls' claw clips",
     "description": "Bad hair days? Never heard of 'em. These fun claw clips will make any 'do extra-cute.",
-    "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-    "price": 15.19,
-    "discounted_price": 11.99,
     "type": "accessories",
+    "brand": "adidas",
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 107,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_NA6764?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere cable-knit bear one-piece",
+    "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia.",
     "type": "baby",
-    "category": "kids",
-    "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
+    "brand": "Brainsmith",
+    "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 204,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_SU2293?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere cable-knit bear one-piece",
     "type": "baby",
+    "brand": "Brainsmith",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 425,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere cable-knit bear one-piece",
     "type": "baby",
+    "brand": "Brainsmith",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 350,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_SU2293?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere one-piece",
     "type": "baby",
+    "brand": "Brainsmith",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 235,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere one-piece in stripe",
     "type": "baby",
+    "brand": "Brainsmith",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 457,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere one-piece",
     "type": "baby",
+    "brand": "Shinse",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 299,
     "image": "https://www.jcrew.com/s7-img-facade/BK366_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie",
     "type": "baby",
+    "brand": "Shinse",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 124,
     "image": "https://www.jcrew.com/s7-img-facade/BK364_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie",
     "type": "baby",
+    "brand": "Shinse",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 596,
     "image": "https://www.jcrew.com/s7-img-facade/BK364_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie",
     "type": "baby",
+    "brand": "Shinse",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 578,
     "image": "https://www.jcrew.com/s7-img-facade/BK365_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere blanket",
     "type": "baby",
+    "brand": "Shinse",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 986,
     "image": "https://www.jcrew.com/s7-img-facade/BK365_PK5895?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere blanket",
     "type": "baby",
+    "brand": "Funcorp",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 457,
     "image": "https://www.jcrew.com/s7-img-facade/BK365_PK5895?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere blanket",
     "type": "baby",
+    "brand": "Funcorp",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 356,
     "image": "https://www.jcrew.com/s7-img-facade/BC969_PK5262?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere button-detail crewneck sweater",
     "type": "baby",
+    "brand": "Funcorp",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 958,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_SU2293?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie",
     "type": "baby",
+    "brand": "Funcorp",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 159,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie",
     "type": "baby",
+    "brand": "Funcorp",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 951,
     "image": "https://www.jcrew.com/s7-img-facade/BC973_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 753,
     "image": "https://www.jcrew.com/s7-img-facade/BK366_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere button-detail crewneck sweater",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 357,
     "image": "https://www.jcrew.com/s7-img-facade/BK364_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere button-detail crewneck sweater",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 456,
     "image": "https://www.jcrew.com/s7-img-facade/BK364_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere button-detail crewneck sweater",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 654,
     "image": "https://www.jcrew.com/s7-img-facade/BK365_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere button-detail sweater in stripe",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
     "image": "https://www.jcrew.com/s7-img-facade/BK365_PK5895?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere button-detail sweater in stripe",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 852,
+    "brand": "Buddyz",
     "image": "https://www.jcrew.com/s7-img-facade/BK365_PK5895?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie in stripe",
     "type": "baby",
@@ -269,35 +280,39 @@
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 258,
     "image": "https://www.jcrew.com/s7-img-facade/BC969_PK5262?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere beanie in stripe",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 963,
     "image": "https://www.jcrew.com/s7-img-facade/BK364_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere blanket in stripe",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
     "image": "https://www.jcrew.com/s7-img-facade/BK365_GY6469?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Limited-edition baby cashmere blanket in stripe",
     "type": "baby",
+    "brand": "Buddyz",
     "category": "kids",
     "description": "Babies love cashmere too! This oh-so-soft (and so very giftable!) one-piece features a cute leopard print and is made from the same high-quality cashmere as Mom and Dad's favorite sweaters. Plus, it matches our baby blanket and beanie! We upgraded our cashmere collection with finer, loftier fibers to make the soft stuff, somehow, even softer. And because we like to make a lasting impression, our new cashmere is also more enduring than ever - in both quality and style. We're invested in bringing you the best in cashmere, so you can feel great about investing in it too. We're proud to support responsible cashmere production through our partnership with the Aid by Trade Foundation (AbTF), a nonprofit that promotes sustainable agricultural development across the globe. As the foundation's first U.S. member, we source cashmere that is certified to the AbTF's The Good Cashmere Standard®, which ensures the welfare of the cashmere goats, protects natural resources and improves the working conditions of farmers and farmworkers in Inner Mongolia."
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 369,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_BL9141?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' quilted jersey reversible half-zip sweatshirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -305,8 +320,9 @@
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 147,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' quilted jersey reversible half-zip sweatshirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -314,8 +330,9 @@
     "category": "kids"
   },
   {
-    
-    "quantity":100,
+    "quantity": 100,
+    "price": 741,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_BL8180?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' quilted jersey reversible half-zip sweatshirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -323,17 +340,19 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_KF5706_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' fleece hoodie",
-    "discounted_price": 93.33,
-    "price": 118,
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
     "type": "sweatshirts-and-sweatpants",
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_HT1922?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' fleece hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -341,7 +360,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BJ845_KF5374?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' fleece hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -349,7 +370,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_KF5365?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' classic fleece sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -357,7 +380,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 356,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/BJ845_KF5365?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' classic fleece sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -365,7 +390,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 245,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1892?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' classic fleece sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -373,7 +400,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 458,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' fleece hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -381,7 +410,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1234,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_GR5818?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' fleece hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -389,7 +420,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1561,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/AJ125_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Boys' rugby crewneck sweatshirt in french terry",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -397,7 +430,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 748,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_BL9141?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' classic fleece sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -405,7 +440,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 459,
+    "brand": "levis",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Boys' rugby crewneck sweatshirt in french terry",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -413,7 +450,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1245,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_BL8180?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' crewneck sweatshirt in french terry",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -421,17 +460,19 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 799,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_KF5706_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
-    "discounted_price": 93.33,
-    "price": 118,
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
     "type": "sweatshirts-and-sweatpants",
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 259,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_HT1922?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -439,7 +480,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 499,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BJ845_KF5365?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -447,7 +490,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 399,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1892?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry full-zip hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -455,7 +500,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 119,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' crewneck sweatshirt in french terry",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -463,7 +510,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 829,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -471,7 +520,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 379,
+    "brand": "siyaram's",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_BL8180?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry full-zip hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -479,17 +530,19 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 956,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_KF5706_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry full-zip hoodie",
-    "discounted_price": 93.33,
-    "price": 118,
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
     "type": "sweatshirts-and-sweatpants",
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1247,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1892?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -497,7 +550,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1199,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -505,7 +560,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 349,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_GR5818?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry slim-slouchy sweatpant",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -513,7 +570,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 154,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/AJ125_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' half-zip cotton popover shirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -521,7 +580,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 465,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' half-zip cotton popover shirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -529,7 +590,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 789,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BC670_BL8180?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' french terry full-zip hoodie",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -537,17 +600,19 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 321,
+    "brand": "netplay",
     "image": "https://www.jcrew.com/s7-img-facade/BJ188_KF5706_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' half-zip cotton popover shirt",
-    "discounted_price": 93.33,
-    "price": 118,
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
     "type": "sweatshirts-and-sweatpants",
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 426,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BJ845_KF5365?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' half-zip cotton popover shirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -555,7 +620,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 678,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1892?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' half-zip cotton popover shirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -563,7 +630,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 653,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_HT1824?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' half-zip cotton popover shirt",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -571,7 +640,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 354,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/BF483_GR5818?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' classic sweatshort in terry",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -579,7 +650,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 154,
+    "brand": "khadims",
     "image": "https://www.jcrew.com/s7-img-facade/AJ125_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Kids' classic sweatshort in terry",
     "description": "The half-zip is our favorite cold-weather layer for weekends, weekday playdates and playgrounds! This one is comfy and quilted, and best of all, it's reversible!",
@@ -587,7 +660,9 @@
     "category": "kids"
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 3565,
+    "brand": "blackberry",
     "image": "https://www.jcrew.com/s7-img-facade/BI876_BL7505?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' shirt-jacket in sherpa",
     "type": "coats-and-jackets",
@@ -595,7 +670,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 2468,
+    "brand": "blackberry",
     "image": "https://www.jcrew.com/s7-img-facade/BI876_BR5418?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' shirt-jacket in sherpa",
     "type": "coats-and-jackets",
@@ -603,17 +680,19 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1458,
+    "brand": "blackberry",
     "image": "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' sherpa coat",
-    "price": 118,
-    "discounted_price": 93.33,
     "type": "coats-and-jackets",
     "category": "kids",
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 3468,
+    "brand": "blackberry",
     "image": "https://www.jcrew.com/s7-img-facade/BJ701_BK0001?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' sherpa coat",
     "type": "coats-and-jackets",
@@ -621,7 +700,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1245,
+    "brand": "blackberry",
     "image": "https://www.jcrew.com/s7-img-facade/BJ701_PK5879?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' reversible metallic puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -629,7 +710,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 4578,
+    "brand": "blackberry",
     "image": "https://www.jcrew.com/s7-img-facade/BJ378_BL6756?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' reversible metallic puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -637,17 +720,19 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 9683,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BJ378_PR6364?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' reversible metallic puffer jacket with PrimaLoft®",
-    "price": 118,
-    "discounted_price": 93.33,
     "type": "coats-and-jackets",
     "category": "kids",
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 6953,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BJ699_BL7505?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' cocoon puffer coat with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -655,7 +740,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 4587,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BI876_BR5418?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' cocoon puffer coat with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -663,7 +750,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 3457,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' cocoon puffer coat with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -671,7 +760,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 2659,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BI858_RD6428?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' metallic puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -679,7 +770,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 4976,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' metallic puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -687,7 +780,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 4986,
+    "brand": "parkAvenue",
     "image": "https://www.jcrew.com/s7-img-facade/BJ701_BK0001?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -695,7 +790,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 4589,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BJ701_PK5879?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -703,7 +800,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1425,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BI876_BR5418?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' puffer jacket with PrimaLoft®",
     "type": "coats-and-jackets",
@@ -711,7 +810,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 5698,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' stadium-cloth topcoat",
     "type": "coats-and-jackets",
@@ -719,7 +820,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 3499,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BI858_RD6428?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' stadium-cloth topcoat",
     "type": "coats-and-jackets",
@@ -727,7 +830,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 2659,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BI876_BR5418?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' reversible quilted jacket with eco-friendly PrimaLoft®",
     "type": "coats-and-jackets",
@@ -735,7 +840,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 1999,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BJ700_WY9889?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' reversible quilted jacket with eco-friendly PrimaLoft®",
     "type": "coats-and-jackets",
@@ -743,7 +850,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 5366,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BI855_BL7505?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' lightweight quilted jacket with eco-friendly PrimaLoft®",
     "type": "coats-and-jackets",
@@ -751,7 +860,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 4572,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BI855_GR7503?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' lightweight quilted jacket with eco-friendly PrimaLoft®",
     "type": "coats-and-jackets",
@@ -759,7 +870,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 2356,
+    "brand": "raymond's",
     "image": "https://www.jcrew.com/s7-img-facade/BI858_RD6428?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' reversible quilted jacket with eco-friendly PrimaLoft®",
     "type": "coats-and-jackets",
@@ -767,59 +880,9 @@
     "description": "Inspired by our classic shirting, this lightweight layer is perfect for those not-quite-fall, not-quite-winter days. It's covered in our cozy, colorful sherpa and has plenty of pockets to hold all of her essentials."
   },
   {
-    "quantity":100,
-    "image": "https://www.jcrew.com/s7-img-facade/BA081_DM2237?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
-    "title": "Boys' stretch jean in medium wash",
-    "category": "kids",
-    "type": "denim",
-    "description": "Brand new this season, we combined the best of our boys' skinny-fit and slim-fit pants into one easy style they can wear everywhere. With a hint of stretch, and ultrasoft (and stripe-y!) lining. Warm and comfy as his favorite sweats, they're perfect for everything from walking the dog after dinner to running around the playground with his pals."
-  },
-  {
-    "quantity":100,
-    "image": "https://www.jcrew.com/s7-img-facade/BA084_DM5394?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
-    "title": "Boys' slim stretch jean in deep blue wash",
-    "category": "kids",
-    "type": "denim",
-    "description": "Brand new this season, we combined the best of our boys' skinny-fit and slim-fit pants into one easy style they can wear everywhere. With a hint of stretch, and ultrasoft (and stripe-y!) lining. Warm and comfy as his favorite sweats, they're perfect for everything from walking the dog after dinner to running around the playground with his pals."
-  },
-  {
-    "quantity":100,
-    "image": "https://www.jcrew.com/s7-img-facade/BA085_DM5394?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
-    "title": "Boys' lined stretch jean in dark wash",
-    "category": "kids",
-    "type": "denim",
-    "description": "Brand new this season, we combined the best of our boys' skinny-fit and slim-fit pants into one easy style they can wear everywhere. With a hint of stretch, and ultrasoft (and stripe-y!) lining. Warm and comfy as his favorite sweats, they're perfect for everything from walking the dog after dinner to running around the playground with his pals."
-  },
-  {
-    "quantity":100,
-    "image": "https://www.jcrew.com/s7-img-facade/BK681_DM4549?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
-    "title": "Boys' Bryce wash run-around jean in pull-on fit",
-    "category": "kids",
-    "type": "denim",
-    "description": "Brand new this season, we combined the best of our boys' skinny-fit and slim-fit pants into one easy style they can wear everywhere. With a hint of stretch, and ultrasoft (and stripe-y!) lining. Warm and comfy as his favorite sweats, they're perfect for everything from walking the dog after dinner to running around the playground with his pals."
-  },
-  {
-    "quantity":100,
-    "image": "https://www.jcrew.com/s7-img-facade/L1814_DM0683?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
-    "title": "Kids' chambray button-down",
-    "price": 6502,
-    "discounted_price": 5245,
-    "category": "kids",
-    "type": "denim",
-    "description": "Brand new this season, we combined the best of our boys' skinny-fit and slim-fit pants into one easy style they can wear everywhere. With a hint of stretch, and ultrasoft (and stripe-y!) lining. Warm and comfy as his favorite sweats, they're perfect for everything from walking the dog after dinner to running around the playground with his pals."
-  },
-  {
-    "quantity":100,
-    "image": "https://www.jcrew.com/s7-img-facade/L1815_DM0683?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
-    "title": "Kids' short-sleeve chambray button-down",
-    "price": 3256,
-    "discounted_price": 2988,
-    "category": "kids",
-    "type": "denim",
-    "description": "Brand new this season, we combined the best of our boys' skinny-fit and slim-fit pants into one easy style they can wear everywhere. With a hint of stretch, and ultrasoft (and stripe-y!) lining. Warm and comfy as his favorite sweats, they're perfect for everything from walking the dog after dinner to running around the playground with his pals."
-  },
-  {
-    "quantity":100,
+    "quantity": 100,
+    "price": 126,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_BL5494_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' puff-sleeve velvet dress",
     "category": "kids",
@@ -827,7 +890,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 299,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_GR6307?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' puff-sleeve velvet dress",
     "category": "kids",
@@ -835,7 +900,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 199,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' puff-sleeve velvet dress",
     "category": "kids",
@@ -843,7 +910,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 124,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2359?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' smocked puff-sleeve dress in tartan",
     "category": "kids",
@@ -851,7 +920,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 399,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2415?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' smocked puff-sleeve dress in tartan",
     "category": "kids",
@@ -859,7 +930,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 135,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_BL5494_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' mixy dress in tartan",
     "category": "kids",
@@ -867,7 +940,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 113,
+    "brand": "FabAlley",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_GR6307?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' crewneck mixy dress with tulle",
     "category": "kids",
@@ -875,7 +950,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 236,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' crewneck mixy dress with tulle",
     "category": "kids",
@@ -883,7 +960,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 249,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2359?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' crewneck mixy dress with tulle",
     "category": "kids",
@@ -891,7 +970,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 645,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2415?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' ribbed squareneck dress",
     "category": "kids",
@@ -899,7 +980,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 246,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2415?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' ribbed squareneck dress",
     "category": "kids",
@@ -907,7 +990,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 245,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_BL5494_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' ribbed squareneck dress",
     "category": "kids",
@@ -915,7 +1000,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 264,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_GR6307?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' tulle turtleneck dress",
     "category": "kids",
@@ -923,7 +1010,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 425,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_BL5494_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' tulle turtleneck dress",
     "category": "kids",
@@ -931,7 +1020,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 145,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_GR6307?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' smocked puff-sleeve dress in voile",
     "category": "kids",
@@ -939,7 +1030,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 369,
+    "brand": "DressBerry",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' smocked puff-sleeve dress in voile",
     "category": "kids",
@@ -947,7 +1040,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 569,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2359?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' velvet squareneck dress",
     "category": "kids",
@@ -955,7 +1050,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 423,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2415?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' velvet squareneck dress",
     "category": "kids",
@@ -963,7 +1060,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 269,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_BL5494_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' mockneck sweater-dress",
     "category": "kids",
@@ -971,7 +1070,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 326,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_GR6307?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' mockneck sweater-dress",
     "category": "kids",
@@ -979,7 +1080,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 452,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' smocked flutter-sleeve dress in floral",
     "category": "kids",
@@ -987,7 +1090,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 124,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2359?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' smocked flutter-sleeve dress in floral",
     "category": "kids",
@@ -995,7 +1100,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 264,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2415?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' mixy dress in slub cotton",
     "category": "kids",
@@ -1003,7 +1110,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 234,
+    "brand": "Cottinfab",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_BL5494_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' mixy dress in slub cotton",
     "category": "kids",
@@ -1011,7 +1120,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
+    "brand": "Only",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_GR6307?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' field dress in twill",
     "category": "kids",
@@ -1019,7 +1130,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 126,
+    "brand": "Only",
     "image": "https://www.jcrew.com/s7-img-facade/BM585_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' field dress in twill",
     "category": "kids",
@@ -1027,7 +1140,9 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 111,
+    "brand": "Only",
     "image": "https://www.jcrew.com/s7-img-facade/BM573_YD2359?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Girls' field dress in twill",
     "category": "kids",
@@ -1035,15 +1150,18 @@
     "description": "Make spirits (and outfits) bright with this sweet holiday dress, featuring a bow-tie belt, puff sleeves and colorful velvet."
   },
   {
-    "quantity":100,
-    "category": "kids",
+    "quantity": 100,
+    "price": 123,
+    "brand": "Kidsville",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9995_GR1398?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
     "title": "Boys' stretch Stanton short in chino",
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 635,
+    "brand": "Kidsville",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_BL1401?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1051,7 +1169,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 567,
+    "brand": "Kidsville",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_GR6092?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1059,7 +1179,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 598,
+    "brand": "Kidsville",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/BE543_BL9164?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1067,7 +1189,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 568,
+    "brand": "Kidsville",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/BE543_GR7503?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1075,7 +1199,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 369,
+    "brand": "Kidsville",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_NA0965?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1083,7 +1209,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 426,
+    "brand": "Fusefit",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_GY7317?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1091,7 +1219,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 624,
+    "brand": "Fusefit",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_BL7493?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1099,7 +1229,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 486,
+    "brand": "Fusefit",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_BL7220?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1107,7 +1239,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 684,
+    "brand": "Fusefit",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_NA6082?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1115,7 +1249,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 457,
+    "brand": "Fusefit",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9996_RD6262?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1123,7 +1259,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 754,
+    "brand": "Fusefit",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9995_NA6082?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1131,7 +1269,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 101,
+    "brand": "puma",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9995_NA0965?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1139,7 +1279,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 324,
+    "brand": "Puma",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9995_BL7493?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",
@@ -1147,7 +1289,9 @@
     "description": "Made from a moisture-wicking stretch nylon blend, these cool and comfy shorts are perfect for the playground, the beach or even dinner with Nana. Even cooler: The environmentally friendly high-tech fabric incorporates recycled textiles and is made at Everest, a mill known for its sustainable practices."
   },
   {
-    "quantity":100,
+    "quantity": 100,
+    "price": 256,
+    "brand": "Puma",
     "category": "kids",
     "type": "shorts",
     "image": "https://www.jcrew.com/s7-img-facade/L9995_BL7220?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=420&hei=420",

@@ -1,5 +1,13 @@
 const mongoose = require("mongoose");
 
+const defaultAddress = {
+  city: "",
+  area: "",
+  district: "",
+  state: "",
+  pinCode: "123456",
+};
+
 const userSchema = mongoose.Schema(
   {
     name: { type: String, required: true },
@@ -14,15 +22,23 @@ const userSchema = mongoose.Schema(
       min: 1000000000,
       max: 9999999999,
     },
-    address: [
-      {
-        city: { type: String },
-        area: { type: String },
-        district: { type: String },
-        state: { type: String },
-        pinCode: { type: Number, min: 100000, max: 999999 },
-      },
-    ],
+    address: {
+      type: [
+        {
+          city: { type: String, default: defaultAddress.city },
+          area: { type: String, default: defaultAddress.area },
+          district: { type: String, default: defaultAddress.district },
+          state: { type: String, default: defaultAddress.state },
+          pinCode: {
+            type: Number,
+            default: defaultAddress.pinCode,
+            min: 100000,
+            max: 999999,
+          },
+        },
+      ],
+      default: [defaultAddress],
+    },
     created: {
       type: Date,
       default: Date.now,
