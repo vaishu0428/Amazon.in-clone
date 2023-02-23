@@ -5,8 +5,10 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './Pages/Home';
 function App() {
   return (
-    <div>
-    
+
+    <div className="App">
+      <Navbar/>
+      <Footer/>
     </div>
   );
 }
