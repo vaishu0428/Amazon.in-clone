@@ -12,7 +12,6 @@ const cartSchema = mongoose.Schema({
     },
     quantity: Number
   }],
-  total: Number
 });
 
 // cart model 
