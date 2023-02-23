@@ -6,9 +6,9 @@ const authenticateToken = (req, res, next) => {
   const token = req.headers?.authorization?.split(" ")[1];
   if (token) {
     const decoded = jwt.verify(token, process.env.userSecretKey);
-    console.log(decoded);
+    console.log("auth decode",decoded);
     if (decoded) {
-      const userID = decoded.parentUserID;
+      const userID = decoded.ExistingUserID;
       // console.log("after decoding the token", userID);
       req.body.userID = userID;
       next();

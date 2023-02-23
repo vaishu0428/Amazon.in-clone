@@ -14,13 +14,17 @@ const getAllusers = async (req, res) => {
 };
 
 const registerUser = async (req, res) => {
-  const { name, email, pass, userType, address } = req.body;
   try {
-    const userExists = await UserModel.findOne({ email });
+    const { name, email, pass, mobile, role, address } = req.body;
 
+    // Check if user already exists
+    const userExists = await UserModel.findOne({ email });
     if (userExists) {
-      return res.status(409).json({ message: "User Exists! Please Login " });
+      return res.status(400).send({ error: "User already exists" });
     }
+
+    // 1.) Create new user
+    // a.)password hashing
     bcrypt.hash(pass, 5, async (err, hash) => {
       if (err) {
         res
@@ -28,53 +32,40 @@ const registerUser = async (req, res) => {
           .send({ message: "Somthing went wrong", err: err.message });
         return;
       }
-      const defaultAddress = {
-        city: "",
-        area: "",
-        district: "",
-        state: "",
-        pinCode: "123456",
-      };
       console.log("hash", hash);
       const new_user = new UserModel({
         name,
         email,
         pass: hash,
-        userType,
-        address: address || [defaultAddress],
+        mobile,
+        role,
+        address,
       });
+
+      // Save user to database
       await new_user.save();
-      res.status(200).send("User Registered");
+      res.status(201).send({ message: "User Registered", new_user });
     });
   } catch (err) {
     res.status(400).send({ msg: "Somthing went wrong", err: err.message });
   }
 };
 
-/**
- * address: [
-      {
-        city: { type: String, default: "shgdvd" },
-        area: { type: String, default: "sdjvf" },
-        district: { type: String, default: "sdjf" },
-        state: { type: String, default: "sdb" },
-        pinCode: { type: Number, default: 123456, min: 100000, max: 999999 },
-      },
-    ],
- */
-
 const userLogin = async (req, res) => {
   const { email, pass } = req.body;
   try {
     const userExists = await UserModel.findOne({ email });
-    console.log("login", userExists);
+
     if (userExists) {
-      bcrypt.compare(pass, userExists.pass, function (err, result) {
+      bcrypt.compare(pass, userExists.pass, async function (err, result) {
         if (result) {
           const token = jwt.sign(
-            { parentUserID: userExists._id },
+            { ExistingUserID: userExists._id },
             process.env.userSecretKey
           );
+          console.log("login l-101", userExists.isActive);
+          userExists.isActive = true;
+          await userExists.save();
           res.status(200).send({ msg: "Login Successfull", token: token });
         } else {
           res.status(401).send("Wrong Credntials");
@@ -88,10 +79,30 @@ const userLogin = async (req, res) => {
   }
 };
 
-const updateProfile = (req, res) => {};
+const userLogout = async (req, res) => {
+  try {
+    const user = await UserModel.findById(req.body.userID);
+    console.log(user);
+    if (!user) {
+      return res.status(404).send("User not found");
+    }
+    user.isActive = false;
+    await user.save();
+    res.status(200).send("Logout Successful");
+  } catch (err) {
+    console.error(err);
+    res.status(400).send({ msg: "Something went wrong", err: err.message });
+  }
+};
+
+const userUpdateProfile = async (req, res) => {
+  
+};
 
 module.exports = {
   getAllusers,
   registerUser,
   userLogin,
+  userLogout,
+  userUpdateProfile,
 };

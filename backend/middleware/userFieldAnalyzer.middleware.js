@@ -1,50 +1,114 @@
-const validateUserData = (req, res, next) => {
-  const user = req.body;
-  const errors = [];
+// const userValidator = (req, res, next) => {
+//   const { name, email, pass, mobile, address } = req.body;
 
-  // Validate name field
-  if (!user.name) {
-    errors.push("Name is required.");
+//   // Validate name
+//   if (!name || name.trim().length < 3) {
+//     return res
+//       .status(400)
+//       .json({ error: "Name must be at least 3 characters" });
+//   }
+
+//   // Validate email
+//   if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+//     return res.status(400).json({ error: "Please provide a valid email" });
+//   }
+
+//   // Validate password
+//   if (!pass || pass.trim().length < 6) {
+//     return res
+//       .status(400)
+//       .json({ error: "Password must be at least 6 characters" });
+//   }
+
+//   // // Validate mobile number
+//   // if (!mobile || !/^[0-9]{10}$/.test(mobile)) {
+//   //   return res
+//   //     .status(400)
+//   //     .json({ error: "Please provide a valid 10 digit mobile number" });
+//   // }
+
+//   // // Validate address
+//   // if (
+//   //   !address ||
+//   //   !address[0].city ||
+//   //   !address[0].area ||
+//   //   !address[0].district ||
+//   //   !address[0].state ||
+//   //   !address[0].pinCode
+//   // ) {
+//   //   return res.status(400).json({ error: "Please provide a valid address" });
+//   // }
+
+//   next();
+// };
+
+const userSignupInputValidate = (req, res, next) => {
+  const { name, email, pass } = req.body;
+  // Validate name
+  if (!name || name.trim().length < 3) {
+    return res
+      .status(400)
+      .json({ error: "Name must be at least 3 characters" });
   }
 
-  // Validate email field
-  if (!user.email) {
-    errors.push("Email is required.");
-  } else if (!/^\S+@\S+\.\S+$/.test(user.email)) {
-    errors.push("Email is invalid.");
+  // Validate email
+  if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+    return res.status(400).json({ error: "Please provide a valid email" });
   }
 
-  // Validate pass field
-  if (!user.pass) {
-    errors.push("Password is required.");
-  } else if (user.pass.length < 6) {
-    errors.push("Password must be at least 6 characters long.");
+  // Validate password
+  if (!pass || pass.trim().length < 6) {
+    return res
+      .status(400)
+      .json({ error: "Password must be at least 6 characters" });
+  }
+  next();
+};
+
+const userLoginInput = (req, res, next) => {
+  const { email, pass } = req.body;
+
+  // Validate email
+  if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+    return res.status(400).json({ error: "Please provide a valid email" });
   }
 
-  // Validate mobile field
-  if (user.mobile && (user.mobile < 1000000000 || user.mobile > 9999999999)) {
-    errors.push("Mobile number is invalid.");
-  }
-
-  // Validate address field
-  if (user.address && user.address.length > 0) {
-    const address = user.address[0];
-    if (
-      !address.city ||
-      !address.area ||
-      !address.district ||
-      !address.state ||
-      !address.pinCode
-    ) {
-      errors.push("Address fields are incomplete.");
-    }
-  }
-
-  if (errors.length > 0) {
-    return res.status(400).json({ errors });
+  // Validate password
+  if (!pass || pass.trim().length < 6) {
+    return res
+      .status(400)
+      .json({ error: "Password must be at least 6 characters" });
   }
 
   next();
 };
 
-module.exports = { validateUserData };
+const profileInput = (req, res, next) => {
+  const { mobile, address } = req.body;
+  // Validate mobile number
+  if (!mobile || !/^[0-9]{10}$/.test(mobile)) {
+    return res
+      .status(400)
+      .json({ error: "Please provide a valid 10 digit mobile number" });
+  }
+  // Validate address
+  if (
+    !address ||
+    !address[0].city ||
+    !address[0].area ||
+    !address[0].district ||
+    !address[0].state ||
+    !address[0].pinCode
+  ) {
+    return res.status(400).json({ error: "Please provide a valid address" });
+  }
+
+  next();
+};
+
+module.exports = {
+  // userValidator,
+  userSignupInputValidate,
+  userLoginInput,
+  profileInput,
+};
