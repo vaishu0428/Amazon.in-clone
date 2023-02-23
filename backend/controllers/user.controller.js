@@ -2,6 +2,8 @@ const { UserModel } = require("../model/user.model");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+const cloudinary = require("cloudinary").v2;
+const { cloudinaryConfig } = require("../config/cloudinary.config");
 
 const getAllusers = async (req, res) => {
   try {
@@ -96,8 +98,43 @@ const userLogout = async (req, res) => {
 };
 
 const userUpdateProfile = async (req, res) => {
-  
+  try {
+    // Find the user by ID
+    const user = await UserModel.findById(req.body.userID);
+    console.log("l-104", user);
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    const file = req.files.image;
+    cloudinary.uploader.upload(file.tempFilePath, async (err, result) => {
+      if (result) {
+        // Update the user object with the new data from the request body
+        user.name = req.body.name || user.name;
+        user.mobile = req.body.mobile || user.mobile;
+        user.image = result.url; // Use the uploaded file path or the existing image path
+        // Update the user's address array
+        if (req.body.address) {
+          user.address = req.body.address;
+        }
+        // Save the updated user object
+        const updatedUser = await user.save();
+        res.json({ message: "User profile updated", updatedUser });
+      } else {
+        return res.json({
+          message: "User profile image is not uploaded updated",
+        });
+      }
+    });
+  } catch (err) {
+    return res.json({ message: "Somting went wrong update profile" });
+  }
 };
+
+
+
+
+
 
 module.exports = {
   getAllusers,
