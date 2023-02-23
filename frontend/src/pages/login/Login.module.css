@@ -1,0 +1,45 @@
+p{
+    font-size: 12px;
+}
+.login{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+    width: 20%;
+    margin: 20px auto;
+    text-align: left;
+    padding: 10px 20px;
+
+}
+.login input,.login button{
+    width: 80%;
+    padding: 5px 10px;
+    margin: 10px auto;
+   
+}
+.login button{
+    background-color: #f2cc6d;
+    border:1px solid gray;
+}
+.belowlogin button{
+    width: 30%;
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 801px) and (max-width:1440px){
+.login{
+    width: 30%;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width:800px){
+    .login{
+        width: 50%;
+    }
+
+
+}
