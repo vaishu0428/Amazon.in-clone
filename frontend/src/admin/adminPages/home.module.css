@@ -1,0 +1,38 @@
+
+@media all and (min-width : 1024px) and (max-width : 3000px) {
+    .card{
+        width: 70%;
+        margin-left: 29%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media all and (min-width : 768px) and (max-width : 1024px) {
+    
+}
+@media all and (min-width : 320px) and (max-width : 768px) {
+    .card{
+        width: 40%;
+        margin-left: 60%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media all and (min-width : 0px) and (max-width : 320px) {
+    .card{
+        width: 70%;
+        margin-left: 29%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
