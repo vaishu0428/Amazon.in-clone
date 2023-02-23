@@ -168,8 +168,67 @@ const getProducts = async (req, res) => {
 
 }
 
+const getDetails = async (req, res) => {
+
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+
+    try {
+        res.status(200).send({ msg: "product get", product: findProduct })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
+const updateProduct = async (req, res) => {
+
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+    if (Object.keys(req.body).length === 0) {
+        return res.status(400).json({ message: "Request body is empty or not passed so did not updated product." });
+    }
+
+    try {
+        await productModel.findByIdAndUpdate({ _id: id }, req.body)
+        res.status(200).send({ msg: "product updated success" })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
+const deleteProduct = async (req, res) => {
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+
+    try {
+
+        await productModel.findByIdAndDelete({ _id: id })
+        res.status(200).send({ msg: "product deleted success" })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
 module.exports = {
     addProduct,
-    getProducts
+    getProducts,
+    getDetails,
+    updateProduct,
+    deleteProduct
 }
 

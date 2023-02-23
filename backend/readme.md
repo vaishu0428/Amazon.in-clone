@@ -65,3 +65,8 @@ bracelet:["jCrew"]
 8. `http://localhost:8080/product/get?price=${amount}&order=${value}` ----> sortBy price
    - ex: `http://localhost:8080/product/get?price=400&order=-1`
       
+
+## Single product
+
+- `http://localhost:8080/product/get/${productId}`
+   - ex : `http://localhost:8080/product/get/63f76572b286efb722870609`
