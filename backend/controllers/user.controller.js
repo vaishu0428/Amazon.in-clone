@@ -63,7 +63,7 @@ const userLogin = async (req, res) => {
             { ExistingUserID: userExists._id },
             process.env.SECRET_KEY
           );
-          console.log("login l-101", userExists.isActive);
+          // console.log("login l-101", userExists.isActive);
           userExists.isActive = true;
           await userExists.save();
           res.status(200).send({ msg: "Login Successfull", token: token });

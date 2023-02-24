@@ -6,6 +6,7 @@ const cors = require("cors");
 const ConnectDb = require("./config/db.connect");
 const productRouter = require("./routes/products.route");
 const { userRoutes } = require("./routes/user.route");
+const cartRouter = require("./routes/cart.route");
 // const { authenticateToken } = require("./middleware/userAuth.middleware");
 
 const app = express()
@@ -22,7 +23,7 @@ app.get("/", (req,res)=>{
 
 app.use("/product",productRouter)
 app.use("/user",userRoutes)
-// app.use(authenticateToken)
+app.use("/cart", cartRouter)
 
 
 
