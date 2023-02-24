@@ -1,5 +1,5 @@
 import React from 'react'
-// import dukan from "./Assets/dukan.png"
+import logo from "../Navbar/Logo.png"
 import styles from "./Footer.module.css"
 
 const Footer = () => {
@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
       <div className={styles.footer3}>
         <div>
-            {/* <img src={dukan} alt="" /> */}
+            {/* <img src={logo} alt="" /> */}
             <button>English</button>
         </div>
         <div>
