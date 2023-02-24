@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import { menData } from '../../Redux/AppReducer/action'
+import { childData } from '../../Redux/AppReducer/action'
 import { useLocation, useSearchParams } from 'react-router-dom';
 import {Box, Grid, GridItem, Image,Text} from "@chakra-ui/react"
-const MenData = () => {
+const ChildData = () => {
   const dispatch=useDispatch();
-  let Products=useSelector((store)=>store.AppReducer.Products)
+  let Child_product=useSelector((store)=>store.AppReducer.Child_product)
   
   const location=useLocation();
   const [searchParams]=useSearchParams()
@@ -22,13 +22,13 @@ const MenData = () => {
       }
     }
     
-   dispatch(menData(paramObj))
+   dispatch(childData(paramObj))
   },[location.search])
   return (
     <Box>
      <Grid templateColumns={'repeat(4,1fr)'}
      gap='3'>
-    { Products.map((ele)=>(
+    { Child_product.map((ele)=>(
       
         <GridItem key={ele.id}>
           <Image src={ele.image}/>
@@ -46,4 +46,4 @@ const MenData = () => {
   )
 }
 
-export default MenData
+export default ChildData
