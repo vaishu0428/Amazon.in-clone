@@ -153,13 +153,15 @@ const removeFromCart = async (req, res) => {
   
     try {
       const cartItem = await cartModel.findOneAndUpdate(
-        { 'products._id': cartItemId },
+        { 'products.product': cartItemId },
         { $inc: { 'products.$.quantity': 1 } },
         { new: true }
       ).populate({
         path: 'products.product',
         model: 'product'
       });
+
+        // console.log(cartItem,"cartItem")
   
       if (!cartItem) {
         return res.status(404).send({ msg: 'Cart item not found' });
@@ -170,12 +172,45 @@ const removeFromCart = async (req, res) => {
       res.status(500).send({ msg: 'Something went wrong in the server', err: error.message });
     }
   };
+
+  const decrementQuantity = async (req, res) => {
+    const cartItemId = req.params.id;
+    // console.log(cartItemId, "cartItemId");
   
-
-
+    try {
+      const cartItem = await cartModel.findOneAndUpdate(
+        { 'products.product': cartItemId },
+        { $inc: { 'products.$.quantity': -1 } },
+        { new: true }
+      ).populate({
+        path: 'products.product',
+        model: 'product'
+      });
+  
+      if (!cartItem) {
+        return res.status(404).send({ msg: 'Cart item not found' });
+      }
+  
+      // Check if quantity has become 0 after decrementing
+      if (cartItem.products.find(p => p.product._id.toString() === cartItemId).quantity === 0) {
+        await cartModel.findOneAndUpdate(
+          { 'products.product': cartItemId },
+          { $pull: { products: { product: cartItemId } } }
+        );
+  
+        return res.status(200).send({ msg: `Cart item removed since this product : ${cartItemId} quantity has become less then 0 ` });
+      }
+  
+      res.status(200).send({ cartItem });
+    } catch (error) {
+      res.status(500).send({ msg: 'Something went wrong in the server', err: error.message });
+    }
+  };
+  
 module.exports = {
     addToCart,
     getCartData,
     removeFromCart,
-    incrementQuantity
+    incrementQuantity,
+    decrementQuantity
 }

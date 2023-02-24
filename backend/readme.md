@@ -1,3 +1,4 @@
+```
 brand :-
 key===type:value===brands
 
@@ -29,17 +30,10 @@ bag:["jCrew"],
 earrings:["jCrew"],
 bracelet:["jCrew"]
 },
+```
 
 
 ## Filter
-
-1. search by :`title`
-2. Sort by
-   - rating
-   - asending/descending by price
-3. get by category 
-4. get by brand
-5. pagination
 
 ## Get products by different filteration (Url) 
 
@@ -70,3 +64,21 @@ bracelet:["jCrew"]
 
 - `http://localhost:8080/product/get/${productId}`
    - ex : `http://localhost:8080/product/get/63f76572b286efb722870609`
+
+
+##  cart
+
+1. `http://localhost:8080/cart/add` --> add product to cart
+   - required 
+     1. token (Bearer token)
+     2. productId that has been clicked
+
+2. `http://localhost:8080/cart/get`  --> get cart item(s)
+   - required 
+     1. token (Bearer token)
+
+3. `http://localhost:8080/cart/remove/:id` ---> remove cart item
+    - required 
+     1. token (Bearer token)
+     2. cartItem id
+         - ex: `http://localhost:8080/cart/remove/63f76572b286efb72287060c`
