@@ -7,13 +7,30 @@ const { cloudinaryConfig } = require("../config/cloudinary.config");
 
 const getAllusers = async (req, res) => {
   const userID = req.body.userID;
-
+  const { mobile, email, name, text_query } = req.query;
   try {
-    users = await UserModel.findById(userID);
-    if (users.role === "admin") {
-      const allusers = await UserModel.find({ role: "user" });
-      // console.log("all users", users);
-      res.status(200).send({ msg: "Welcome User Home Page", allusers });
+    const user = await UserModel.findById(userID);
+    if (user && user.role === "admin") {
+      let allusers = [];
+      if (text_query) {
+        allusers = await UserModel.find({
+          role: "users",
+          $text: { $search: text_query },
+        });
+      } else {
+        const query = {};
+        if (mobile) {
+          query.mobile = { $regex: new RegExp(mobile, "i") };
+        }
+        if (email) {
+          query.email = { $regex: new RegExp(email, "i") };
+        }
+        if (name) {
+          query.name = { $regex: new RegExp(name, "i") };
+        }
+        allusers = await UserModel.find(query);
+      }
+      res.status(200).send({ msg: "Welcome Admin Home Page", allusers });
     } else {
       // console.log("all users", users);
       res.status(400).send({ msg: "Sorry You are not a admin" });
