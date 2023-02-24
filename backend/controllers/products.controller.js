@@ -2,26 +2,28 @@
 
 // const path = require("path");
 const productModel = require("../model/products.model");
-// const fileName = path.join(process.cwd(), "women.json")
+// const fileName = path.join(process.cwd(), "db.js")
 
-// const addProduct = async () => {
+
+// const addProduct = async (req,res) => {
 
 //     let data = fs.readFileSync(fileName, "utf-8");
 
 //     let parse_data = JSON.parse(data);
-//     //    console.log(parse_data);
+//        console.log(parse_data);
 
-//    parse_data.forEach((productData) => {
+//    kids_dresses.forEach((productData) => {
+
 //         const product = new productModel({
-//             title: productData.name || "Womens title",
+//             title: productData.title || "Nike",
 //             price: productData.price || 300,
-//             brand: productData.brand || null, 
+//             brand: productData.brand || "Nike", 
 //             disc: productData.description || "no description found",
-//             rating: productData.rating || 4.5, 
+//             rating: productData.reviews.rate || 4.5, 
 //             category: productData.category || "kids",
-//             subCategory: productData.subcategory || "no subcategory found", 
+//             subCategory: "No subcategory found", 
 //             image: [{
-//                 url: productData.imgUrl || "https://www.jcrew.com/s7-img-facade/BD570_EB8633?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+//                 url: productData.image || "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg",
 //             }],
 //         });
 
@@ -36,18 +38,197 @@ const productModel = require("../model/products.model");
 
 // }
 
-const addProduct=async(req,res)=>{
+// add product 👍👍👍👍
 
-    const product= new productModel(req.body);
+const addProduct = async (req, res) => {
+
+    const product = new productModel(req.body);
 
     try {
-        const new_product= await product.save();
-        res.status(201).send({msg:"product addedd successs", products:new_product})
+        const new_product = await product.save();
+        res.status(201).send({ msg: "product addedd successs", products: new_product })
     } catch (error) {
-        res.status(500).send({mssg:"Something went wrong in the server",err:error})
+        res.status(500).send({ mssg: "Something went wrong in the server", err: error })
+    }
+
+
+    // productModel.updateMany({}, { $unset: { rating: 4 } }) // remove the rating field from all documents
+    //     .then((result) => {
+    //       console.log(`Removed rating field from ${result.nModified} documents`);
+
+    //    productModel.find({}, (err, products) => { // find all products
+    //         if (err) {
+    //           console.error(err);
+    //           return;
+    //         }
+
+    //         // update each product with a random rating
+    //         products.forEach((product) => {
+    //           product.rating = Math.floor(Math.random() * 5) + 1;
+    //           product.save((err) => {
+    //             if (err) {
+    //               console.error(err);
+    //             }
+    //           });
+    //         });
+
+    //         console.log(`Updated rating field in ${products.length} documents`);
+    //       });
+    //     })
+    //     .catch((err) => {
+    //       console.error(err);
+    //     });
+
+
+}
+
+// get products 👍👍👍👍👍
+
+const getProducts = async (req, res) => {
+
+    const {
+        category,
+        order,
+        brand,
+        page = 1,
+        limit = 20,
+        sortBy,
+        search_query,
+        rating,
+        price
+    } = req.query;
+
+    let products;
+
+    try {
+
+
+
+        if (search_query) {
+            const regex = new RegExp(search_query, 'i');
+            // console.log(regex, "regex")
+            products = await productModel.find({ title: regex });
+        }
+
+
+
+        else if (rating) {
+            // console.log(rating) 
+            products = await productModel.find({ rating: parseInt(rating) });
+        }
+
+
+
+
+        else if (category) {
+            products = await productModel.find({ category: category });
+        }
+
+        else if (brand) {
+            products = await productModel.find({ brand: brand });
+        }
+
+
+
+
+        else if (sortBy && order) {
+            const sort = {};
+            sort[sortBy] = parseInt(order);
+            products = await productModel.find().sort(sort);
+        }
+
+        else if (price && order) {
+            const sort = {};
+            sort["price"] = parseInt(order);
+            products = await productModel.find().sort(sort);
+        }
+
+
+        else if (page && limit) {
+            const parsedPage = parseInt(page);
+            const parsedLimit = parseInt(limit);
+            const startIndex = (parsedPage - 1) * parsedLimit;
+            products = await productModel.find().limit(parsedLimit).skip(startIndex).exec();
+        }
+        // if no filters applied, get all products
+        else {
+            products = await productModel.find();
+        }
+
+        if (products.length === 0) {
+            return res.status(200).send({ msg: "Product not found" })
+        } else {
+            res.status(201).send({ products, total: products.length })
+        }
+
+
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+
+}
+
+const getDetails = async (req, res) => {
+
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+
+    try {
+        res.status(200).send({ msg: "product get", product: findProduct })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
     }
 }
-module.exports =
-{
-    addProduct
+
+const updateProduct = async (req, res) => {
+
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+    if (Object.keys(req.body).length === 0) {
+        return res.status(400).json({ message: "Request body is empty or not passed so did not updated product." });
+    }
+
+    try {
+        await productModel.findByIdAndUpdate({ _id: id }, req.body)
+        res.status(200).send({ msg: "product updated success" })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
 }
+
+const deleteProduct = async (req, res) => {
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+
+    try {
+
+        await productModel.findByIdAndDelete({ _id: id })
+        res.status(200).send({ msg: "product deleted success" })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
+module.exports = {
+    addProduct,
+    getProducts,
+    getDetails,
+    updateProduct,
+    deleteProduct
+}
+

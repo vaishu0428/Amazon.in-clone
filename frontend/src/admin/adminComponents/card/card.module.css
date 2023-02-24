@@ -1,0 +1,245 @@
+
+@media all and (min-width : 1024px) and (max-width : 3000px){
+    @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&display=swap');
+
+.card{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 130px;
+    display: flex;
+}
+.poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 40%;
+    
+}
+.info{
+    width: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2%;
+    text-align: right;
+    padding: 5%;
+    font-family: 'Gajraj One', cursive;
+}
+.info>p{
+    font-size: 15px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    
+}
+.info>h3{
+    font-size: 28px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    color: red;
+}
+.poster>img{
+    width: 70%;
+    /* margin-top: 19px;
+    margin-left: 9px; */
+ 
+}
+}
+@media all and (min-width : 767px) and (max-width : 1024px){
+    @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&display=swap');
+
+    .card{
+        background-color: white;
+        width: 30%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 130px;
+        display: flex;
+    }
+    .poster{
+        /* border: 1px solid red; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .info{
+        width: 60%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 1%;
+        text-align: right;
+        padding: 5%;
+        font-family: 'Gajraj One', cursive;
+    }
+    .info>p{
+        font-size: 15px;
+        font-family: 'Gajraj One', cursive;
+        font-weight: 300;
+        
+    }
+    .info>h3{
+        font-size: 28px;
+        font-family: 'Gajraj One', cursive;
+        font-weight: 300;
+        color: red;
+    }
+    .poster>img{
+        width: 80%;
+
+        /* padding: 5px;
+        margin-top: 25px; */
+    }
+}
+@media all and (min-width : 480px) and (max-width : 767px){
+    @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&display=swap');
+
+.card{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 130px;
+    display: flex;
+}
+.poster{
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info{
+    width: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1%;
+    text-align: right;
+    padding: 5%;
+    font-family: 'Gajraj One', cursive;
+}
+.info>p{
+    font-size: 15px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    
+}
+.info>h3{
+    font-size: 28px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    color: red;
+}
+.poster>img{
+    width: 60%;
+   
+}
+}
+@media all and (min-width : 320px) and (max-width : 480px){
+    @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&display=swap');
+
+.card{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100px;
+    display: flex;
+}
+.poster{
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info{
+    width: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1%;
+    text-align: right;
+    padding: 5%;
+    font-family: 'Gajraj One', cursive;
+}
+.info>p{
+    font-size: 15px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    
+}
+.info>h3{
+    font-size: 27px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    color: red;
+}
+.poster>img{
+    width: 70%;
+   
+}
+}
+@media all and (min-width : 0px) and (max-width : 320px){
+    @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&display=swap');
+
+.card{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100px;
+    display: flex;
+}
+.poster{
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info{
+    width: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1%;
+    text-align: right;
+    padding: 5%;
+    font-family: 'Gajraj One', cursive;
+}
+.info>p{
+    font-size: 15px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    
+}
+.info>h3{
+    font-size: 22px;
+    font-family: 'Gajraj One', cursive;
+    font-weight: 300;
+    color: red;
+}
+.poster>img{
+    width: 70%;
+  
+}
+}

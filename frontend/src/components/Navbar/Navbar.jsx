@@ -1,18 +1,26 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
 import { BiSearch } from "react-icons/bi";
+import { BsPerson } from "react-icons/bs";
+import logo from "./Logo.png"
+import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
     <div className={styles.navbar1}>
-      <img src="" alt="" placeholder='Search Dukan.in' />
-      <div>
+      <div className={styles.logo}>
+      <img src={logo} alt="logo" placeholder='Search Dukan.in' />
+      </div>
+      <div className={styles.searchbar}>
         <input type="text" placeholder='Search Dukan.in' />
         <button><BiSearch/></button>
       </div>
-      <p>login</p>
-      <p>cart</p>
+      <div className={styles.auth}>
+      <p><BsPerson/>login</p>
+      <p><HiOutlineShoppingCart/>cart</p>
+      </div>
+      
     </div>
     <div className={styles.navbar2}>
       <p>All</p>
