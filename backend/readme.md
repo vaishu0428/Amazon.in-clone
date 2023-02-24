@@ -94,5 +94,8 @@ bracelet:["jCrew"]
      1. token (Bearer token)
      2. cartItem id
         - ex :`http://localhost:8080/cart/decQty/63f76572b286efb72287060b`
-     3. Note : When quantity reaches to 0 then cartitem will be deleted. for reference see code   
+     3. Note : When quantity reaches to 0 then cartitem will be deleted. for reference see ressponse in the conssole.log
+
+  
+      
 

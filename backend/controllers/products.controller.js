@@ -87,86 +87,77 @@ const addProduct = async (req, res) => {
 const getProducts = async (req, res) => {
 
     const {
-        category,
-        order,
-        brand,
-        page = 1,
-        limit = 20,
-        sortBy,
-        search_query,
-        rating,
-        price
+      category,
+      order,
+      brand,
+      page = 1,
+      limit = 20,
+      sortBy,
+      search_query,
+      rating,
+      price
     } = req.query;
-
+  
     let products;
-
+  
     try {
-
-
-
-        if (search_query) {
-            const regex = new RegExp(search_query, 'i');
-            // console.log(regex, "regex")
-            products = await productModel.find({ title: regex });
-        }
-
-
-
-        else if (rating) {
-            // console.log(rating) 
-            products = await productModel.find({ rating: parseInt(rating) });
-        }
-
-
-
-
-        else if (category) {
-            products = await productModel.find({ category: category });
-        }
-
-        else if (brand) {
-            products = await productModel.find({ brand: brand });
-        }
-
-
-
-
-        else if (sortBy && order) {
-            const sort = {};
-            sort[sortBy] = parseInt(order);
-            products = await productModel.find().sort(sort);
-        }
-
-        else if (price && order) {
-            const sort = {};
-            sort["price"] = parseInt(order);
-            products = await productModel.find().sort(sort);
-        }
-
-
-        else if (page && limit) {
-            const parsedPage = parseInt(page);
-            const parsedLimit = parseInt(limit);
-            const startIndex = (parsedPage - 1) * parsedLimit;
-            products = await productModel.find().limit(parsedLimit).skip(startIndex).exec();
-        }
-        // if no filters applied, get all products
-        else {
-            products = await productModel.find();
-        }
-
-        if (products.length === 0) {
-            return res.status(200).send({ msg: "Product not found" })
-        } else {
-            res.status(201).send({ products, total: products.length })
-        }
-
-
+  
+      if (search_query) {
+        const regex = new RegExp(search_query, 'i');
+        products = await productModel.find({ title: regex });
+      }
+  
+      else if (rating) {
+        products = await productModel.find({ rating: parseInt(rating) });
+      }
+  
+      else if (category) {
+        products = await productModel.find({ category: category });
+      }
+  
+      else if (brand) {
+        products = await productModel.find({ brand: brand });
+      }
+  
+      else if (sortBy && order) {
+        const sort = {};
+        sort[sortBy] = parseInt(order);
+        products = await productModel.find().sort(sort);
+      }
+  
+      else if (price && order) {
+        const sort = {};
+        sort["price"] = parseInt(order);
+        products = await productModel.find().sort(sort);
+      }
+  
+      else if (page && limit) {
+        const parsedPage = parseInt(page);
+        const parsedLimit = parseInt(limit);
+        const startIndex = (parsedPage - 1) * parsedLimit;
+        products = await productModel.find().limit(parsedLimit).skip(startIndex).exec();
+      }
+  
+      else {
+        products = await productModel.find();
+      }
+  
+      if (products.length === 0) {
+        return res.status(200).send({ msg: "Product not found" })
+      } else {
+        // for (let product of products) {
+        //   const newQuantity = Math.floor(Math.random() * (20 - 10 + 1) + 10);
+        //   await productModel.findByIdAndUpdate(product._id, { $set: { quantity: newQuantity }});
+        // }
+        res.status(201).send({ products, total: products.length })
+      }
+  
     } catch (err) {
-        res.status(500).json({ message: err.message });
+      res.status(500).json({ message: err.message });
     }
-
-}
+  }
+  
+  
 
 const getDetails = async (req, res) => {
 
