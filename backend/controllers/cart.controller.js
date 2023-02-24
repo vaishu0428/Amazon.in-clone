@@ -164,11 +164,14 @@ const removeFromCart = async (req, res) => {
   const incrementQuantity = async (req, res) => {
     const cartItemId = req.params.id;
     console.log(cartItemId, "cartItemId");
+
+    const quantity=req.body.quantity
+    // console.log(quantity,"quantity")
   
     try {
       const cartItem = await cartModel.findOneAndUpdate(
         { 'products.product': cartItemId },
-        { $inc: { 'products.$.quantity': 1 } },
+        { $inc: { 'products.$.quantity': quantity } },
         { new: true }
       ).populate({
         path: 'products.product',
@@ -212,7 +215,7 @@ const removeFromCart = async (req, res) => {
           { $pull: { products: { product: cartItemId } } }
         );
   
-        return res.status(200).send({ msg: `Cart item removed since this product : ${cartItemId} quantity has become less then 0 ` });
+        return res.status(200).send({ msg: `Cart item removed since this product : ${cartItemId} quantity has become  0 ` });
       }
   
       res.status(200).send({ cartItem });
