@@ -6,10 +6,18 @@ const cloudinary = require("cloudinary").v2;
 const { cloudinaryConfig } = require("../config/cloudinary.config");
 
 const getAllusers = async (req, res) => {
+  const userID = req.body.userID;
+
   try {
-    users = await UserModel.find();
-    // console.log("all users", users);
-    res.status(200).send({ msg: "Welcome User Home Page", users });
+    users = await UserModel.findById(userID);
+    if (users.role === "admin") {
+      const allusers = await UserModel.find({ role: "user" });
+      // console.log("all users", users);
+      res.status(200).send({ msg: "Welcome User Home Page", allusers });
+    } else {
+      // console.log("all users", users);
+      res.status(400).send({ msg: "Sorry You are not a admin" });
+    }
   } catch (err) {
     res.status(400).send({ msg: "Somthing went wrong" });
   }
@@ -83,8 +91,8 @@ const userLogin = async (req, res) => {
 
 const userLogout = async (req, res) => {
   try {
-    const user = await UserModel.findById(req.body.userID);
-    console.log(user);
+    const user = await UserModel.findByIdAndUpdate(req.body.userID);
+    // console.log("user logout l-88", user);
     if (!user) {
       return res.status(404).send("User not found");
     }
@@ -98,43 +106,108 @@ const userLogout = async (req, res) => {
 };
 
 const userUpdateProfile = async (req, res) => {
+  const { name, mobile, city, area, district, state, pinCode, addressId } =
+    req.body;
   try {
     // Find the user by ID
     const user = await UserModel.findById(req.body.userID);
-    console.log("l-104", user);
-
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
-    const file = req.files.image;
-    cloudinary.uploader.upload(file.tempFilePath, async (err, result) => {
-      if (result) {
-        // Update the user object with the new data from the request body
-        user.name = req.body.name || user.name;
-        user.mobile = req.body.mobile || user.mobile;
-        user.image = result.url; // Use the uploaded file path or the existing image path
-        // Update the user's address array
-        if (req.body.address) {
-          user.address = req.body.address;
-        }
-        // Save the updated user object
-        const updatedUser = await user.save();
-        res.json({ message: "User profile updated", updatedUser });
-      } else {
-        return res.json({
-          message: "User profile image is not uploaded updated",
+
+    const newAddress = {
+      city,
+      area,
+      district,
+      state,
+      pinCode,
+    };
+
+    // Only update the name, mobile, and image fields if they are provided
+    if (name) user.name = name;
+    if (mobile) user.mobile = mobile;
+
+    //upload profile pic of user
+    if (user.image === "" || user.image === null) {
+      if (req.files.image) {
+        const file = req.files.image;
+        cloudinary.uploader.upload(file.tempFilePath, async (err, result) => {
+          if (err) {
+            return res
+              .status(400)
+              .send({ massage: "Image file is not uploaded" });
+          }
+          console.log("result url", result.url);
+          user.image = result.url;
+          await user.save();
         });
       }
-    });
+    }
+
+    // if (city || area || district || state || pinCode) {
+    // Find the index of the address with the given ID
+    const addressIndex = user.address.findIndex(
+      (a) => a._id.toString() === addressId
+    );
+    console.log("id matched L-148", addressIndex);
+    if (addressIndex !== -1) {
+      // If the address exists, update it
+      user.address[addressIndex] = newAddress;
+      await user.save();
+      res.send(
+        `Hello!, ${user.name}, your old address ${addressId} has been updated. The new address is ${newAddress}.`
+      );
+    } else {
+      // If the address doesn't exist, add it to the array
+      user.address.push(newAddress);
+      await user.save();
+      res.send(`Hello!, ${user.name}, your new address has been added.`);
+    }
+    // }
+    res
+      .status(200)
+      .send(`Hello!, ${user.name}, your profile has been updated.`);
   } catch (err) {
-    return res.json({ message: "Somting went wrong update profile" });
+    return res.json({ message: "Something went wrong updating profile" });
   }
 };
 
+const userDeleteAddress = async (req, res) => {
+  const userId = req.body.userID;
+  const addressId = req.body.addressID;
+  // console.log("line-150", addressId);
+  try {
+    // Find the user by ID
+    const user = await UserModel.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
 
+    // address length should not be lessthen 1
 
-
-
+    if (user.address.length > 1) {
+      // Find the index of the address with the given ID
+      const addressIndex = user.address.findIndex(
+        (ele) => ele._id.toString() === addressId
+      );
+      // console.log(addressIndex);
+      if (addressIndex === -1) {
+        return res.status(404).json({ message: "Address not found" });
+      }
+      // Remove the address from the user's address array
+      user.address.splice(addressIndex, 1);
+      // Update the user document in the database
+      await UserModel.findByIdAndUpdate(userId, { address: user.address });
+      res.send(
+        `Address with ID ${addressId} has been deleted from the user's address list.`
+      );
+    } else {
+      return res.json({ message: "Sorry you can't Delete default address" });
+    }
+  } catch (err) {
+    return res.json({ message: "Something went wrong deleting address" });
+  }
+};
 
 module.exports = {
   getAllusers,
@@ -142,4 +215,5 @@ module.exports = {
   userLogin,
   userLogout,
   userUpdateProfile,
+  userDeleteAddress,
 };
