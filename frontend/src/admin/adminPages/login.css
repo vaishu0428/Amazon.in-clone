@@ -1,0 +1,330 @@
+
+@media all and (min-width : 1024px) and (max-width : 3000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif";
+  }
+  
+  body {
+    background: #f0f0f0;
+  }
+  
+  .login-form-container {
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+  }
+  .login-form-container > h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffa41c;
+  }
+  .form-floating {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+    background: #fff;
+    transition: all 0.3s ease-out;
+  }
+  
+  .form-floating input {
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-out;
+    box-sizing: border-box;
+  
+    display: block;
+    padding: 8px;
+  
+    background: #fff;
+    color: #323840;
+    border-radius: 3px;
+  }
+  .form-floating input:focus {
+    outline: none;
+    /* border-color: #0077cc; */
+  }
+  .form-floating.has-value label {
+    top: 0px;
+    left: 12px;
+    font-size: 15px;
+    color: #0077cc;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #ffa41c ;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+
+@media all and (min-width : 0px) and (max-width : 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif";
+  }
+  
+ 
+  
+  .login-form-container {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+  }
+  .login-form-container > h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffa41c;
+  }
+  .form-floating {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+    background: #fff;
+    transition: all 0.3s ease-out;
+  }
+  
+  .form-floating input {
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-out;
+    box-sizing: border-box;
+  
+    display: block;
+    padding: 8px;
+  
+    background: #fff;
+    color: #323840;
+    border-radius: 3px;
+  }
+  .form-floating input:focus {
+    outline: none;
+    /* border-color: #0077cc; */
+  }
+  .form-floating.has-value label {
+    top: 0px;
+    left: 12px;
+    font-size: 15px;
+    color: #0077cc;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #ffa41c ;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+@media all and (min-width : 320px) and (max-width : 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif";
+  }
+  
+  
+  
+  .login-form-container {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+  }
+  .login-form-container > h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffa41c;
+  }
+  .form-floating {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+    background: #fff;
+    transition: all 0.3s ease-out;
+  }
+  
+  .form-floating input {
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-out;
+    box-sizing: border-box;
+  
+    display: block;
+    padding: 8px;
+  
+    background: #fff;
+    color: #323840;
+    border-radius: 3px;
+  }
+  .form-floating input:focus {
+    outline: none;
+    /* border-color: #0077cc; */
+  }
+  .form-floating.has-value label {
+    top: 0px;
+    left: 12px;
+    font-size: 15px;
+    color: #0077cc;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #ffa41c ;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+@media all and (min-width : 768px) and (max-width : 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif";
+  }
+  
+  body {
+    background: #f0f0f0;
+  }
+  
+  .login-form-container {
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+  }
+  .login-form-container > h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffa41c;
+  }
+  .form-floating {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+    background: #fff;
+    transition: all 0.3s ease-out;
+  }
+  
+  .form-floating input {
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-out;
+    box-sizing: border-box;
+  
+    display: block;
+    padding: 8px;
+  
+    background: #fff;
+    color: #323840;
+    border-radius: 3px;
+  }
+  .form-floating input:focus {
+    outline: none;
+    /* border-color: #0077cc; */
+  }
+  .form-floating.has-value label {
+    top: 0px;
+    left: 12px;
+    font-size: 15px;
+    color: #0077cc;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #ffa41c ;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}

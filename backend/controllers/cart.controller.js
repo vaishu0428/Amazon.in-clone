@@ -1,4 +1,5 @@
 const cartModel = require("../model/cart.model");
+
 const decrementProductQuantity = require("./helperDecrementQuantity.controller");
 
 const addToCart = async (req, res) => {
@@ -196,3 +197,4 @@ module.exports = {
   incrementQuantity,
   decrementQuantity
 }
+
