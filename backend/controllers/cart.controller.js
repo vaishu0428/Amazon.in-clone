@@ -1,6 +1,20 @@
-const cartModel = require("../model/cart.model")
+const cartModel = require("../model/cart.model");
+const prodtID = "63f76572b286efb722870609";
 
+const addToCart = async (req, res) => {
+  const userID = req.body.userID;
+  console.log(userID);
+  const cadtItems = new cartModel({
+    user: userID,
+    products: [{ product: prodtID }],
+    quantity: 1,
+  });
+  await cadtItems.save();
 
+module.exports = {
+  addToCart,
+};
+=======
 // const addToCart = async (req, res) => {
 //     const user_id = req.body.userID;
 //     //  console.log(user_id)
