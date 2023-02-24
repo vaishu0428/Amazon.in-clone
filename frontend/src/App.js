@@ -1,13 +1,15 @@
 
+import Cardcomponent from './admin/adminComponents/card/Cardcomponent';
+import Home from './admin/adminPages/Home';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
   return (
 
     <div className="App">
-
+       <Home/>
+       {/* <Cardcomponent/> */}
     </div>
   );
 }

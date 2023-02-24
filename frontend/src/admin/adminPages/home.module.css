@@ -1,38 +1,72 @@
 
 @media all and (min-width : 1024px) and (max-width : 3000px) {
-    .card{
-        width: 70%;
-        margin-left: 29%;
+    .home{
         /* border: 1px solid red; */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
+        justify-content: flex-start;
+    }
+    
+    .card{
+       
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+       
+        gap: 1%;
     }
 }
 @media all and (min-width : 768px) and (max-width : 1024px) {
-    
-}
-@media all and (min-width : 320px) and (max-width : 768px) {
-    .card{
-        width: 40%;
-        margin-left: 60%;
+    .home{
         /* border: 1px solid red; */
         display: flex;
+        justify-content: flex-start;
+    }
+    .right{
+        width: 70%;
+    }
+    .card{
+       
+        width: 100%;
+        margin-left: 40%;
+        display: flex;
+        gap: 1%;
+    }
+}
+@media all and (min-width : 320px) and (max-width : 767px) {
+    .home{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .right{
+        width: 70%;
+    }
+    .card{
+       
+        width: 100%;
+        margin-left: 35%;
+        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
+        gap: 5px;
+        margin-right: 10px;
     }
 }
 @media all and (min-width : 0px) and (max-width : 320px) {
-    .card{
-        width: 70%;
-        margin-left: 29%;
+    .home{
         /* border: 1px solid red; */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
+        justify-content: flex-start;
+    }
+    .right{
+        width: 70%;
+    }
+    .card{
+       
+        width: 100%;
+        margin-left: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-right: 10px;
     }
 }
