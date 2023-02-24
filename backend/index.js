@@ -30,10 +30,13 @@ app.get("/", (req, res) => {
 
 /* import all routes */
 
-app.use("/product", productRouter);
+
 app.use("/user", userRoutes);
-app.use("/cart", cartRouter);
-// app.use(authenticateToken)
+
+app.use("/product",productRouter)
+
+app.use("/cart", cartRouter)
+
 
 const port = process.env.PORT || 8090;
 

@@ -40,35 +40,195 @@ const productModel = require("../model/products.model");
 
 // add product 👍👍👍👍
 
-const addProduct=async(req,res)=>{
+const addProduct = async (req, res) => {
 
-    const product= new productModel(req.body);
+    const product = new productModel(req.body);
 
     try {
-        const new_product= await product.save();
-        res.status(201).send({msg:"product addedd successs", products:new_product})
+        const new_product = await product.save();
+        res.status(201).send({ msg: "product addedd successs", products: new_product })
     } catch (error) {
-        res.status(500).send({mssg:"Something went wrong in the server",err:error})
+        res.status(500).send({ mssg: "Something went wrong in the server", err: error })
     }
+
+
+    // productModel.updateMany({}, { $unset: { rating: 4 } }) // remove the rating field from all documents
+    //     .then((result) => {
+    //       console.log(`Removed rating field from ${result.nModified} documents`);
+
+    //    productModel.find({}, (err, products) => { // find all products
+    //         if (err) {
+    //           console.error(err);
+    //           return;
+    //         }
+
+    //         // update each product with a random rating
+    //         products.forEach((product) => {
+    //           product.rating = Math.floor(Math.random() * 5) + 1;
+    //           product.save((err) => {
+    //             if (err) {
+    //               console.error(err);
+    //             }
+    //           });
+    //         });
+
+    //         console.log(`Updated rating field in ${products.length} documents`);
+    //       });
+    //     })
+    //     .catch((err) => {
+    //       console.error(err);
+    //     });
+
+
 }
 
 // get products 👍👍👍👍👍
 
-const getProducts= async(req,res)=>{
+const getProducts = async (req, res) => {
 
-     const products= await productModel.find();
+    const {
+        category,
+        order,
+        brand,
+        page = 1,
+        limit = 20,
+        sortBy,
+        search_query,
+        rating,
+        price
+    } = req.query;
 
-     if(products.length===0){
-        return res.status(404).send({msg:"Product not found"})
-     }
+    let products;
 
-     try {
-        res.status(200).send({products:products,total:products.length})
-     } catch (error) {
-        return res.status(500).send({msg:"Something went wrong server", err:error})
-     }
+    try {
+
+
+
+        if (search_query) {
+            const regex = new RegExp(search_query, 'i');
+            // console.log(regex, "regex")
+            products = await productModel.find({ title: regex });
+        }
+
+
+
+        else if (rating) {
+            // console.log(rating) 
+            products = await productModel.find({ rating: parseInt(rating) });
+        }
+
+
+
+
+        else if (category) {
+            products = await productModel.find({ category: category });
+        }
+
+        else if (brand) {
+            products = await productModel.find({ brand: brand });
+        }
+
+
+
+
+        else if (sortBy && order) {
+            const sort = {};
+            sort[sortBy] = parseInt(order);
+            products = await productModel.find().sort(sort);
+        }
+
+        else if (price && order) {
+            const sort = {};
+            sort["price"] = parseInt(order);
+            products = await productModel.find().sort(sort);
+        }
+
+
+        else if (page && limit) {
+            const parsedPage = parseInt(page);
+            const parsedLimit = parseInt(limit);
+            const startIndex = (parsedPage - 1) * parsedLimit;
+            products = await productModel.find().limit(parsedLimit).skip(startIndex).exec();
+        }
+        // if no filters applied, get all products
+        else {
+            products = await productModel.find();
+        }
+
+        if (products.length === 0) {
+            return res.status(200).send({ msg: "Product not found" })
+        } else {
+            res.status(201).send({ products, total: products.length })
+        }
+
+
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+
 }
-module.exports ={
+
+const getDetails = async (req, res) => {
+
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+
+    try {
+        res.status(200).send({ msg: "product get", product: findProduct })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
+const updateProduct = async (req, res) => {
+
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+    if (Object.keys(req.body).length === 0) {
+        return res.status(400).json({ message: "Request body is empty or not passed so did not updated product." });
+    }
+
+    try {
+        await productModel.findByIdAndUpdate({ _id: id }, req.body)
+        res.status(200).send({ msg: "product updated success" })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
+const deleteProduct = async (req, res) => {
+    const id = req.params.id;
+
+    const findProduct = await productModel.findById({ _id: id });
+
+    if (!findProduct) {
+        return res.status(400).send({ msg: `product not found with id : ${id}` })
+    }
+
+    try {
+
+        await productModel.findByIdAndDelete({ _id: id })
+        res.status(200).send({ msg: "product deleted success" })
+    } catch (error) {
+        res.status(500).send({ msg: "Something went wrong in the server", err: error.message })
+    }
+}
+
+module.exports = {
     addProduct,
-    getProducts
+    getProducts,
+    getDetails,
+    updateProduct,
+    deleteProduct
 }
+

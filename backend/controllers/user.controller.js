@@ -59,7 +59,7 @@ const registerUser = async (req, res) => {
           .send({ message: "Somthing went wrong", err: err.message });
         return;
       }
-      console.log("hash", hash);
+      // console.log("hash", hash);
       const new_user = new UserModel({
         name,
         email,
@@ -88,9 +88,9 @@ const userLogin = async (req, res) => {
         if (result) {
           const token = jwt.sign(
             { ExistingUserID: userExists._id },
-            process.env.userSecretKey
+            process.env.SECRET_KEY
           );
-          console.log("login l-101", userExists.isActive);
+          // console.log("login l-101", userExists.isActive);
           userExists.isActive = true;
           await userExists.save();
           res.status(200).send({ msg: "Login Successfull", token: token });
