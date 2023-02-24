@@ -17,16 +17,13 @@ const {
 
 const userRoutes = express.Router();
 
-userRoutes.get("/", authenticateToken, getAllusers);
 userRoutes.post("/register", userSignupInputValidate, registerUser);
-userRoutes.post("/login", userLoginInput, userLogin);
-userRoutes.post("/logout", authenticateToken, userLogout);
-userRoutes.patch("/profile", authenticateToken, userUpdateProfile);
-userRoutes.delete(
-  "/profile/deleteaddress",
-  authenticateToken,
-  userDeleteAddress
-);
+userRoutes.post("/login", userLogin);
+userRoutes.use(authenticateToken);
+userRoutes.get("/", getAllusers);
+userRoutes.post("/logout", userLogout);
+userRoutes.patch("/profile", userUpdateProfile);
+userRoutes.delete("/profile/deleteaddress", userDeleteAddress);
 
 module.exports = {
   userRoutes,
