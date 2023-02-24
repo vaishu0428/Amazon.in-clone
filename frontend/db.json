@@ -1,0 +1,171 @@
+{
+    "todos":[
+        {
+          "id":1,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BE394_NA6445?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "J.Crew trail runners",
+          "description": "Introducing our newest sneakers that are designed to perform whether you're taking on trail runs or running around the city. Built with suede and mesh uppers, these comfortable trail runners feature 98 percent recycled Ortholite® footbeds, plus durable Vibram® outsoles.",
+          "price": 148,
+          "type": "clothing",
+          "brand": "levis",
+          "category": "men"
+        },
+        {
+          "id":2,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/AY197_WZ1852?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "8\" camp short in cotton-linen",
+          "description": "Inspired by the shorts soldiers once wore during basic training, these camp shorts feature fatigue-style pockets and a comfortable fit. We build them with a cotton-linen blend that's lightweight, naturally breathable and subtly textured. By buying cotton products from J.Crew, you're supporting more responsibly grown cotton through the Better Cotton Initiative.",
+          "price": 75,
+          "type": "clothing",
+          "brand": "denim",
+          "category": "men"
+        },
+        {
+          "id":3,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BE393_PP2862?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Nordic low-top hikers",
+          "description": "Inspired by vintage mountain gear, the J.Crew Nordic Collection is engineered to keep you sure-footed and bone-dry, no matter what the terrain or conditions. Crafted in a low-top silhouette, these versatile hiking shoes are made with suede and nylon uppers. We build them to perform on the trail with Vibram® Rollingait System outsoles, which are specially designed to support the natural motion of the foot. Whether you're in the woods or on city streets, these retro hikers will help you hit your stride.",
+          "price": 178,
+          "type": "shoes",
+          "brand": "nike",
+          "category": "men"
+        },
+        {
+          "id":4,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BE386_SP2335?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Camden crepe-sole slip-ons in English suede",
+          "description": "Our Camden slip-ons are crafted in premium suede from C.F. Stead, a renowned British tannery that boasts well over a century of expertise. Taking cues from vintage styles, this pair can be both rugged and laid-back, and it's extra-comfortable, thanks to its soft crepe soles.",
+          "price": 228,
+          "type": "shoes",
+          "brand": "puma",
+          "category": "men"
+        },
+        {
+          "id":5,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/AK786_BL8551?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Woven belt",
+          "description": "Inspired by the ropes on ships, this braided belt is for the the person hoping to look like someone who knows port from starboard. This belt is great for a day at the beach, on the golf course or anywhere, really.",
+          "price": 49.5,
+          "type": "accessories",
+          "brand": "woodland",
+          "category": "men"
+        },
+        {
+          "id":6,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BH142_PT1752?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Zip pouch in printed nylon",
+          "description": "Keys? Phone? Wallet? Keep them all together, as well as your sunnies and some SPF 50 on your next trip to the pool or beach with this easy-access zip pouch, crafted in the same recycled nylon as our swimsuits.",
+          "price": 39.5,
+          "type": "accessories",
+          "brand": "woodland",
+          "category": "men"
+        },
+        {
+          "id":7,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BH140_PT1359?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Five-panel cap in floral print seersucker",
+          "description": "Wear this versatile cotton cap when you need some extra protection from the sun, or when you just want something to top off your look.",
+          "price": 49.5,
+          "type": "accessories",
+          "brand": "puma",
+          "category": "men"
+        },
+        {
+          "id":8,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BH305_NT4619?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "English silk seersucker tie",
+          "description": "Our ties are handmade in Long Island City, New York, by skilled craftsmen who have been making ties since 1957. Every single tie is hand-stitched, which means they're more flexible and easier to tie than machine-made ties. This one is made with silk from Stephen Walters, a renowned family-owned English mill founded in 1720.",
+          "price": 59.5,
+          "type": "accessories",
+          "brand": "puma",
+          "category": "men"
+        },
+        {
+          "id":9,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/AX215_PP1630?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Critter socks",
+          "description": "There's a time and a place for plain socks. This pair is for the days that call for a little something extra.",
+          "price": 14.5,
+          "type": "accessories",
+          "brand": "puma",
+          "category": "men"
+        },
+        {
+          "id":10,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/J1785_WT0002_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Garment-dyed slub cotton crewneck T-shirt",
+          "description": "These supersoft tees are made from garment-dyed slub cotton, which means each one will have a rich, perfectly imperfect color that will softly fade over time.",
+          "price": 3861,
+          "type": "clothing",
+          "brand": "denim",
+          "category": "men"
+        },
+        {
+          "id":11,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/AZ684_BL8133?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Double-knit jogger pant",
+          "description": "Originally developed in the early 1900s, this double-layer fabric traps heat, making it ideal for layering (and lounging around the house). Fun fact: This fabric was worn by the first Everest expedition to reach the summit.",
+          "price": 9096,
+          "type": "clothing",
+          "brand": "levis",
+          "category": "men"
+        },
+        {
+          "id":12,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/H8622_GY6597?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "  Stretch boxer briefs",
+          "description": "We feel our unmentionables should be worth mentioning, so we knit these boxer briefs in soft cotton-spandex and added a waistband that's been brushed for extra comfort.",
+          "price": 2880,
+          "type": "clothing",
+          "brand": "polo",
+          "category": "men"
+        },
+        {
+          "id":13,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/BE619_DM5940_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Classic Relaxed-fit jean in two-year wash",
+          "description": "Our designers are obsessed with denim—and it shows. We source denim from some of the world's most renowned mills, create exclusive washes and build our jeans to feel good from the moment you put them on. This denim is made with 100 percent cotton, so it will take on your unique wear characteristics over time. Our newest washes let you jump into the break-in process wherever you like, from day-one dark to old-favorite fades. The vintage-inspired Classic Relaxed fit is built with room to move, and relaxed through the hip and thigh with a full leg. By buying cotton products from J.Crew, you're supporting our investment in Better Cotton's mission to help cotton communities survive and thrive while protecting and restoring the environment. This product is sourced through a system of mass balance and therefore may not contain Better Cotton.",
+          "price": 21987,
+          "type": "clothing",
+          "brand": "polo",
+          "category": "men"
+        },
+        {
+          "id":14,
+          "quantity": 100,
+          "image": "https://www.jcrew.com/s7-img-facade/AU428_BL8308_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+          "title": "Ludlow Slim-fit unstructured suit jacket in Irish cotton-linen",
+          "description": "We changed the suiting game when we introduced the Ludlow in 2008, proving that you can get a suit made with the world's best fabrics and with details you'd find in a four-figure suit for a fraction of the cost. Today, the Ludlow comes in two fits and new fabrics from renowned mills every season. Introduced in 2017, our Ludlow unstructured suit has become a customer favorite. Unpadded and with unlimited ways to wear it, we call it the Un-suit, and it's the most versatile suit you can own. We cut this suit jacket in fabric from Baird McNutt, an Irish mill founded in 1912 that's known for producing some of the world's finest linen.",
+          "price": 28531,
+          "type": "clothing",
+          "brand": "polo",
+          "category": "men"
+        }
+        
+        
+       
+       
+       
+       
+        
+        
+         
+      ]
+      
+      
+        
+    
+}
