@@ -88,6 +88,7 @@ const userLogin = async (req, res) => {
         if (result) {
           const token = jwt.sign(
             { ExistingUserID: userExists._id },
+
             process.env.userSecretKey
           );
           // console.log("login l-101", userExists.isActive);
