@@ -28,7 +28,7 @@ p{
 
 @media screen and (min-width: 801px) and (max-width:1440px){
 .login{
-    width: 30%;
+    width: 40%;
 }
 
 
@@ -38,7 +38,7 @@ p{
 
 @media screen and (min-width: 320px) and (max-width:800px){
     .login{
-        width: 50%;
+        width: 70%;
     }
 
 

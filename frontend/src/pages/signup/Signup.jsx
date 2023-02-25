@@ -1,26 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styles from "../login/Login.module.css"
+import axios from "axios"
+import { Flex, Heading, Input } from '@chakra-ui/react'
+import {Link} from "react-router-dom"
 const Signup = () => {
+  const [email,setemail]=useState("")
+  const [name,setname]=useState("")
+  const [pass,setpass]=useState("")
+  const[error,seterror]=useState("")
+  console.log(email,pass,name)
+  
+  async function register(){
+    if(name===""||email===""||pass===""){
+      alert("enter details")
+    }else
+    await axios.post(`http://localhost:8090/user/register`,{
+      name:name,
+      email:email,
+      pass:pass,
+
+    }).then(res=>console.log(res.name)).catch(err=>seterror(err.response.data.error))
+
+  }
   return (
    
          <div>
-      <h1><img src="/login.jpeg" width="200px" alt="/" /></h1>
+      <Flex justify={"center"}><Link to="/"><img src="/login.jpeg" width="200px" alt="/" /></Link></Flex>
 
 <div className={Styles.login}>
-  <h2>Create Account</h2>
+  <Heading size={"md"} m="10px 0px ">Create Account</Heading>
  <div >
     <label>Your name <br/>
-    <input type="text" name="name" placeholder='First and last name' id="name" />
+    <Input type="text" name="name" onChange={(e)=>setname(e.target.value)} placeholder='First and last name' id="name" />
    </label>
    </div>
    <div >
     <label>Enter your email <br/>
-    <input type="email" name="email" placeholder='Enter your email' id="email" /><br/>
+    <Input type="email" name="email" onChange={(e)=>setemail(e.target.value)} placeholder='Enter your email' id="email" /><br/>
  </label></div>
     <div >
 
 <label>Password <br/>
-    <input type="password" name="password" placeholder='At least 6 characters' id="password" /><br/>
+    <Input type="password" name="password" onChange={(e)=>setpass(e.target.value)} placeholder='At least 6 characters' id="password" /><br/>
     <p>
 Passwords must be at least 6 characters.</p>
     </label>
@@ -28,8 +49,8 @@ Passwords must be at least 6 characters.</p>
 
 
   <p>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Amazon. Message and data rates may apply.</p>
-   <button>Continue</button>
-
+   <button onClick={register}>Continue</button>
+   {error?<h3>{error}</h3>:null}
 </div>
 <div className={Styles.belowlogin}>
 <p>
