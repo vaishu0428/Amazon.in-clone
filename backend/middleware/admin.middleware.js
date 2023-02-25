@@ -10,10 +10,12 @@ const adminAccesssOnly = async (req, res, next) => {
 
             const Logged_User = await UserModel.findById({ _id: decoded.ExistingUserID })
 
+            // console.log(Logged_User)
+
             if (Logged_User.role === "admin") {
                 next();
             } else {
-                res.status(401).send("Unauthorized access");
+                res.status(401).send("Unauthorized access or only admin can access this route");
             }
 
 

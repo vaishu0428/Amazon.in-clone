@@ -48,7 +48,7 @@ const addProduct = async (req, res) => {
         const new_product = await product.save();
         res.status(201).send({ msg: "product addedd successs", products: new_product })
     } catch (error) {
-        res.status(500).send({ mssg: "Something went wrong in the server", err: error })
+        res.status(500).send({ mssg: "Something went wrong", err: error.message })
     }
 
 
@@ -156,9 +156,7 @@ const getProducts = async (req, res) => {
       res.status(500).json({ message: err.message });
     }
   }
-  
-  
-
+   
 const getDetails = async (req, res) => {
 
     const id = req.params.id;
