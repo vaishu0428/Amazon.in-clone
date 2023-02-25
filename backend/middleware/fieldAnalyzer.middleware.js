@@ -1,4 +1,4 @@
-const requiredFields = ['title', 'price', 'disc', 'brand', 'rating', 'category', 'subCategory', 'image'];
+const requiredFields = ['title', 'price', 'description', 'brand', 'rating', 'category', 'image',"quantity"];
 
 const validateProductFields = (req, res, next) => {
 
@@ -17,11 +17,15 @@ const validateProductFields = (req, res, next) => {
     fieldErrors.push('price');
   }
 
+  if(typeof req.body.quantity !=="number"){
+    fieldErrors.push("quantity")
+  }
+
   if (typeof req.body.brand !== 'string') {
     fieldErrors.push('brand');
   }
 
-  if (typeof req.body.disc !== 'string') {
+  if (typeof req.body.description !== 'string') {
     fieldErrors.push('disc');
   }
 
@@ -33,11 +37,8 @@ const validateProductFields = (req, res, next) => {
     fieldErrors.push('category');
   }
 
-  if (typeof req.body.subCategory !== 'string') {
-    fieldErrors.push('subCategory');
-  }
 
-  if (!Array.isArray(req.body.image) || !req.body.image.every(img => typeof img.url === 'string')) {
+  if (typeof req.body.image!== 'string') {
     fieldErrors.push('image');
   }
 

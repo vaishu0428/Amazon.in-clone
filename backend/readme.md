@@ -66,6 +66,63 @@ bracelet:["jCrew"]
    - ex : `http://localhost:8080/product/get/63f76572b286efb722870609`
 
 
+## CRUD In Products (Admin Only)
+
+1. `http://localhost:8080/product/add` ----> Create product
+   - required 
+     1. token (Bearer token)
+
+     2. Below fields (`Should stricly follow typeOf`)
+        ```
+            title: {
+               type: String,
+               required: true
+            },
+            image: {
+               type: String,
+               required: true
+            },
+            description: {
+               type: String,
+               required: true
+            },
+            price: {
+               type: Number,
+               required: true
+            },
+            rating: {
+               type: Number,
+               required: true
+            },
+            brand: {
+               type: String,
+               required: true
+            },
+
+            category: {
+               type: String,
+               required: true
+            },
+
+            quantity: {
+               type: Number,
+               required: true
+            },
+        ```
+      3. Method : `POST`
+
+2. `http://localhost:8080/product/update/:id` ---> Update 
+   - required 
+     1. token (Bearer token)
+     2. Method : `PATCH`
+
+3. `http://localhost:8080/product/delete/:id` ---> Delete 
+   - required 
+     1. token (Bearer token)
+     2. Method : `DELETE`
+      
+
+
 ##  cart
 
 1. `http://localhost:8080/cart/add` --> add product to cart
