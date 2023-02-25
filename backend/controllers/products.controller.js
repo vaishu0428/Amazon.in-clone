@@ -48,7 +48,7 @@ const addProduct = async (req, res) => {
         const new_product = await product.save();
         res.status(201).send({ msg: "product addedd successs", products: new_product })
     } catch (error) {
-        res.status(500).send({ mssg: "Something went wrong in the server", err: error })
+        res.status(500).send({ mssg: "Something went wrong", err: error.message })
     }
 
 
@@ -95,12 +95,20 @@ const getProducts = async (req, res) => {
       sortBy,
       search_query,
       rating,
-      price
+      price,
+      getMinRate,
+      getMaxRate
     } = req.query;
   
     let products;
   
     try {
+
+      // console.log(getMinRate,"min::", getMaxRate,"maxx")
+
+      if(getMinRate<0 || getMaxRate>5){
+        return res.status(200).send({msg:"Please provide rating between 1 to 5"})
+      }
   
       if (search_query) {
         const regex = new RegExp(search_query, 'i');
@@ -109,6 +117,10 @@ const getProducts = async (req, res) => {
   
       else if (rating) {
         products = await productModel.find({ rating: parseInt(rating) });
+      }
+
+      else if (getMinRate && getMaxRate) {
+        products = await productModel.find({ rating: { $gte: parseInt(getMinRate), $lte: parseInt(getMaxRate) } });
       }
   
       else if (category) {
@@ -156,9 +168,7 @@ const getProducts = async (req, res) => {
       res.status(500).json({ message: err.message });
     }
   }
-  
-  
-
+   
 const getDetails = async (req, res) => {
 
     const id = req.params.id;

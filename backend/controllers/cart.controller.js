@@ -48,8 +48,6 @@ const addToCart = async (req, res) => {
 
 const getCartData = async (req, res) => {
   const user_id = req.body.userID;
-
-
   try {
     const cartData = await cartModel
       .find({ user: user_id })
@@ -92,7 +90,43 @@ const getCartData = async (req, res) => {
     res.status(500).send({ msg: 'Something went wrong in the server', err: error.message });
   }
 
-};
+};    
+
+
+// const removeFromCart = async (req, res) => {
+//   try {
+//     const userID = req.body.userID;
+//     const productID = req.params.id;
+
+//     // Find the cart with the given user ID
+//     const cart = await cartModel.findOne({ user: userID }).populate('products.product');
+
+//     // If cart is not found or user ID does not match
+//     if (!cart || cart.user.toString() !== userID) {
+//       return res.status(400).send({ msg: 'You are not allowed' });
+//     }
+
+//     // Find the index of the product with the given product ID
+//     const productIndex = cart.products.findIndex(
+//       (product) => product.product._id.toString() === productID
+//     );
+
+//     // If product is not found in the cart
+//     if (productIndex === -1) {
+//       return res.status(404).send({ msg: `Product not found in the cart with id : ${productID}` });
+//     }
+
+//     // Remove the product from the cart
+//     cart.products.splice(productIndex, 1);
+
+//     await cart.save();
+
+//     return res.status(200).send({ msg: 'Product removed from the cart' });
+//   } catch (error) {
+//     console.error(error);
+//     return res.status(500).send({ msg: 'Something went wrong in the server' });
+//   }
+// };
 
 const removeFromCart = async (req, res) => {
   try {
@@ -101,21 +135,23 @@ const removeFromCart = async (req, res) => {
 
     const cart = await cartModel.findOne({ user: userID });
 
+    // console.log(cart)
+
     if (!cart) {
-      return res.status(404).send({ msg: 'Cart not found' });
+      return res.status(404).send({ msg: 'Cart not found the logged user' });
     }
 
     const productIndex = cart.products.findIndex(
       (product) => product.product.toString() === productID
     );
 
-    //   console.log(productIndex,"productIndex")
+    // console.log(productIndex,"productIndex") 
 
     if (productIndex === -1) {
       return res.status(404).send({ msg: `Product not found in the cart with id : ${productID}` });
     }
 
-    // Remove the product from the cart
+    // // Remove the product from the cart
     cart.products.splice(productIndex, 1);
 
     await cart.save();
@@ -131,7 +167,7 @@ const incrementQuantity = async (req, res) => {
   const cartItemId = req.params.id;
   console.log(cartItemId, "cartItemId");
 
-  const quantity = req.body.quantity
+  const quantity = req.body.quantity   
   // console.log(quantity,"quantity")
 
   try {

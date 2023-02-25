@@ -1,4 +1,4 @@
-import {GET_PRODUCTS_FAILURE, GET_PRODUCTS_REQUEST, GET_PRODUCTS_SUCCESS} from "./actionTypes"
+import {GET_PRODUCTS_FAILURE, GET_PRODUCTS_REQUEST, GET_PRODUCTS_SUCCESS,GET_WOMEN_FAILURE,GET_WOMEN_REQUEST,GET_WOMEN_SUCCESS,GET_CHILD_FAILURE,GET_CHILD_REQUEST,GET_CHILD_SUCCESS} from "./actionTypes"
 import axios from 'axios'
 
 // Mens Data
@@ -14,7 +14,30 @@ const getMensDFailureAction = () =>
 {
     return {type:GET_PRODUCTS_FAILURE}
 }
-
+const getWomensRequestAction = () =>
+{
+    return {type:GET_WOMEN_REQUEST}
+}
+const getWomensSuccessAction = (payload) =>
+{
+    return {type:GET_WOMEN_SUCCESS,payload}
+}
+const getWomensDFailureAction = () =>
+{
+    return {type:GET_WOMEN_FAILURE}
+}
+const getChildRequestAction = () =>
+{
+    return {type:GET_CHILD_REQUEST}
+}
+const getChildSuccessAction = (payload) =>
+{
+    return {type:GET_CHILD_SUCCESS,payload}
+}
+const getChildFailureAction = () =>
+{
+    return {type:GET_CHILD_FAILURE}
+}
 
 export const menData = (param) => (dispatch) =>
 {
@@ -30,7 +53,36 @@ export const menData = (param) => (dispatch) =>
     dispatch(getMensDFailureAction())
   })
 }
+// Women
+export const womenData = (param) => (dispatch) =>
+{
+  dispatch(getWomensRequestAction());
+    axios.get("http://localhost:8080/womenProduct",param).then((res)=>
+  {
+    
+    dispatch(getWomensSuccessAction(res.data))
+   console.log(res.data)
 
+  }).catch((err)=>
+  {
+    dispatch(getWomensDFailureAction())
+  })
+}
+// 
+export const childData = (param) => (dispatch) =>
+{
+  dispatch(getChildRequestAction());
+    axios.get("http://localhost:8080/childProduct",param).then((res)=>
+  {
+    
+    dispatch(getChildSuccessAction(res.data))
+   console.log(res.data)
+
+  }).catch((err)=>
+  {
+    dispatch(getChildFailureAction())
+  })
+}
 
 
 
