@@ -1,29 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import styles from "./AdminProductCard.module.css"
-const AdminProductCard = () => {
+import styles from "./AdminUserCard.module.css"
+
+const AdminUserCard = () => {
   return (
-    <div className={styles.productcard}>
+    <div className={styles.usercard}>
       <div className={styles.left}>
       <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_525,c_limit/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png" alt="" />
       </div>
       <div className={styles.right}>
       <div className={styles.title}>
-        <h3>Nike Air Force 1 '07</h3>
-      </div>
-      <div className={styles.id}>
-          <p>product id : </p>
-         <p> 124578963254789</p>
+        <h3>username : Asif Shaikh</h3>
+        <h3>userid :  124578963254789</h3>
       </div>
       <div className={styles.numbers}>
-        <p>category : Mens Shoes</p>
         <div>
-            <p>315</p>
-            <p>quantity remaining</p>
+            <p>12</p>
+            <p>orders</p>
+        </div>
+        <div>
+            <p>4</p>
+            <p>cart items</p>
         </div>
       </div>
+      <div className={styles.status}>
+         <p>status:active</p>
+      </div>
       <div className={styles.btn}>
-         <button><Link className={styles.btn} to="/adminupdate">UPDATE</Link></button>
          <button>DELETE</button>
       </div>
       </div>
@@ -31,4 +33,4 @@ const AdminProductCard = () => {
   )
 }
 
-export default AdminProductCard
+export default AdminUserCard

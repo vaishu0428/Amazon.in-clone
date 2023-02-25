@@ -23,9 +23,9 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 5%;
+    gap: 3%;
     /* border: 1px solid red; */
-    padding: 3%;
+    padding: 2%;
     
 }
 .title>h3{
@@ -58,6 +58,9 @@
     line-height: 20px;
     /* letter-spacing: 2px; */
 
+    font-family: 'Tilt Warp', cursive;
+}
+.btn>button>Link{
     font-family: 'Tilt Warp', cursive;
 }
 .btn>button{

@@ -1,11 +1,12 @@
-
+.maindiv{
+    background-color: 
+    #f6f6f6;
+}
 @media all and (min-width : 1024px) and (max-width : 3000px) {
     .home{
         /* border: 1px solid red; */
         display: flex;
         justify-content: flex-start;
-        background-color: 
-        #eaeded;
     }
     .header{
         width: 15%;
@@ -36,6 +37,18 @@
     .searchbar{
         text-align: left;
         padding-left: 2%;
+        display: flex;
+        
+        
+    }
+    .searchbar>div{
+        margin-left: 35%;
+        margin-top: 1%;
+        font-size: 22px;
+    }
+    .searchbar>div>p{
+        color: 131921;
+        font-family: 'Tilt Warp', cursive; 
     }
     .searchbar>input{
         font-family: 'Tilt Warp', cursive;
@@ -62,10 +75,8 @@
        #131921 ;
     }
 }
-@media all and (min-width : 767px) and (max-width : 1024px) {
+@media all and (min-width : 768px) and (max-width : 1024px) {
     .home{
-        background-color: 
-        #eaeded;
         /* border: 1px solid red; */
         display: flex;
         justify-content: flex-start;
@@ -96,9 +107,22 @@
        
         gap: 1%;
     }
+    
     .searchbar{
         text-align: left;
         padding-left: 2%;
+        display: flex;
+        
+        
+    }
+    .searchbar>div{
+        margin-left: 6%;
+        margin-top: 1%;
+        font-size: 22px;
+    }
+    .searchbar>div>p{
+        color: 131921;
+        font-family: 'Tilt Warp', cursive; 
     }
     
     .searchbar>input{
@@ -128,8 +152,6 @@
 }
 @media all and (min-width : 320px) and (max-width : 767px) {
     .home{
-        background-color: 
-        #eaeded;
         /* border: 1px solid red; */
         display: flex;
         justify-content: flex-start;
@@ -149,6 +171,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 2%;
+        
     }
     
     .card{
@@ -161,6 +184,16 @@
     .searchbar{
         text-align: left;
         padding-left: 2%;
+    }
+   
+    .searchbar>div{
+        margin-left: 1%;
+        margin-top: 1%;
+        font-size: 18px;
+    }
+    .searchbar>div>p{
+        color: #131921;
+        font-family: 'Tilt Warp', cursive; 
     }
     .searchbar>input{
         font-family: 'Tilt Warp', cursive;
@@ -227,6 +260,15 @@
     .searchbar{
         text-align: left;
         padding-left: 2%;
+    }
+    .searchbar>div{
+        margin-left: 1%;
+        margin-top: 1%;
+        font-size: 18px;
+    }
+    .searchbar>div>p{
+        color: 131921;
+        font-family: 'Tilt Warp', cursive; 
     }
     
     .searchbar>button{

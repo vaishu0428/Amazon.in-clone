@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import AdminNavbar from "../adminComponents/Header/AdminNavbar";
 // import styles from "./login.module.css";
 
 const SignIn = () => {
@@ -33,6 +34,10 @@ const SignIn = () => {
   };
 
   return (
+    <div>
+      <div>
+        <AdminNavbar/>
+      </div>
     <div className="login-form-container">
       <h2 className="h2">SIGN UP</h2>
       <form onSubmit={handleSubmit}>
@@ -69,6 +74,7 @@ const SignIn = () => {
         </div>
         <input type={"submit"} value="Submit" />
       </form>
+    </div>
     </div>
   );
 };

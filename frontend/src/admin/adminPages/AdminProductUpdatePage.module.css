@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Tilt+Warp&display=swap');
+@media all and (min-width : 1024px) and (max-width : 3000px){
+    .data{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width: 30% ;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 5px;
+        background-color: #eaeded;
+       padding: 2% 1%;
+    }
+    .title{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+        font-size: 22px;
+        margin-top: 2%;
+        color: #ffa41c;
+    }
+     .data>input{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+      padding: 1% 20% 1% 3%;
+     }
+    .btn{
+        padding: 1% 20%;
+        background-color: 
+        #ffa41c;
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+    }
+}
+@media all and (min-width : 768px) and (max-width : 1024px){
+    .data{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width: 40% ;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 5px;
+        background-color: #eaeded;
+       padding: 2% 1%;
+    }
+     .data>input{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+      padding: 1% 20% 1% 3%;
+     }
+    .btn{
+        padding: 1% 20%;
+        background-color: 
+        #ffa41c;
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+    }
+}
+@media all and (min-width : 320px) and (max-width : 768px){
+    .data{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width: 90% ;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 5px;
+        background-color: #eaeded;
+       padding: 2% 1%;
+    }
+     .data>input{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+      padding: 1% 20% 1% 3%;
+     }
+    .btn{
+        padding: 1% 20%;
+        background-color: 
+        #ffa41c;
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+    }
+}
+@media all and (min-width : 0px) and (max-width : 320px){
+    .data{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width: 90% ;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        gap: 5px;
+        background-color: #eaeded;
+       padding: 2% 1%;
+    }
+     .data>input{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+      padding: 1% 20% 1% 3%;
+     }
+    .btn{
+        padding: 1% 20%;
+        background-color: 
+        #ffa41c;
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+    }
+}
