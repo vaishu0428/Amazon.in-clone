@@ -48,8 +48,6 @@ const addToCart = async (req, res) => {
 
 const getCartData = async (req, res) => {
   const user_id = req.body.userID;
-
-
   try {
     const cartData = await cartModel
       .find({ user: user_id })
