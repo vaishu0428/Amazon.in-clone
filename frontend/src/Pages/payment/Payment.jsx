@@ -74,13 +74,25 @@ const Payment = () => {
                 <ModalCloseButton />
                 <ModalBody pb={6}>
                   <FormControl>
-                    <FormLabel> Name</FormLabel>
-                    <Input ref={initialRef} placeholder='Enter name' />
+                    <FormLabel> Area</FormLabel>
+                    <Input ref={initialRef} placeholder='Enter region' />
                   </FormControl>
-      
+                 
                   <FormControl mt={4}>
                     <FormLabel>City</FormLabel>
                     <Input placeholder='city' />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>State</FormLabel>
+                    <Input placeholder='state' />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Mobile</FormLabel>
+                    <Input placeholder='number' />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Pincode</FormLabel>
+                    <Input placeholder='pin' />
                   </FormControl>
                 </ModalBody>
       
