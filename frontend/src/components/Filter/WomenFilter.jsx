@@ -148,6 +148,12 @@ const WomenFilter = () => {
    
     </Box>
     </Box>
+    <Box>
+    <Heading as='h4' size='md'>New Arrivals</Heading>
+    
+    <Box><Text>Last 30 days</Text></Box>
+    <Box><Text>Last 90 days</Text></Box>
+    </Box>
    </Box>
   )
 }
