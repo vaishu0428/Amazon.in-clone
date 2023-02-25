@@ -11,7 +11,7 @@ import {
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-
+import { Link } from "react-router-dom";
 //import icons from react icons
 import { FaList, FaRegHeart } from "react-icons/fa";
 import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
@@ -57,11 +57,11 @@ const Header = () => {
           <SidebarContent>
             <Menu iconShape="square">
               <MenuItem active={true} icon={<FiHome />}>
-                Home
+              <Link to="/">Home</Link>
               </MenuItem>
-              <MenuItem icon={<FaList />}>Category</MenuItem>
-              <MenuItem icon={<FaRegHeart />}>Favourite</MenuItem>
-              <MenuItem icon={<RiPencilLine />}>Author</MenuItem>
+              <MenuItem icon={<FaList />}><Link to="/adminproducts">Products</Link></MenuItem>
+              <MenuItem icon={<FaRegHeart />}><Link to="/adminusers">Users</Link></MenuItem>
+              <MenuItem icon={<RiPencilLine />}><Link to="/adminupdate">Update</Link></MenuItem>
               <MenuItem icon={<BiCog />}>Settings</MenuItem>
             </Menu>
           </SidebarContent>

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Open+Sans:wght@400;500;600&family=Rowdies:wght@300;400;700&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Tilt+Warp&display=swap');
+.usercard{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    background-color: white;
+}
+.left{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left>img{
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* border: 1px solid #ffa41c; */
+}
+.right{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    /* border: 1px solid red; */
+    padding: 3%;
+    
+}
+.title{
+    text-align: left;
+}
+.title>h3{
+    font-weight: 300;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.status>p{
+    font-weight: 300;
+    font-family: 'Tilt Warp', cursive; 
+}
+.numbers{
+    /* border: 1px solid red; */
+    width: 25%;
+    font-family: 'Gajraj One', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    font-family: 'Tilt Warp', cursive;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   
+}
+.id{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.id>p:nth-child(1){
+    font-family: 'Tilt Warp', cursive;
+}
+.id>p:nth-child(2){
+    font-weight: 400;
+    line-height: 20px;
+    /* letter-spacing: 2px; */
+
+    font-family: 'Tilt Warp', cursive;
+}
+.btn>button{
+    font-family: 'Tilt Warp', cursive;
+    margin-right: 10%;
+    /* margin-top: 4%; */
+    padding: 5px 15px;
+    background-color: #ffa41c ;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    transition-duration: 500ms;
+}
+.btn>button:hover{
+   background-color:
+   #131921 ;
+}
+.numbers>div>p:nth-child(2){
+    font-family: 'Tilt Warp', cursive;
+}
+.numbers>p{
+    font-family: 'Tilt Warp', cursive;
+}
+.numbers>div>P:nth-child(1){
+    font-family: 'Gajraj One', cursive;
+    color:#131921;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    color: #ffa41c;
+}
+
+@media all and (min-width : 320px) and (max-width : 767px) {
+    .usercard{
+        width: 100%;
+        height: 200px;
+        /* border: 1px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        display: flex;
+        background-color: white;
+    }
+    .left{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 3%;
+    }
+    .left>img{
+      width: 75px;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      /* border: 1px solid #ffa41c; */
+    }
+    .right{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1%;
+        /* border: 1px solid red; */
+        padding: 3%;
+        
+        
+    }
+    .title{
+        text-align: left;
+    }
+    .title>h3{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+    }
+    
+    .status>p{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive; 
+        
+    }
+    .numbers{
+        font-size: 14px;
+        /* border: 1px solid red; */
+        width: 100%;
+        /* width: 20%; */
+        font-family: 'Gajraj One', cursive;
+        
+    }
+    
+    .btn{
+        font-family: 'Tilt Warp', cursive;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+       
+    }
+    .id{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .id>p:nth-child(1){
+        font-family: 'Tilt Warp', cursive;
+    }
+    .id>p:nth-child(2){
+        font-weight: 400;
+        line-height: 20px;
+        /* letter-spacing: 2px; */
+    
+        font-family: 'Tilt Warp', cursive;
+    }
+    .btn>button{
+        font-family: 'Tilt Warp', cursive;
+        margin-right: 10%;
+        font-size: 14px;
+        /* margin-top: 4%; */
+        padding: 5px 15px;
+        background-color: #ffa41c ;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        transition-duration: 500ms;
+    }
+    .btn>button:hover{
+       background-color:
+       #131921 ;
+    }
+    .numbers>div>p:nth-child(2){
+        font-family: 'Tilt Warp', cursive;
+    }
+   
+    .numbers>div>P:nth-child(1){
+        font-family: 'Gajraj One', cursive;
+        color:#131921;
+        text-align: right;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        color: #ffa41c;
+    }
+}
+@media all and (min-width : 0px) and (max-width : 320px) {
+    .usercard{
+        width: 100%;
+        height: 200px;
+        /* border: 1px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        display: flex;
+        background-color: white;
+    }
+    .left{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 9%;
+    }
+    .left>img{
+      width: 75px;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      /* border: 1px solid #ffa41c; */
+    }
+    .right{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1%;
+        /* border: 1px solid red; */
+        padding: 5%;
+        
+        
+    }
+    .title{
+        text-align: left;
+        font-size: 14px;
+    }
+    .title>h3{
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive;
+    }
+    
+    .status>p{
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'Tilt Warp', cursive; 
+        
+    }
+    .numbers{
+        font-size: 14px;
+        /* border: 1px solid red; */
+        width: 100%;
+        /* width: 20%; */
+        font-family: 'Gajraj One', cursive;
+        
+    }
+    
+    .btn{
+        font-family: 'Tilt Warp', cursive;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+       
+    }
+    .id{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .id>p:nth-child(1){
+        font-family: 'Tilt Warp', cursive;
+    }
+    .id>p:nth-child(2){
+        font-weight: 400;
+        line-height: 20px;
+        /* letter-spacing: 2px; */
+    
+        font-family: 'Tilt Warp', cursive;
+    }
+    .btn>button{
+        font-family: 'Tilt Warp', cursive;
+        margin-right: 10%;
+        /* margin-top: 4%; */
+        font-size: 14px;
+        padding: 5px 15px;
+        background-color: #ffa41c ;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        transition-duration: 500ms;
+    }
+    .btn>button:hover{
+       background-color:
+       #131921 ;
+    }
+    .numbers>div>p:nth-child(2){
+        font-family: 'Tilt Warp', cursive;
+    }
+   
+    .numbers>div>P:nth-child(1){
+        font-family: 'Gajraj One', cursive;
+        color:#131921;
+        text-align: right;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        color: #ffa41c;
+    }
+}
