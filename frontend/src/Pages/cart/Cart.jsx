@@ -7,7 +7,7 @@ import SimpleSliders2 from '../../components/HomePage/HomeComp/Slider1'
 import SimpleSliders from '../../components/HomePage/HomeComp/Slider3'
 import axios from 'axios'
 import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
+import Footer1 from '../../components/Footer/Footer1'
 import {Link} from "react-router-dom"
 
 const dat=[
@@ -83,8 +83,7 @@ const [total,settotal]=useState(0)
   </Heading>
 <Flex mt={"10px"}  justify={'space-between'} p="0px 30px"><Box>items</Box><Box>price</Box></Flex>
 <Divider orientation='horizontal' />
-
-<Grid >
+{data.lenght>0?<Grid >
     
     {data.map((el)=>{
     return <Box p={"10px"} key={el.id}>
@@ -145,7 +144,11 @@ In stock</Text>
 
     })}
 
-</Grid>
+</Grid>:<Heading size={"md"} textAlign="left" m="20px 0px">Add something to proceed</Heading>
+
+}
+
+
 
 
 
@@ -175,7 +178,7 @@ In stock</Text>
     <Image src={el.imgUrl} alt="/" width={"100%"}/>
 </Box>
 <Box  textAlign={"left"} flex="6" >
-<Heading as='h4' fontWeight="medium" size='sm'>
+<Heading as='h4' fontWeight="medium" size='sm' overflow={"hidden"}>
     {el.name}   {/* change to title */}
   </Heading>
  
@@ -215,7 +218,7 @@ In stock</Text>
 </Box >
 
 
-<Footer/>
+<Footer1/>
 
 
     </div>

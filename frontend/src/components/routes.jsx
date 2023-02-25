@@ -8,13 +8,15 @@ import Payment from '../Pages/payment/Payment'
 import Signup from '../Pages/signup/Signup'
 
 const Pageroutes = () => {
+  const token=JSON.parse(localStorage.getItem("token"))
+  console.log(token)
   return (
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/login" element={<LoginPage/>}></Route>
             <Route path="/signup" element={<Signup/>}></Route>
             <Route path="/cart" element={<Cart/>}></Route>
-            <Route path="/payment" element={<Payment/>}></Route>
+            <Route path="/payment" element={token?<Payment/>:<LoginPage/>}></Route>
             <Route path="/men" element={<Mens/>}></Route>
             
         </Routes>

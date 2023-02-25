@@ -2,7 +2,9 @@ import React from 'react'
 import {Box} from "@chakra-ui/react"
 import TopSec from '../components/HomePage/topSec';
 import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
+import Footer1 from '../components/Footer/Footer1';
+import Footer2 from '../components/Footer/Footer2';
+import Footer3 from '../components/Footer/Footer3';
 
 const Home = () => {
   return (
@@ -14,7 +16,9 @@ const Home = () => {
      <TopSec/>
      </Box>
     </Box>
-    <Footer/>
+    <Footer1/>
+    <Footer2/>
+    <Footer3/>
     </div>
   )
 }
