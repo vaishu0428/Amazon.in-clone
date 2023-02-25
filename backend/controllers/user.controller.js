@@ -88,12 +88,19 @@ const userLogin = async (req, res) => {
         if (result) {
           const token = jwt.sign(
             { ExistingUserID: userExists._id },
-            process.env.SECRET_KEY 
+
+            process.env.userSecretKey
           );
           // console.log("login l-101", userExists.isActive);
           userExists.isActive = true;
           await userExists.save();
-          res.status(200).send({ msg: "Login Successfull", token: token });
+          res
+            .status(200)
+            .send({
+              msg: "Login Successfull",
+              token: token,
+              userRole: userExists.role,
+            });
         } else {
           res.status(401).send("Wrong Credntials");
         }
