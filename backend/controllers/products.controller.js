@@ -95,12 +95,16 @@ const getProducts = async (req, res) => {
       sortBy,
       search_query,
       rating,
-      price
+      price,
+      getMinRate,
+      getMaxRate
     } = req.query;
   
     let products;
   
     try {
+
+      console.log(getMinRate,"min::", getMaxRate,"maxx")
   
       if (search_query) {
         const regex = new RegExp(search_query, 'i');
