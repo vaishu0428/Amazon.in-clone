@@ -52,84 +52,85 @@ const ChildFilter = () => {
    
   return (
    <Box h='auto' w="100%" m='auto' textAlign="left">
-    <Heading as='h1' size='lg' m="1" color={'gray'} >Filter By...</Heading>
+    <Heading as='h1' size={['sm','md','lg']} m="1" color={'gray'} >Filter By...</Heading>
     <Box m='3'>
-    <Heading as='h4' size='md' m="1">Brands</Heading>
-    <Box m='1' color={'gray'}>
-        {/* <input type="checkbox" value="Puma" onChange={handleFilter} checked={brand.includes("Puma")}/> */}
-        <Checkbox size='md' colorScheme='green' value="Puma" onChange={handleFilter} checked={brand.includes("Puma")} >Puma</Checkbox>
+   
+    <Heading as="h4" size={["sm","sm","md"]}>Brands</Heading>
+    <Box m={['0','1','1']} color={'gray'}>
+        
+        <Checkbox size={['sm','md','md']} colorScheme='green' value="Puma" onChange={handleFilter} checked={brand.includes("Puma")} >Puma</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Fusefit" onChange={handleFilter} checked={brand.includes("Fusefit")}>Fusefit</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Fusefit" onChange={handleFilter} checked={brand.includes("Fusefit")}>Fusefit</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}> 
-    <Checkbox size='md' colorScheme='green' value="Kidsville" onChange={handleFilter} checked={brand.includes("Kidsville")}>Kidsville</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}> 
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Kidsville" onChange={handleFilter} checked={brand.includes("Kidsville")}>Kidsville</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Only" onChange={handleFilter} checked={brand.includes("Only")}>Only</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Only" onChange={handleFilter} checked={brand.includes("Only")}>Only</Checkbox>
       
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Cottinfab" onChange={handleFilter} checked={brand.includes("Cottinfab")}>Cottinfab</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Cottinfab" onChange={handleFilter} checked={brand.includes("Cottinfab")}>Cottinfab</Checkbox>
         
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="DressBerry" onChange={handleFilter} checked={brand.includes("DressBerry")}>DressBerry</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="DressBerry" onChange={handleFilter} checked={brand.includes("DressBerry")}>DressBerry</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="FabAlley" onChange={handleFilter} checked={brand.includes("FabAlley")}>FabAlley</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="FabAlley" onChange={handleFilter} checked={brand.includes("FabAlley")}>FabAlley</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="raymond's" onChange={handleFilter} checked={brand.includes("raymond's")}></Checkbox>Raymond's
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="raymond's" onChange={handleFilter} checked={brand.includes("raymond's")}>Raymond's</Checkbox>
     
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="parkAvenue" onChange={handleFilter} checked={brand.includes("parkAvenue")}>ParkAvenue</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="parkAvenue" onChange={handleFilter} checked={brand.includes("parkAvenue")}>ParkAvenue</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="blackberry" onChange={handleFilter} checked={brand.includes("blackberry")}>Blackberry</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="blackberry" onChange={handleFilter} checked={brand.includes("blackberry")}>Blackberry</Checkbox>
      
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="khadims" onChange={handleFilter} checked={brand.includes("khadims")}>Khadims</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="khadims" onChange={handleFilter} checked={brand.includes("khadims")}>Khadims</Checkbox>
         
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="netplay" onChange={handleFilter} checked={brand.includes("netplay")}>Netplay</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="netplay" onChange={handleFilter} checked={brand.includes("netplay")}>Netplay</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="siyaram's" onChange={handleFilter} checked={brand.includes("siyaram's")}>Siyaram's</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="siyaram's" onChange={handleFilter} checked={brand.includes("siyaram's")}>Siyaram's</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="levis" onChange={handleFilter} checked={brand.includes("levis")}>Levis</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="levis" onChange={handleFilter} checked={brand.includes("levis")}>Levis</Checkbox>
         
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Buddyz" onChange={handleFilter} checked={brand.includes("Buddyz")}>Buddyz</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Buddyz" onChange={handleFilter} checked={brand.includes("Buddyz")}>Buddyz</Checkbox>
       
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Funcorp" onChange={handleFilter} checked={brand.includes("Funcorp")}>Funcorp</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Funcorp" onChange={handleFilter} checked={brand.includes("Funcorp")}>Funcorp</Checkbox>
         
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Shinse" onChange={handleFilter} checked={brand.includes("Shinse")}>Shinse</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Shinse" onChange={handleFilter} checked={brand.includes("Shinse")}>Shinse</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="Brainsmith" onChange={handleFilter} checked={brand.includes("Brainsmith")}>Brainsmith</Checkbox>
+    <Box m={['0','1','1']}color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="Brainsmith" onChange={handleFilter} checked={brand.includes("Brainsmith")}>Brainsmith</Checkbox>
         
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="levis" onChange={handleFilter} checked={brand.includes("levis")}>Levis</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="levis" onChange={handleFilter} checked={brand.includes("levis")}>Levis</Checkbox>
      
     </Box>
     
@@ -137,41 +138,41 @@ const ChildFilter = () => {
     
   
     <Box m='3'>
-    <Heading as='h4' m="1" size='md'>Type</Heading>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="clothing" onChange={handleFilter1} checked={type.includes("clothing")}>Clothing</Checkbox>
+    <Heading as="h4" size={["sm","","md"]}>Type</Heading>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="clothing" onChange={handleFilter1} checked={type.includes("clothing")}>Clothing</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="baby" onChange={handleFilter1} checked={type.includes("baby")}>Baby</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="baby" onChange={handleFilter1} checked={type.includes("baby")}>Baby</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="accessories" onChange={handleFilter1} checked={type.includes("accessories")}>Accessories</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="accessories" onChange={handleFilter1} checked={type.includes("accessories")}>Accessories</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="sweatshirts-and-sweatpants" onChange={handleFilter1} checked={type.includes("sweatshirts-and-sweatpants")}>Sweaters-shirts-pants</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="sweatshirts-and-sweatpants" onChange={handleFilter1} checked={type.includes("sweatshirts-and-sweatpants")}>Sweaters-shirts-pants</Checkbox>
       
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="coats-and-jackets" onChange={handleFilter1} checked={type.includes("coats-and-jackets")}>Coats & Jackets</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="coats-and-jackets" onChange={handleFilter1} checked={type.includes("coats-and-jackets")}>Coats & Jackets</Checkbox>
         
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="dresses-and-jumpsuits" onChange={handleFilter1} checked={type.includes("dresses-and-jumpsuits")}>Jumpsuites</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="dresses-and-jumpsuits" onChange={handleFilter1} checked={type.includes("dresses-and-jumpsuits")}>Jumpsuites</Checkbox>
        
     </Box>
-    <Box m='1' color={'gray'}>
-    <Checkbox size='md' colorScheme='green' value="shorts" onChange={handleFilter1} checked={type.includes("shorts")}>Shorts</Checkbox>
+    <Box m={['0','1','1']} color={'gray'}>
+    <Checkbox size={['sm','md','md']} colorScheme='green' value="shorts" onChange={handleFilter1} checked={type.includes("shorts")}>Shorts</Checkbox>
        
     </Box>
   
     </Box>
    
-    <Heading as='h1' size='lg' m="1" color={'gray'}>Sort By...</Heading>
+    <Heading as='h1' size={['sm','sm','lg']} m="1" color={'gray'}>Sort By...</Heading>
     <Box m="3">
-    <Heading as='h4' size='md'>Price</Heading>
+    <Heading as="h4" size={["sm","sm","md"]}>Price</Heading>
     <Box onChange={handleSort} color='gray'>
    
     <input type="radio" name="sort_by" value="asc" defaultChecked={order==='asc'} />
@@ -184,7 +185,7 @@ const ChildFilter = () => {
     </Box>
     
     <Box color="gray" m="3">
-    <Heading as='h4' size='md'>New Arrivals</Heading>
+    <Heading as='h1' size={['sm','sm','lg']} m="1" color={'gray'}>New Arrivals</Heading>
     
     <Box><Text>Last 30 days</Text></Box>
     <Box><Text>Last 90 days</Text></Box>

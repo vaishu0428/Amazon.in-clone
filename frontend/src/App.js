@@ -5,12 +5,10 @@ import Pageroutes from "./components/routes"
 
 function App() {
   return (
+
 <div className="App">
 <Pageroutes/>
        </div>
-
-
-
   );
 }
 
