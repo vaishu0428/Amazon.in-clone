@@ -2,7 +2,7 @@ import React from 'react'
 import WomenFilter from '../components/Filter/WomenFilter';
 import WomenData from '../components/Men/WomenData';
 import {Box, Grid, GridItem} from "@chakra-ui/react"
-import Footer from '../components/Footer/Footer';
+import Footer1 from '../components/Footer/Footer1';
 import Navbar from '../components/Navbar/Navbar';
 const Womens = () => {
   return (
@@ -19,7 +19,7 @@ const Womens = () => {
     </GridItem>
    </Grid>
    </Box>
-   <Footer/>
+   <Footer1/>
    </Box>
   )
 }

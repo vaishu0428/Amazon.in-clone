@@ -14,7 +14,7 @@ const Home = () => {
      <Box height={'auto'} width="93%" margin="auto" >
      <TopSec/>
      </Box>
-     <Footer/>
+    
     </Box>
     <Footer1/>
     <Footer2/>

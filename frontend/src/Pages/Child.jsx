@@ -3,7 +3,7 @@ import ChildFilter from '../components/Filter/ChildFilter'
 import ChildData from '../components/Men/ChildData'
 import {Box, Grid, GridItem} from "@chakra-ui/react"
 import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
+import Footer1 from '../components/Footer/Footer1'
 const Childs = () => {
   return (
     <Box>
@@ -19,7 +19,7 @@ const Childs = () => {
     </GridItem>
    </Grid>
    </Box>
-   <Footer/>
+   <Footer1/>
    </Box>
   )
 }

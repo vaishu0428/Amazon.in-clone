@@ -1,11 +1,13 @@
 import React from 'react'
 import {Route,Routes} from "react-router-dom"
 import Cart from '../Pages/cart/Cart'
+import Childs from '../Pages/Child'
 import Home from "../Pages/Home"
 import LoginPage from '../Pages/login/Login'
 import Mens from '../Pages/Mens'
 import Payment from '../Pages/payment/Payment'
 import Signup from '../Pages/signup/Signup'
+import Womens from '../Pages/Womens'
 
 const Pageroutes = () => {
   const token=JSON.parse(localStorage.getItem("token"))
@@ -18,6 +20,9 @@ const Pageroutes = () => {
             <Route path="/cart" element={<Cart/>}></Route>
             <Route path="/payment" element={token?<Payment/>:<LoginPage/>}></Route>
             <Route path="/men" element={<Mens/>}></Route>
+            <Route path="/women" element={<Womens/>}/>
+            <Route path="/kid" element={<Childs/>}/>
+            
             
         </Routes>
 
