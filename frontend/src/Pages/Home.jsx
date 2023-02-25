@@ -9,10 +9,10 @@ const Home = () => {
     <div>
     <Navbar/>
     <Box  bgColor={"#E3E6E6"} pb='5'>
-     
      <Box height={'auto'} width="93%" margin="auto" >
      <TopSec/>
      </Box>
+     <Footer/>
     </Box>
     <Footer/>
     </div>

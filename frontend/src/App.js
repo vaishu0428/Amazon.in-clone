@@ -1,17 +1,14 @@
 
 
 import './App.css';
-
-
-
 import Pageroutes from "./components/routes"
 
 function App() {
   return (
-
-    <div className="App">
+<div className="App">
 <Pageroutes/>
        </div>
+
 
 
   );
