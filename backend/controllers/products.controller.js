@@ -104,7 +104,11 @@ const getProducts = async (req, res) => {
   
     try {
 
-      console.log(getMinRate,"min::", getMaxRate,"maxx")
+      // console.log(getMinRate,"min::", getMaxRate,"maxx")
+
+      if(getMinRate<0 || getMaxRate>5){
+        return res.status(200).send({msg:"Please provide rating between 1 to 5"})
+      }
   
       if (search_query) {
         const regex = new RegExp(search_query, 'i');
@@ -113,6 +117,10 @@ const getProducts = async (req, res) => {
   
       else if (rating) {
         products = await productModel.find({ rating: parseInt(rating) });
+      }
+
+      else if (getMinRate && getMaxRate) {
+        products = await productModel.find({ rating: { $gte: parseInt(getMinRate), $lte: parseInt(getMaxRate) } });
       }
   
       else if (category) {
