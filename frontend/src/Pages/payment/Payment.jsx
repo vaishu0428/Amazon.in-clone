@@ -7,7 +7,7 @@ import { Box, Button, Divider, Flex, Heading, Image, Text,  Modal,
     ModalCloseButton,useDisclosure,FormControl,FormLabel,Input, Checkbox, Grid } from '@chakra-ui/react'
 import React from 'react'
 import {UnlockIcon,AddIcon} from "@chakra-ui/icons"
-
+import {Link} from "react-router-dom"
 const Payment = () => {
 
   const data=[
@@ -74,13 +74,25 @@ const Payment = () => {
                 <ModalCloseButton />
                 <ModalBody pb={6}>
                   <FormControl>
-                    <FormLabel> Name</FormLabel>
-                    <Input ref={initialRef} placeholder='Enter name' />
+                    <FormLabel> Area</FormLabel>
+                    <Input ref={initialRef} placeholder='Enter region' />
                   </FormControl>
-      
+                 
                   <FormControl mt={4}>
                     <FormLabel>City</FormLabel>
                     <Input placeholder='city' />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>State</FormLabel>
+                    <Input placeholder='state' />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Mobile</FormLabel>
+                    <Input placeholder='number' />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Pincode</FormLabel>
+                    <Input placeholder='pin' />
                   </FormControl>
                 </ModalBody>
       
@@ -100,13 +112,13 @@ const Payment = () => {
     <div style={{backgroundColor:"#ffffff"}}>
 <nav>
     <Flex justifyContent={"space-around"} bg="#eaeded" align="center" width={"90%"} m="10px auto">
-        <Box> <Image src="/login.jpeg" width={"150px"} borderRadius="50%"></Image></Box>
+        <Box><Link to="/"> <Image src="/login.jpeg" width={"150px"} borderRadius="50%"></Image></Link></Box>
         <Box> <Heading fontWeight={"400"}>Checkout</Heading></Box>
         <Box><UnlockIcon/></Box>
     </Flex>
 </nav>
 
-<Flex justify={'space-between'} gap="10px"  p="20px" width={"80%"} m="10px auto" border="1px solid"  flexDirection={["column","row","row"]}>
+<Flex justify={'space-between'} gap="10px"  p="20px" width={"80%"} m="10px auto"  flexDirection={["column","row","row"]}>
 <Box flex="8"bg="#ffffff" >
 <Heading textAlign={"left"}m="10px 0px" color="#c56638" size="md">1.
 Select a delivery address</Heading>

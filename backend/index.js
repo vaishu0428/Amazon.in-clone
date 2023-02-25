@@ -10,6 +10,7 @@ const cartRouter = require("./routes/cart.route");
 // const { authenticateToken } = require("./middleware/userAuth.middleware");
 
 const fileupload = require("express-fileupload");
+const { orderRouter } = require("./routes/order.route");
 
 const app = express();
 app.use(express.json());
@@ -33,9 +34,11 @@ app.get("/", (req, res) => {
 
 app.use("/user", userRoutes);
 
-app.use("/product",productRouter)
+app.use("/product",productRouter);
 
-app.use("/cart", cartRouter)
+app.use("/cart", cartRouter);
+
+app.use("/order",orderRouter);
 
 
 const port = process.env.PORT || 8090;

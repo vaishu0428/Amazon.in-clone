@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import {Box, Heading, Input, Text} from "@chakra-ui/react"
 import { useSearchParams } from "react-router-dom"
-const Filter = () => {
-    let [searchParams,setSearchParams]=useSearchParams()
+const WomenFilter = () => {
+ const [searchParams,setSearchParams]=useSearchParams()
    let initialStates=searchParams.getAll("brand")
    let initialType=searchParams.getAll("type")
    const initialOrder=searchParams.get("order")
@@ -56,89 +56,82 @@ const Filter = () => {
     <Box>
     <Heading as='h4' size='md'>Brands</Heading>
     <Box>
-        <input type="checkbox" value="levis" onChange={handleFilter} checked={brand.includes("levis")}/>
-        <label>Levis</label>
+        <input type="checkbox" value="jCrew" onChange={handleFilter} checked={brand.includes("jCrew")}/>
+        <label>JCrew</label>
     </Box>
     <Box>
-    <input type="checkbox" value="denim" onChange={handleFilter} checked={brand.includes("denim")}/>
-        <label>Denim</label>
+    <input type="checkbox" value="Sparx" onChange={handleFilter} checked={brand.includes("Sparx")}/>
+        <label>Sparx</label>
     </Box>
     <Box> 
-    <input type="checkbox" value="nike" onChange={handleFilter} checked={brand.includes("nike")}/>
-        <label>Nike</label>
+    <input type="checkbox" value="Woodland" onChange={handleFilter} checked={brand.includes("Woodland")}/>
+        <label>Woodland</label>
     </Box>
     <Box>
-    <input type="checkbox" value="puma" onChange={handleFilter} checked={brand.includes("puma")}/>
-        <label>Puma</label>
+    <input type="checkbox" value="Campus" onChange={handleFilter} checked={brand.includes("Campus")}/>
+        <label>Campus</label>
     </Box>
     <Box>
     <input type="checkbox" value="woodland" onChange={handleFilter} checked={brand.includes("woodland")}/>
         <label>Woodland</label>
     </Box>
     <Box>
-    <input type="checkbox" value="polo" onChange={handleFilter} checked={brand.includes("polo")}/>
-        <label>Polo</label>
+    <input type="checkbox" value="Nike" onChange={handleFilter} checked={brand.includes("Nike")}/>
+        <label>Nike</label>
     </Box>
     <Box>
-    <input type="checkbox" value="peterEngland" onChange={handleFilter} checked={brand.includes("peterEngland")}/>
-        <label>PeterEngland</label>
+    <input type="checkbox" value="Biba" onChange={handleFilter} checked={brand.includes("Biba")}/>
+        <label>Biba</label>
     </Box>
     <Box>
-    <input type="checkbox" value="adidas" onChange={handleFilter} checked={brand.includes("adidas")}/>
-        <label>Adidas</label>
+    <input type="checkbox" value="denim" onChange={handleFilter} checked={brand.includes("denim")}/>
+        <label>denim</label>
     </Box>
     <Box>
     <input type="checkbox" value="bata" onChange={handleFilter} checked={brand.includes("bata")}/>
         <label>Bata</label>
     </Box>
     <Box>
-    <input type="checkbox" value="lee" onChange={handleFilter} checked={brand.includes("lee")}/>
-        <label>Lee</label>
+    <input type="checkbox" value="levis" onChange={handleFilter} checked={brand.includes("levis")}/>
+        <label>levis</label>
     </Box>
-    <Box>
-    <input type="checkbox" value="parkAvenue" onChange={handleFilter} checked={brand.includes("parkAvenue")}/>
-        <label>ParkAvenue</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="blackberry" onChange={handleFilter} checked={brand.includes("blackberry")}/>
-        <label>Blackberry</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="montecarlo" onChange={handleFilter} checked={brand.includes("montecarlo")}/>
-        <label>Montecarlo</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="raymond's" onChange={handleFilter} checked={brand.includes("raymond's")}/>
-        <label>Raymond's</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="netplay" onChange={handleFilter} checked={brand.includes("netplay")}/>
-        <label>Netplay</label>
-    </Box>
+   
     </Box>
     
   
     <Box>
     <Heading as='h4' size='md'>Type</Heading>
     <Box>
+    <input type="checkbox" value="earrings" onChange={handleFilter1} checked={type.includes("earrings")}/>
+        <label>Earrings</label>
+    </Box>
+    <Box>
+    <input type="checkbox" value="bracelet" onChange={handleFilter1} checked={type.includes("bracelet")}/>
+        <label>Bracelet</label>
+    </Box>
+    <Box>
+    <input type="checkbox" value="bag" onChange={handleFilter1} checked={type.includes("bag")}/>
+        <label>Bag</label>
+    </Box>
+    <Box>
+    <input type="checkbox" value="sandals" onChange={handleFilter1} checked={type.includes("sandals")}/>
+        <label>Sandals</label>
+    </Box>
+    <Box>
+    <input type="checkbox" value="sneaker" onChange={handleFilter1} checked={type.includes("sneaker")}/>
+        <label>Sneaker</label>
+    </Box>
+    <Box>
+    <input type="checkbox" value="pant" onChange={handleFilter1} checked={type.includes("pant")}/>
+        <label>Pant</label>
+    </Box>
+    <Box>
+    <input type="checkbox" value="top" onChange={handleFilter1} checked={type.includes("top")}/>
+        <label>Top</label>
+    </Box>
+    <Box>
     <input type="checkbox" value="clothing" onChange={handleFilter1} checked={type.includes("clothing")}/>
         <label>Clothing</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="shoes" onChange={handleFilter1} checked={type.includes("shoes")}/>
-        <label>Shoes</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="accessories" onChange={handleFilter1} checked={type.includes("accessories")}/>
-        <label>Accessories</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="coat" onChange={handleFilter1} checked={type.includes("coat")}/>
-        <label>Coat</label>
-    </Box>
-    <Box>
-    <input type="checkbox" value="pajama_pants" onChange={handleFilter1} checked={type.includes("pajama_pants")}/>
-        <label>Pajama Pants</label>
     </Box>
   
     </Box>
@@ -165,4 +158,4 @@ const Filter = () => {
   )
 }
 
-export default Filter
+export default WomenFilter

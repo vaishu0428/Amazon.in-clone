@@ -1,275 +1,42 @@
-@media all and (min-width:1024px) and (max-width: 3000px){
-    .navbar1{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        background-color: #131921;
-        color: white;
-    }
-    .logo{
-       /* border:1px solid red; */
-       width: 20%;
-    }
-    .logo>img{
-        width: 40%;
-        margin-top: 14px;
-    }
-    .searchbar{
-        width: 50%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .searchbar>input{
-        padding: 5px 100px;
-    }
-    .searchbar>button{
-        padding: 5px 7px;
-        border: 1px solid #ffa41c;
-        background-color: #ffa41c;
-    }
-    .auth{
-        width: 30%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .auth>p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-.navbar2{
- width: 100%;
- height: 30px;
- display: flex;
- justify-content: space-around;
- align-items: center;
- background-color:#232f3e ;
- color: white;
- font-size: 70%;
+.nav_link_arrow{
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    transform: rotate(45deg);
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    border: 1px solid gray;
+    z-index: 2;
+    border-bottom-color: white;
+    border-right-color: white;
 }
+.nav_link_arrow_top{
+    position: absolute;
+    left: 45%;
+    top: -7px;
+    transform: rotate(45deg);
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    border: 1px solid gray;
+    z-index: 2;
+    border-bottom-color: white;
+    border-right-color: white;
 }
-@media all and (min-width:721px) and (max-width: 1024px){
-    .navbar1{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        background-color: #131921;
-        color: white;
-    }
-    .logo{
-       /* border:1px solid red; */
-       width: 20%;
-    }
-    .logo>img{
-        width: 80%;
-        margin-top: 14px;
-    }
-    .searchbar{
-        width: 50%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .searchbar>input{
-        padding: 5px 30px;
-    }
-    .searchbar>button{
-        padding: 5px 7px;
-        border: 1px solid #ffa41c;
-        background-color: #ffa41c;
-    }
-    .auth{
-        width: 30%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .auth>p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-   
-    .navbar2{
-     width: 100%;
-     height: 30px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color:#232f3e ;
-     color: white;
-     font-size: 70%;
-    }
+.search_input:focus ~ .search_result_container{
+    display: block;
+ 
 }
-@media all and (min-width:480px) and (max-width: 720px){
-    .navbar1{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        background-color: #131921;
-        color: white;
-    }
-    .logo{
-       /* border:1px solid red; */
-       width: 20%;
-    }
-    .logo>img{
-        width: 80%;
-        margin-top: 17px;
-    }
-    .searchbar{
-        width: 50%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .searchbar>input{
-        padding: 5px 30px;
-    }
-    .searchbar>button{
-        padding: 5px 7px;
-        border: 1px solid #ffa41c;
-        background-color: #ffa41c;
-    }
-    .auth{
-        width: 30%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .auth>p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar2{
-     width: 100%;
-     height: 30px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color:#232f3e ;
-     color: white;
-     font-size: 70%;
-    }
+.search_result_container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    top: 48px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+
 }
-@media all and (min-width:320px) and (max-width: 479px){
-    .navbar1{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        background-color: #131921;
-        color: white;
-    }
-    .logo{
-       /* border:1px solid red; */
-       width: 15%;
-    }
-    .logo>img{
-        width: 80%;
-        margin-top: 25px;
-    }
-    .searchbar{
-        width: 60%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .searchbar>input{
-        padding: 5px 10px;
-    }
-    .searchbar>button{
-        padding: 5px 7px;
-        border: 1px solid #ffa41c;
-        background-color: #ffa41c;
-    }
-    .auth{
-        width: 25%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 12px;
-    }
-    .auth>p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .navbar2{
-     width: 100%;
-     height: 30px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color:#232f3e ;
-     color: white;
-     font-size: 70%;
-    } 
-   
-}
-@media all and (min-width:0px) and (max-width: 319px){
-    .navbar1{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        background-color: #131921;
-        color: white;
-    }
-    .logo{
-       /* border:1px solid red; */
-       width: 15%;
-    }
-    .logo>img{
-        width: 80%;
-        margin-top: 25px;
-    }
-    .searchbar{
-        width: 60%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .searchbar>input{
-        padding: 5px 10px;
-    }
-    .searchbar>button{
-        padding: 5px 7px;
-        border: 1px solid #ffa41c;
-        background-color: #ffa41c;
-    }
-    .auth{
-        width: 25%;
-        /* border:1px solid red; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 12px;
-    }
-    .auth>p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar2{
-     width: 100%;
-     height: 30px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color:#232f3e ;
-     color: white;
-     font-size: 70%;
-    }
-}
+

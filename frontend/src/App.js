@@ -9,20 +9,18 @@ import AllRoutes from './admin/adminRoutes/AllRoutes';
 import './App.css';
 
 
+
+
+
+
+import Pageroutes from "./components/routes"
+
 function App() {
   return (
 
-    <div className="App">
-   
-       {/* <AdminProducts/> */}
-      {/* <AdminUpdateProductPage/> */}
-        {/* <AdminUsersPage/> */}
-         {/* <AdminUserCard/> */}
-         {/* <Home/> */}
-         <AllRoutes/>
+<div className="App">
+<Pageroutes/>
        </div>
-
-
   );
 }
 
