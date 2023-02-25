@@ -1,30 +1,43 @@
 
 import React, { useState } from 'react'
 import Styles from "./Login.module.css"
-
+import axios from "axios"
+import {Link} from "react-router-dom"
+import { Button, Flex,Text, Input, Heading } from '@chakra-ui/react'
 const LoginPage = () => {
   const [email,setemail]=useState("prashant")
   const [show,setshow]=useState(false)
   const [pass,setpass]=useState("")
+  const [error,seterror]=useState("")
+  async function login(){
+    await axios.post(`http://localhost:8090/user/login`,{
+     
+      email:email,
+      pass:pass
+    }).then(res=>{
+   localStorage.setItem("token",JSON.stringify(res.data.token))
+    }).catch(err=>seterror(err.response.data))
+
+  }
   
   return (
     <div>
-      <h1><img src="/login.jpeg" width="200px" alt="/" /></h1>
+      <Flex justify={"center"} ><Link to="/"><img src="/login.jpeg" width="200px" alt="/" /></Link></Flex>
 
 <div className={Styles.login}>
-  <h2>Sign in</h2>
+  <Heading size={"md"} m="10px 0px">Sign in</Heading>
 {show===true?<div >
-<h4>{email} <a href='/' onClick={()=>setshow(false)}>change?</a></h4>
+<h4>{email} <Text cursor={"pointer"} onClick={()=>setshow(false)}>change?</Text></h4>
 <label>Password <br/>
-    <input type="password" name="email" placeholder='Enter your password' id="password" /><br/>
-    <button>Sign in</button></label>
+    <Input type="password" name="password"onChange={(e)=>setpass(e.target.value)} placeholder='Enter your password' id="password" /><br/>
+    <button onClick={login}>Sign in</button></label>
 </div>: <div >
     <label>Enter your email <br/>
-    <input type="email" name="email" placeholder='Enter your email' id="email" /><br/>
+    <Input type="email" name="email" onChange={(e)=>setemail(e.target.value)} placeholder='Enter your email' /><br/>
     <button onClick={()=>setshow(true)}>Continue</button></label></div>}
  
 
-
+{error?<h3>{error}</h3>:null}
 
   <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
     <li>Forgot Password?</li>
@@ -32,7 +45,7 @@ const LoginPage = () => {
 </div>
 <div className={Styles.belowlogin}>
 <p>--------New to Amazon?--------</p>
-<button>Create Your Amazon account</button>
+<Button ><Link to="/signup">Create Your Amazon account</Link></Button>
 </div>
 
 

@@ -1,56 +1,81 @@
 import { Box, Button, Checkbox, Divider, Flex, Grid, Heading,Image,   Text } from '@chakra-ui/react'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SimpleSliders6 from '../../components/HomePage/HomeComp/Slider6'
 
 import SimpleSliders2 from '../../components/HomePage/HomeComp/Slider1'
 import SimpleSliders from '../../components/HomePage/HomeComp/Slider3'
+import axios from 'axios'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
+import {Link} from "react-router-dom"
+
+const dat=[
+  {
+      "_id": "639f497f97b38063c0ba2599",
+      "imgUrl": "https://www.jcrew.com/s7-img-facade/BG280_KF4708?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+      "name": "Boys' short-sleeve Rolling Stones T-shirt",
+      "description": "More graphic tees, please! Made from comfy, machine-washable cotton, our cool, colorful graphic T-shirts let them show their personality without saying a word.",
+      "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
+      "price": 34.5,
+      "discounted_price": 26.99,
+      "type": "clothing",
+      "category": "kids"
+    },
+    {
+      "_id": "639f497f97b38063c0ba259a",
+      "imgUrl": "https://www.jcrew.com/s7-img-facade/AZ940_WY2481?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+      "name": "Boys' cozy pajama pant",
+      "description": "Pj's. Jammies. Jam-jams. Sleepy suits. No matter what you call them, our supersoft and cozy pajamas feel like a dream.",
+      "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
+      "price": 39.5,
+      "discounted_price": 31.99,
+      "type": "clothing",
+      "category": "kids"
+    },
+    {
+      "_id": "639f497f97b38063c0ba259b",
+      "imgUrl": "https://www.jcrew.com/s7-img-facade/BC454_BL7286?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
+      "name": "Kids' short in towel terry",
+      "description": "Perfect for warm-weather getaways (or any day), these shorts are made from cozy terry cloth that feels like your softest beach towel. The best part? We made a matching hoodie!",
+      "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
+      "price": 39.5,
+      "discounted_price": 31.99,
+      "type": "clothing",
+      "category": "kids"
+    },
+] 
 const Cart = () => {
 const [qty,setqty]=useState(1)
-console.log(qty)
+const [data,setdata]=useState(dat)
+const [total,settotal]=useState(0)
+
    
-  const deleteProduct=()=>{
+  const deleteProduct=async(id)=>{
+
+
+  }
+  async function getdata(){
+    await axios.get(`http://localhost:8090/cart/get`,{
+      headers:{
+        Authorization:JSON.parse(localStorage.getItem("token"))
+      }
+    }).then(res=>{
+      settotal(res.totalPrice)
+      setdata(res.cartItems)}
+      )
+  
 
   }
    
- const data=[
-    {
-        "_id": "639f497f97b38063c0ba2599",
-        "imgUrl": "https://www.jcrew.com/s7-img-facade/BG280_KF4708?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-        "name": "Boys' short-sleeve Rolling Stones T-shirt",
-        "description": "More graphic tees, please! Made from comfy, machine-washable cotton, our cool, colorful graphic T-shirts let them show their personality without saying a word.",
-        "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-        "price": 34.5,
-        "discounted_price": 26.99,
-        "type": "clothing",
-        "category": "kids"
-      },
-      {
-        "_id": "639f497f97b38063c0ba259a",
-        "imgUrl": "https://www.jcrew.com/s7-img-facade/AZ940_WY2481?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-        "name": "Boys' cozy pajama pant",
-        "description": "Pj's. Jammies. Jam-jams. Sleepy suits. No matter what you call them, our supersoft and cozy pajamas feel like a dream.",
-        "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-        "price": 39.5,
-        "discounted_price": 31.99,
-        "type": "clothing",
-        "category": "kids"
-      },
-      {
-        "_id": "639f497f97b38063c0ba259b",
-        "imgUrl": "https://www.jcrew.com/s7-img-facade/BC454_BL7286?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-        "name": "Kids' short in towel terry",
-        "description": "Perfect for warm-weather getaways (or any day), these shorts are made from cozy terry cloth that feels like your softest beach towel. The best part? We made a matching hoodie!",
-        "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-        "price": 39.5,
-        "discounted_price": 31.99,
-        "type": "clothing",
-        "category": "kids"
-      },
-] 
+  useEffect(()=>{
+    getdata()
+  },[])
+
   return (
     <div style={{backgroundColor:"#eaeded"}}>
-<h1>cartpage</h1>
+      <Navbar/>
+
 <Flex justify={'space-between'} gap="10px" p="20px"  flexDirection={["column","row","row"]}>
 <Box boxShadow={"md"} flex="8"bg="#ffffff" height={"fit-content"} p={"10px"}>
 <Heading as='h4'  textAlign={"left"} fontWeight="hairline" size='lg'>
@@ -92,7 +117,7 @@ Eligible for FREE Shipping</Text>
   <option value="10">Qty : 10</option>
 </select>
 </Box>
-<Box ml={"20px"}><Button size={"sm"} onClick={deleteProduct}>Delete</Button></Box>
+<Box ml={"20px"}><Button size={"sm"} onClick={()=>deleteProduct(el.id)}>Delete</Button></Box>
     
 </Flex>
 </Box>
@@ -131,10 +156,10 @@ In stock</Text>
   <Box bg="#ffffff" p={"10px"}>
   <Text fontSize={"12px"} color="blue.600">Your order is eligible for FREE Delivery. Select this option at checkout. Detailsk</Text>
   <Heading as='h5'm="10px 0px" fontWeight="hairline" size='md'>
-   Subtotal ({3}items): ₹{28747}
+   Subtotal ({3}items): ₹{total}
   </Heading>
   <Flex justify={"center"} mb="10px"><Checkbox></Checkbox>This order contains a gift </Flex>
-  <Button>Proceed to Buy</Button>
+  <Button><Link to="/payment">Proceed to Buy</Link></Button>
  
 
 
@@ -190,7 +215,7 @@ In stock</Text>
 </Box >
 
 
-
+<Footer/>
 
 
     </div>

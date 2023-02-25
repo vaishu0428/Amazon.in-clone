@@ -21,10 +21,7 @@ const productSchema = mongoose.Schema({
     type: Number,
     required: true
   },
-  type: {
-    type: String,
-    required: true
-  },
+
   brand: {
     type: String,
     required: true
@@ -36,7 +33,7 @@ const productSchema = mongoose.Schema({
   },
 
   quantity: {
-    type: String,
+    type: Number,
     required: true
   },
 
