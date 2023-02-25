@@ -10,7 +10,7 @@ import Childs from "./Pages/Child"
 function App() {
   return (
     <div>
-  
+
     </div>
   );
 }
