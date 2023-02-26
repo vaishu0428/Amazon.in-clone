@@ -18,6 +18,7 @@ function handleclick(){
  let otp= window.prompt("enter otp sent to your phone")
  if(otp.length!==4){
   alert("Please enter otp sent to your registered number")
+  handleclick()
  }else{
   alert("order succesfull")
  }

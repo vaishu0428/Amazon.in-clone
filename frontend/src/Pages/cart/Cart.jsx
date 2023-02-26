@@ -45,14 +45,17 @@ const Cart = () => {
       return;
     }
     try {
-      await axios.patch(`https://smoggy-woolens-lamb.cyclic.app/cart/decQty/${id}`, {}, {
+      await axios.patch(`https://smoggy-woolens-lamb.cyclic.app/cart/incQty/${id}`, {
+        quantity:-1
+      }, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
-      }).then(res =>
+      }).then(res=>{
+        // console.log(res)
         getdata()
-      )
+    })
     } catch (error) {
       console.log(error)
     }
@@ -133,7 +136,7 @@ const Cart = () => {
 
                   <Box flex="1">
                     <Heading size={"md"}>
-                      ₹{el.product.price}
+                      ₹{el.product.price*el.quantity}
                     </Heading>
                     <Text fontSize={"12px"} color="blue.600">Save 5 % more with Subscribe & Save
                       In stock</Text>

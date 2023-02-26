@@ -19,25 +19,14 @@ import axios from 'axios'
 
 const Navbar = () => {
  
-  async function getdata(){
-    await axios.get(`https://smoggy-woolens-lamb.cyclic.app/user/`,{
-      headers:{
-        Authorization:"Bearer "+JSON.parse(localStorage.getItem("token"))
-      }
-    }).then(res=>console.log(res))
-
-  }
-  useEffect(()=>{
-    getdata()
-
-  },[])
 
 
+let name=JSON.parse(localStorage.getItem("name"))
 
 
 
   return <>
-    <NavbarTop dName={"user"} />
+    <NavbarTop dName={name||"user"} />
      <NavbarMiddle />
   
 
@@ -52,7 +41,7 @@ export const NavbarTop = ({ dName }) => {
   const [show, setShow] = useState(false);
 
  
-  function InitialFocus() {
+  function InitialFocus(name) {
     const { isOpen, onOpen, onClose } = useDisclosure()
   
     const initialRef = React.useRef(null)
@@ -60,7 +49,7 @@ export const NavbarTop = ({ dName }) => {
   
     return (
       <>
-        <Text cursor={"pointer"} onClick={onOpen} color="white">Add Profile</Text>
+        <Text cursor={"pointer"} onClick={onOpen} color="white">{name?name:"Hello User"}</Text>
        
   
         <Modal
@@ -173,7 +162,7 @@ export const NavbarTop = ({ dName }) => {
       </Show>
       <Box >
         <Show above='md'>
-          <Text fontSize="12px" >{InitialFocus()}</Text>
+          <Text fontSize="12px" >{InitialFocus(dName)}</Text>
         <Link to="/login"> <Heading size="xs">Account & Login</Heading></Link> 
         </Show>
         <Show below='md'>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./Login.module.css";
 import axios from "axios";
-import { Link,  useNavigate } from "react-router-dom";
+import { json, Link,  useNavigate } from "react-router-dom";
 import { Button, Flex, Text, Input, Heading } from "@chakra-ui/react";
 import ForgetPass from "./Forget";
 const LoginPage = () => {
@@ -17,7 +17,7 @@ const LoginPage = () => {
         pass: pass,
       })
       .then((res) => {
-        // console.log(res.data);
+       localStorage.setItem("name",JSON.stringify(res.data.name))
         localStorage.setItem("token", JSON.stringify(res.data.token));
         navigate("/")
       })
