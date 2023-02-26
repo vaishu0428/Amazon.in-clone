@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar"
 import Footer1 from "../components/Footer/Footer1";
 import Footer2 from "../components/Footer/Footer2"
 import Footer3 from "../components/Footer/Footer3"
+import axios from 'axios';
 const SinglePage = () => {
     const {id}=useParams()
     const Products = useSelector((store) => store.AppReducer.Products);
@@ -20,8 +21,64 @@ const SinglePage = () => {
         womenData && setMenProduct(womenData)
         let childData=Child_product.find((el)=>el._id===id)
         childData && setMenProduct(childData)
-        console.log(menData)
+        // console.log(menData)
     })
+
+    // const addTocart=(product_id)=>{
+    //     const token = JSON.parse(localStorage.getItem("token"));
+    //     if (!token) {
+    //       console.log("Please login to add to cart");
+    //       return;
+    //     }
+        
+    //     axios.post("https://smoggy-woolens-lamb.cyclic.app/cart/add", {
+    //       headers:{
+    //         "Content-Type": "application/json",
+    //         "Authorization": "Bearer " + token
+    //       },
+    //       body:JSON.stringify({product_id}) 
+    //     })
+    //     .then(res=>{
+    //       console.log(res);
+    //     })
+    //     .catch(err=>{
+    //       console.log(err);
+    //     });
+    //   }
+
+    const addTocart = (product_id) => {
+        const token = JSON.parse(localStorage.getItem("token"));
+        if (!token) {
+          console.log("Please login to add to cart");
+          return;
+        }
+      
+        axios
+          .post(
+            "https://smoggy-woolens-lamb.cyclic.app/cart/add",
+            {
+              product_id: product_id,
+             
+            },
+            {
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + token,
+              },
+            }
+          )
+          .then((res) => {
+            if(res.data.msg==="product added to cart successs")
+            {
+                alert("Product added success")
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      };
+      
+      
    
   return (
     <Box>
@@ -76,7 +133,7 @@ const SinglePage = () => {
             <Text fontSize='md' color={"red"} p="1">Select delivery location</Text>
             <Heading as='h4' size='md' p="1"> In Stock</Heading>
             <Text fontSize='md' p="1">Sold by Turrantbuy and Fulfilled by Amazon.</Text>
-            <Button w="80%" colorScheme='yellow' m="2" borderRadius={"20px"}>ADD TO CART</Button> 
+            <Button w="80%" colorScheme='yellow' m="2" borderRadius={"20px"} onClick={()=>addTocart(id)} >ADD TO CART</Button> 
             <Button w="80%" colorScheme='orange' m="2" borderRadius={"20px"}>Buy Now</Button> 
             </Box>
         </GridItem>
