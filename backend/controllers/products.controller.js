@@ -209,10 +209,10 @@ const getProducts = async (req, res) => {
     const parsedLimit = parseInt(limit);
     const startIndex = (parsedPage - 1) * parsedLimit;
 
-    // console.log(filter,"filter:- ",sort,"sort")
+    console.log(filter,"filter:- ",sort,"sort")
 
     // console.log(parsedPage,"req.query page no",parsedLimit,"passsing by req.query" )
-
+   
     products = await productModel
       .find(filter)
       .sort(sort)

@@ -17,14 +17,15 @@ const MenData = () => {
     let paramObj = {
       params: {
         brand: searchParams.getAll('brand'),
-        type: searchParams.getAll('type'),
+        type: searchParams.get('type'),
         _sort: order && 'price',
         _order: order,
       },
     };
+    
 
     dispatch(menData(paramObj));
-  }, [location.search]);
+  }, [location.search,dispatch,searchParams]);
 
   return (
     <Box>

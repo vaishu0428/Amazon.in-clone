@@ -18,14 +18,16 @@ const WomenData = () => {
     let paramObj={
       params:{
       brand:searchParams.getAll("brand"),
-      type:searchParams.getAll("type"),
+      type:searchParams.get("type"),
       _sort: order && "price",
       _order:order,
       }
     }
+
+ 
     
    dispatch(womenData(paramObj))
-  },[location.search])
+  },[location.search,dispatch,searchParams])
 
   // console.log(Womens_product,"women")
   
