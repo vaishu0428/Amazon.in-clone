@@ -56,13 +56,14 @@ const [total,settotal]=useState(0)
 
   }
   async function getdata(){
-    await axios.get(`http://localhost:8090/cart/get`,{
+    await axios.get(`https://smoggy-woolens-lamb.cyclic.app/cart/get`,{
       headers:{
         Authorization:JSON.parse(localStorage.getItem("token"))
       }
     }).then(res=>{
+      console.log(res)
       settotal(res.totalPrice)
-      setdata(res.cartItems)}
+      setdata(res.data.cartItems)}
       )
   
 
