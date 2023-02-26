@@ -9,7 +9,7 @@ const Signup = () => {
   const [pass, setpass] = useState("");
   const [error, seterror] = useState("");
   console.log(email, pass, name);
-const navigate=useNavigate()
+  const navigate = useNavigate()
   async function register() {
     if (name === "" || email === "" || pass === "") {
       alert("enter details");
@@ -21,11 +21,11 @@ const navigate=useNavigate()
           pass: pass,
         })
         .then((res) => {
-          console.log(res);
-       navigate("/login")
-            
-   
-         
+          // console.log(res);
+          navigate("/login")
+
+
+
         })
         .catch((err) => seterror(err.response.data.error));
   }
