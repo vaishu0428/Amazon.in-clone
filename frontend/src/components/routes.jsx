@@ -7,6 +7,7 @@ import LoginPage from '../Pages/login/Login'
 import Mens from '../Pages/Mens'
 import Payment from '../Pages/payment/Payment'
 import Signup from '../Pages/signup/Signup'
+import SinglePage from '../Pages/SinglePage'
 import Womens from '../Pages/Womens'
 
 const Pageroutes = () => {
@@ -22,7 +23,7 @@ const Pageroutes = () => {
             <Route path="/men" element={<Mens/>}></Route>
             <Route path="/women" element={<Womens/>}/>
             <Route path="/kid" element={<Childs/>}/>
-            
+            <Route path="/Single/:id" element={<SinglePage/>}/>
             
         </Routes>
 

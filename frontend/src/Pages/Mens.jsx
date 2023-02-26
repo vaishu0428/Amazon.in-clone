@@ -8,10 +8,10 @@ const Mens = () => {
   return (
     <Box>
       <Navbar/>
-   <Box h="auto" w="97%" m="auto"  p='3'>
-   <Grid templateColumns={'20% 80%'}
+   <Box h="auto" w="97%" m="auto" p={['1','','3']}>
+   <Grid templateColumns={['35% 65%','20% 80%','20% 80%']}
    gap="3">
-    <GridItem h="auto"  p="3">
+    <GridItem h="auto"  p={["0","","3"]} borderRight={'3px solid #E3E6E6'}>
       <Filter/>
     </GridItem>
     <GridItem h="auto"  p="3">
