@@ -1,49 +1,59 @@
 import React, { useEffect } from 'react'
-import {useDispatch, useSelector} from "react-redux"
-import { menData } from '../../Redux/AppReducer/action'
+import { useDispatch, useSelector } from "react-redux"
+
 import { useLocation, useSearchParams } from 'react-router-dom';
-import {Box, Grid, GridItem, Image,Text} from "@chakra-ui/react"
+import { Box, Grid, GridItem, Heading, Image, Text } from "@chakra-ui/react"
+import { menData } from '../../Redux/AppReducer/action';
+import { EmptyCart } from './Cart/EmptyCart';
 const MenData = () => {
-  const dispatch=useDispatch();
-  let Products=useSelector((store)=>store.AppReducer.Products)
-  
-  const location=useLocation();
-  const [searchParams]=useSearchParams()
-  // console.log(location)
-  useEffect(()=>
-  {
-    const order=searchParams.get('order')
-    let paramObj={
-      params:{
-      brand:searchParams.getAll("brand"),
-      type:searchParams.getAll("type"),
-      _sort: order && "price",
-      _order:order,
-      }
-    }
-    
-   dispatch(menData(paramObj))
-  },[location.search])
+  const dispatch = useDispatch();
+  const Products = useSelector((store) => store.AppReducer.Products);
+
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const order = searchParams.get('order');
+    let paramObj = {
+      params: {
+        brand: searchParams.getAll('brand'),
+        type: searchParams.getAll('type'),
+        _sort: order && 'price',
+        _order: order,
+      },
+    };
+
+    dispatch(menData(paramObj));
+  }, [location.search]);
+
   return (
     <Box>
-     <Grid templateColumns={'repeat(4,1fr)'}
-     gap='3'>
-    { Products.map((ele)=>(
-      
-        <GridItem key={ele.id}>
-          <Image src={ele.image}/>
-          <Text>{ele.title}</Text>
-          <Text>Price : ₹{ele.price}</Text>
-          <Text>Type :{ele.type}</Text>
-          <Text>Brand:{ele.brand}</Text>
-          <Text>Qty:{ele.quantity}</Text>
-        </GridItem>
-    ))
-    }
-     </Grid>
-      
+      {Products && Products.length > 0 ? (
+        <Grid templateColumns={['repeat(1,1fr)', 'repeat(3,1fr)', 'repeat(4,1fr)']} gap='3'>
+          {Products.map((ele) => (
+            <GridItem key={ele._id} boxShadow='rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'>
+              <Image src={ele.image} />
+              <Box p='2'>
+                <Heading as='h4' size='md' textAlign='center'>
+                  --{ele.brand}--
+                </Heading>
+                <Text color={'gray'} as='b'>
+                  {ele.title}
+                </Text>
+                <Text color={'green'}>MRP : ₹{ele.price}</Text>
+                <Text color={'gray'}>Type :{ele.type}</Text>
+                <Text color={'gray'}>Brand:{ele.brand}</Text>
+                <Text color={'gray'}>Qty:{ele.quantity}</Text>
+              </Box>
+            </GridItem>
+          ))}
+        </Grid>
+      ) : (
+        <EmptyCart />
+      )}
     </Box>
-  )
-}
+  );
+};
+
 
 export default MenData

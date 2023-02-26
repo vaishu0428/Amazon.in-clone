@@ -9,7 +9,7 @@ const Filter = () => {
     let [brand,setBrand]=useState(initialStates||[])
     const [type,setType]=useState(initialType||[])
     const [order,setOrder]=useState(initialOrder||"")
-    console.log(brand)
+    // console.log(brand)
     const handleFilter=(e)=>
     {
        const newBrand=[...brand]

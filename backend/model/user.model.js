@@ -5,8 +5,9 @@ const defaultAddress = {
   area: "",
   district: "",
   state: "",
-  pinCode: "",
+  pinCode: "123456",
 };
+
 
 const userSchema = mongoose.Schema(
   {
@@ -15,7 +16,7 @@ const userSchema = mongoose.Schema(
     pass: { type: String, required: true },
     isActive: { type: Boolean, default: false },
     role: { type: String, enum: ["user", "admin"], default: "user" },
-    image: { type: String, default: null },
+    image: { type: String, default: "" },
     mobile: {
       type: Number,
       default: 1234567890,
