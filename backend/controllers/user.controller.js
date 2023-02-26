@@ -94,6 +94,7 @@ const userLogin = async (req, res) => {
     if (userExists) {
       bcrypt.compare(pass, userExists.pass, async function (err, result) {
         if (result) {
+          // console.log(userExists)
           const token = jwt.sign(
             { ExistingUserID: userExists._id },
             process.env.SECRET_KEY
@@ -101,7 +102,7 @@ const userLogin = async (req, res) => {
           // console.log("login l-101", userExists.isActive);
           userExists.isActive = true;
           await userExists.save();
-          res.status(200).send({ msg: "Login Successfull", token: token });
+          res.status(200).send({ msg: "Login Successfull", token: token ,name:userExists.name});
         } else {
           res.status(401).send("Wrong Credntials");
         }
