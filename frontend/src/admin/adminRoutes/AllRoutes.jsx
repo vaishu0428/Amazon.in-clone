@@ -6,6 +6,7 @@ import SignIn from "../adminPages/SignIn";
 import AdminUpdateProductPage from "../adminPages/AdminUpdateProductPage"
 import AdminUsersPage from "../adminPages/AdminUsersPage"
 import AdminProducts from "../adminPages/AdminProducts"
+import AdminOrderPage from "../adminPages/AdminOrderPage";
 
 const AllRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const AllRoutes = () => {
       <Route path="/adminupdate" element={<AdminUpdateProductPage/>} />
       <Route path="/adminusers" element={<AdminUsersPage/>} />
       <Route path="/adminproducts" element={<AdminProducts/>} />
+      <Route path="/adminorders" element={<AdminOrderPage/>} />
 
     </Routes>
   );

@@ -62,7 +62,7 @@ const Header = () => {
               <MenuItem icon={<FaList />}><Link to="/adminproducts">Products</Link></MenuItem>
               <MenuItem icon={<FaRegHeart />}><Link to="/adminusers">Users</Link></MenuItem>
               <MenuItem icon={<RiPencilLine />}><Link to="/adminupdate">Update</Link></MenuItem>
-              <MenuItem icon={<BiCog />}>Settings</MenuItem>
+              <MenuItem icon={<BiCog />}><Link to="/adminorders">Orders</Link></MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>

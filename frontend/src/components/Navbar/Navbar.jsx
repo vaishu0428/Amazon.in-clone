@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Styles from "./Navbar.module.css"
 
 import { Box,Image, Text, Heading, HStack, Input, InputGroup, InputLeftElement, InputRightElement, Show, VStack, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, FormControl, FormLabel, ModalFooter, useDisclosure } from '@chakra-ui/react'
@@ -8,6 +8,7 @@ import { FaRegUser } from "react-icons/fa"
 import { BsSearch } from "react-icons/bs"
 import { SlLocationPin } from "react-icons/sl"
 import {Link} from "react-router-dom"
+import axios from 'axios'
 
 
 
@@ -18,7 +19,18 @@ import {Link} from "react-router-dom"
 
 const Navbar = () => {
  
- 
+  async function getdata(){
+    await axios.get(`https://smoggy-woolens-lamb.cyclic.app/user/`,{
+      headers:{
+        Authorization:"Bearer "+JSON.parse(localStorage.getItem("token"))
+      }
+    }).then(res=>console.log(res))
+
+  }
+  useEffect(()=>{
+    getdata()
+
+  },[])
 
 
 
@@ -38,6 +50,7 @@ export const NavbarTop = ({ dName }) => {
 
 
   const [show, setShow] = useState(false);
+
  
   function InitialFocus() {
     const { isOpen, onOpen, onClose } = useDisclosure()
