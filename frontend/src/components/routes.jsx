@@ -23,7 +23,7 @@ const Pageroutes = () => {
             <Route path="/men" element={<Mens/>}></Route>
             <Route path="/women" element={<Womens/>}/>
             <Route path="/kid" element={<Childs/>}/>
-            <Route path="/Single/:id" element={<SinglePage/>}/>
+            <Route path="/Single/:id" element={token?<SinglePage/>:<LoginPage/>}/>
             
         </Routes>
 

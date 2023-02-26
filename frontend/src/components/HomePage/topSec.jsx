@@ -8,6 +8,7 @@ import SimpleSliders5 from "./HomeComp/Slider5"
 import SimpleSliders6 from "./HomeComp/Slider6"
 import { NavLink } from "react-router-dom"
 const topSec = () => {
+   let token=JSON.parse(localStorage.getItem("token"))
    return (
       <Box width={'100%'} height="auto" >
          <Box width={'100%'} height='auto'>
@@ -431,7 +432,10 @@ const topSec = () => {
 
          <Box w='100%' h='auto' m='auto' textAlign={'center'} borderTop="1px solid gray" borderBottom={"1px solid gray"} pt='20px' pb="20px">
             <Text fontSize='md'>See personalized recommendations</Text>
-            <Button colorScheme='yellow' w='150px' p='10px'>Sign in</Button>
+{token?<Button colorScheme='yellow' w='150px' p='10px'onClick={()=>{
+   localStorage.removeItem("token")
+localStorage.removeItem("name")}}>Sign out</Button>:<Button colorScheme='yellow' w='150px' p='10px'><Link to="/login">Sign in</Link></Button>}
+    
             <Text fontSize='md'>New Customer?</Text>
             <Text fontSize='md' color={'blue'}>Start here</Text>
          </Box>
