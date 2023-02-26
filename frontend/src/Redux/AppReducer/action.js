@@ -57,7 +57,7 @@ const getChildFailureAction = () =>
 
 export const menData = (paramObj) => (dispatch) => {
   dispatch(getMensRequestAction());
-  axios.get("http://localhost:8080/product/get", { params: paramObj.params })
+  axios.get("https://smoggy-woolens-lamb.cyclic.app/product/get?category=men", { params: paramObj.params })
     .then((res) => {
       dispatch(getMensSuccessAction(res.data.products));
     })
@@ -85,7 +85,7 @@ export const womenData = (param) => (dispatch) =>
 {
   dispatch(getWomensRequestAction());
   //http://localhost:8080/product/get?category=women
-    axios.get("http://localhost:8080/product/get?category=women",{ params: param.params }).then((res)=>
+    axios.get("https://smoggy-woolens-lamb.cyclic.app/product/get?category=women",{ params: param.params }).then((res)=>
   {
     
     dispatch(getWomensSuccessAction(res.data.products))
@@ -100,7 +100,7 @@ export const womenData = (param) => (dispatch) =>
 export const childData = (param) => (dispatch) =>
 {
   dispatch(getChildRequestAction());
-  axios.get("http://localhost:8080/product/get?category=kids",{ params: param.params }).then((res)=>
+  axios.get("https://smoggy-woolens-lamb.cyclic.app/product/get?category=kids",{ params: param.params }).then((res)=>
   {
     
     dispatch(getChildSuccessAction(res.data.products))

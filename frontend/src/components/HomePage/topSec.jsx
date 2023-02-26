@@ -6,6 +6,7 @@ import SimpleSliders1 from "./HomeComp/Slider4"
 import SimpleSliders2 from "./HomeComp/Slider1"
 import SimpleSliders5 from "./HomeComp/Slider5"
 import SimpleSliders6 from "./HomeComp/Slider6"
+import { NavLink} from "react-router-dom"
 const topSec = () => {
   return (
     <Box width={'100%'} height="auto" >
@@ -17,8 +18,10 @@ const topSec = () => {
       templateRows={['repeat(8, 1fr)','repeat(4, 1fr)','repeat(2, 1fr)']}
     columnGap={'4'}
      rowGap={'4'}>
+      <NavLink to="/men">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="5">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Starting ₹87 | Amazon Brands & more</Heading>
+    
     <Grid
      templateColumns='repeat(2, 1fr)'
      templateRows='repeat(2, 1fr)'
@@ -43,8 +46,8 @@ const topSec = () => {
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">Shop Now</Text></Link>
     </GridItem>
-    
-
+    </NavLink>
+    <NavLink to="/women">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Shop & Pay | Earn rewards daily</Heading>
     <Grid
@@ -74,8 +77,8 @@ Shop & Collect Rewards daily</Text>
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">See more</Text></Link>
     </GridItem>
-
-
+  </NavLink>
+  <NavLink to="/kid">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>SUp to 60% off | Styles for men</Heading>
     <Grid
@@ -103,7 +106,8 @@ Shop & Collect Rewards daily</Text>
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">See all offers</Text></Link>
     </GridItem>
-
+    </NavLink>
+    <NavLink to="/men">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Starting ₹87 | Amazon Brands & more</Heading>
     <Grid
@@ -130,8 +134,8 @@ Shop & Collect Rewards daily</Text>
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">Shop Now</Text></Link>
     </GridItem>
-    
-
+    </NavLink>
+    <NavLink to="/kid">
   <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Up to 70% off | Clearance store</Heading>
     <Grid
@@ -144,9 +148,9 @@ Shop & Collect Rewards daily</Text>
         </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="3">See more</Text></Link>
     </GridItem>
-
+  </NavLink>
    
-
+  <NavLink to="/kid">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Automotive essentials | Up to 60% off</Heading>
     <Grid
@@ -173,8 +177,8 @@ Shop & Collect Rewards daily</Text>
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">See more</Text></Link>
     </GridItem>
-
-
+</NavLink>
+<NavLink to="/women">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Up to 50% off | Monitor blood sugar at home</Heading>
     <Grid
@@ -187,7 +191,8 @@ Shop & Collect Rewards daily</Text>
         </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="3">Visit store</Text></Link>
     </GridItem>
-
+    </NavLink>
+    <NavLink to="/men">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Up to 60% off | Professional tools, testing & more</Heading>
     <Grid
@@ -215,6 +220,7 @@ Shop & Collect Rewards daily</Text>
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">See more</Text></Link>
     </GridItem>
+    </NavLink>
     </Grid>
     </Box>
     {/*  */}
@@ -237,6 +243,7 @@ Shop & Collect Rewards daily</Text>
       templateRows={['repeat(4, 1fr)','repeat(2, 1fr)','repeat(1, 1fr)']}
     columnGap={'4'}
      rowGap={'4'}>
+      <NavLink to="/men">
    <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Sell on Amazon with 1-Click Launch Support</Heading>
     <Grid
@@ -249,7 +256,8 @@ Shop & Collect Rewards daily</Text>
         </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="3">Visit store</Text></Link>
     </GridItem>
-  
+    </NavLink>
+    <NavLink to="/women">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Up to 60% off | Professional tools, testing & more</Heading>
     <Grid
@@ -277,8 +285,8 @@ Shop & Collect Rewards daily</Text>
     </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="5">See all offers</Text></Link>
     </GridItem>
-
-
+ </NavLink>
+ <NavLink to="/kid">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Daily essentials | Amazon Brands & more</Heading>
     <Grid
@@ -305,10 +313,12 @@ Shop & Collect Rewards daily</Text>
 Up to 40% off | Baby grooming essentials
 </Text>
          </GridItem>
+      
     </Grid>
     
     </GridItem>
-
+</NavLink>
+<NavLink to="/men">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Under ₹499 | Pocket-friendly fashion</Heading>
     <Grid
@@ -335,9 +345,12 @@ Up to 40% off | Baby grooming essentials
 View all
 </Text>
          </GridItem>
+         
+      
     </Grid>
     
     </GridItem>
+    </NavLink>
     </Grid>
     </Box>
     <Box bgColor={'white'} p="5" mb='15px'>
@@ -350,10 +363,12 @@ View all
 
     {/*  */}
     <Box mb='15px'>
+     
     <Grid templateColumns={['repeat(1, 1fr)' ,'repeat(2, 1fr)' ,'repeat(4, 1fr)' ]}
       templateRows={['repeat(4, 1fr)','repeat(2, 1fr)','repeat(1, 1fr)']}
     columnGap={'4'}
      rowGap={'4'}>
+      <NavLink to="/kid">
    <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Diapers & wipes | Starting ₹99</Heading>
     <Grid
@@ -366,7 +381,8 @@ View all
         </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="3">Visit store</Text></Link>
     </GridItem>
-    
+    </NavLink>
+    <NavLink to="/men">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Sell on Amazon with 1-Click Launch Support</Heading>
     <Grid
@@ -379,6 +395,8 @@ View all
         </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="3">Visit store</Text></Link>
     </GridItem>
+    </NavLink>
+    <NavLink to="/kid">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Diapers & wipes | Starting ₹99</Heading>
     <Grid
@@ -391,7 +409,8 @@ View all
         </Grid>
     <Link color={'blue'} ><Text fontSize='sm' mt="3">Visit store</Text></Link>
     </GridItem>
-    
+    </NavLink>
+    <NavLink to="/women">
     <GridItem w='100%' h='420px' m='auto' bg='white' p="4">
     <Heading as='h3' size={['md','sm','md']} pb='3'>Computers & Accessories</Heading>
     <Grid
@@ -405,7 +424,7 @@ View all
     <Link color={'blue'} ><Text fontSize='sm' mt="3">Visit store</Text></Link>
     </GridItem>
   
-    
+    </NavLink>
    
     </Grid>
     </Box>
