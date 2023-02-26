@@ -156,18 +156,20 @@ Review your orders</Heading>
 <Grid boxShadow={"md"} >
     
     {data.map((el)=>{
-    return <Box p={"10px"} key={el.id}>
+    return <Box p={"10px"} key={el.product._id}>
       
    
 <Flex flex="8" gap="20px" flexDirection={["column","column","row"]} >
 <Box >
-    <Image src={el.imgUrl} alt="/" width={["150px","150px","200px"]}/>
+    <Image src={el.product.image} alt="/" width={["150px","150px","200px"]}/>
 </Box>
 <Box  textAlign={"left"} >
 <Heading as='h4' fontWeight="medium" size='md'>
-    {el.name}   {/* change to title */}
+    {el.product.title}   {/* change to title */}
   </Heading>
-  <Text>In stock</Text>
+  <Text fontSize={"16px"}>{el.product.name}</Text>
+  <Text fontSize={"14px"}>{el.product.brand}</Text>
+  <Text fontSize={"14px"}>{el.product.category}</Text>
   <Text m={"10px 0px"}>
 Eligible for FREE Shipping</Text>
 <Image src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png" alt="/"></Image>

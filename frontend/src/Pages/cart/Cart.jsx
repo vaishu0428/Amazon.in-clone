@@ -12,17 +12,20 @@ import {Link} from "react-router-dom"
 
 
 const Cart = () => {
-const [qty,setqty]=useState(1)
+
 const [data,setdata]=useState([])
 const [total,settotal]=useState(0)
 const increase=async(id)=>{
+  console.log(id,localStorage.getItem("token"))
   try {
     await axios.patch(`https://smoggy-woolens-lamb.cyclic.app/cart/incQty/${id}`,{
       headers:{
-        Authorization:"Bearer "+JSON.parse(localStorage.getItem("token"))
+        Authorization:"Bearer"+JSON.parse(localStorage.getItem("token"))
       },
-      body:1,
-    })
+      body:{
+        quantity:1
+      },
+    }).then(res=>console.log(res))
     
     
   } catch (error) {
@@ -36,9 +39,14 @@ const increase=async(id)=>{
     await axios.patch(`https://smoggy-woolens-lamb.cyclic.app/cart/decQty/${id}`,{
       headers:{
         Authorization:"Bearer "+JSON.parse(localStorage.getItem("token"))
-      }
+      },
+      body:{
+        product_id: id,
+       
+      },
 
-    })
+    }).then(res=>console.log(res))
+    getdata()
   } catch (error) {
     console.log(error)
   }
@@ -60,7 +68,11 @@ const increase=async(id)=>{
 
   }
   const deleteProduct=async(id)=>{
-    await axios.delete(`https://smoggy-woolens-lamb.cyclic.app/cart/remove/${id}`).then(res=>getdata())
+    await axios.delete(`https://smoggy-woolens-lamb.cyclic.app/cart/remove/${id}`,{
+      headers:{
+        Authorization:"Bearer "+JSON.parse(localStorage.getItem("token"))
+      }
+    }).then(res=>getdata())
     
     
       }
@@ -84,6 +96,7 @@ const increase=async(id)=>{
 {data.length>0?<Grid >
     
     {data.map((el)=>{
+      console.log(el)
     return <Box p={"10px"} key={el.product._id}>
       
     <Flex  >
@@ -101,7 +114,7 @@ Eligible for FREE Shipping</Text>
 <Image src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png" alt="/"></Image>
 <Flex mt={"15px"} >
 <Box>
-<Button onClick={decrease}>-</Button>{el.product.quantity} <Button onClick={increase}>+</Button>
+<Button onClick={()=>decrease(el.product._id)}>-</Button>{el.quantity} <Button onClick={()=>increase(el.product._id)}>+</Button>
 </Box>
 <Box ml={"20px"}><Button size={"sm"} onClick={()=>deleteProduct(el.product._id)}>Delete</Button></Box>
     
@@ -112,7 +125,7 @@ Eligible for FREE Shipping</Text>
 
 <Box flex="1">
     <Heading size={"md"}>
-    ₹{el.price}
+    ₹{el.product.price}
     </Heading>
     <Text fontSize={"12px"} color="blue.600">Save 5 % more with Subscribe & Save
 In stock</Text>
