@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Styles from "../login/Login.module.css";
 import axios from "axios";
 import { Flex, Heading, Input } from "@chakra-ui/react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 const Signup = () => {
   const [email, setemail] = useState("");
   const [name, setname] = useState("");
   const [pass, setpass] = useState("");
   const [error, seterror] = useState("");
   console.log(email, pass, name);
-const navigate=useNavigate()
+  const navigate = useNavigate()
   async function register() {
     if (name === "" || email === "" || pass === "") {
       alert("enter details");
@@ -21,11 +21,11 @@ const navigate=useNavigate()
           pass: pass,
         })
         .then((res) => {
-          console.log(res);
-       navigate("/login")
-            
-   
-         
+          // console.log(res);
+          navigate("/login")
+
+
+
         })
         .catch((err) => seterror(err.response.data.error));
   }

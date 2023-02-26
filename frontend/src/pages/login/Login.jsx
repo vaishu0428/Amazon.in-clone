@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./Login.module.css";
 import axios from "axios";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import { Button, Flex, Text, Input, Heading } from "@chakra-ui/react";
 import ForgetPass from "./Forget";
 const LoginPage = () => {
@@ -9,7 +9,7 @@ const LoginPage = () => {
   const [show, setshow] = useState(false);
   const [pass, setpass] = useState("");
   const [error, seterror] = useState("");
-  const navigate=useNavigate()
+  const navigate = useNavigate()
   async function login() {
     await axios
       .post(`https://smoggy-woolens-lamb.cyclic.app/user/login`, {
@@ -17,7 +17,7 @@ const LoginPage = () => {
         pass: pass,
       })
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         localStorage.setItem("token", JSON.stringify(res.data.token));
         navigate("/")
       })
@@ -79,7 +79,7 @@ const LoginPage = () => {
           By continuing, you agree to Amazon's Conditions of Use and Privacy
           Notice.
         </p>
-     <li><ForgetPass/></li> 
+        <li><ForgetPass /></li>
       </div>
       <div className={Styles.belowlogin}>
         <p>--------New to Amazon?--------</p>
