@@ -1,39 +1,82 @@
-import React from 'react'
-import styles from "./AdminOrderCard.module.css"
+import React, { useEffect, useState } from "react";
+import { updateOrderStatus } from "../../fetchData/data";
+import styles from "./AdminOrderCard.module.css";
 
-const AdminOrderCard = () => {
+const AdminOrderCard = ({
+  created,
+  payment,
+  products,
+  status,
+  totalAmount,
+  user,
+  _id,
+}) => {
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    if (products) {
+      setProduct(products);
+      // console.log("products", products.length);
+    }
+  }, [products]);
+
+  const handleOrderStatus = async (id) => {
+    let status = window.prompt("Please enter Status");
+    if (status != null) {
+      // if (
+      //   status === "deliverd" ||
+      //   status === "packed" ||
+      //   status === "dispatch"
+      // ) {
+      await updateOrderStatus(id, status).then((res) => console.log(res));
+      // console.log(status);
+      // } else {
+      //   alert("You shold only packed,dispatch,deliverd");
+      // }
+    }
+  };
+
   return (
     <div className={styles.productcard}>
       <div className={styles.left}>
-      <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_525,c_limit/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png" alt="" />
+        <img
+          src="https://img.freepik.com/free-vector/sale-full-shopping-cart-red-pictogram_1284-8505.jpg"
+          alt=""
+        />
       </div>
       <div className={styles.right}>
-      <div className={styles.title}>
-        <h3>USERNAME : USERNAME</h3>
-        <p>userid:12457896325</p>
-        <h3>Nike Air Force 1 '07</h3>
-      </div>
-      <div className={styles.id}>
-          <p>product id : </p>
-         <p> 124578963254789</p>
-      </div>
-      <div className={styles.numbers}>
-        <div>
-            <p>2</p>
-            <p>QUANTITY</p>
+        <div className={styles.title}>
+          <h3>Order Date : {created} </h3>
+          <p>userid:{user}</p>
+          <h3>Order Staus: {status}</h3>
         </div>
-        <div>
-            <p>200</p>
+        <div className={styles.id}>
+          <p>Order id : </p>
+          <p> {_id}</p>
+        </div>
+        <div className={styles.id}>
+          <p>Paymet : </p>
+          <p> {payment}</p>
+        </div>
+        <div className={styles.numbers}>
+          <div>
+            {/* <p></p> */}
+            <p>Products: {product.length} </p>
+          </div>
+          <div>
+            <p>{totalAmount}</p>
             <p>TOTAL AMOUNT</p>
+          </div>
         </div>
-      </div>
-      <div className={styles.btn}>
-         {/* <button><Link className={styles.btn} to="/adminupdate">UPDATE</Link></button> */}
-         <button>DELETE ORDER</button>
-      </div>
+        <div className={styles.btn}>
+          {/* <button><Link className={styles.btn} to="/adminupdate">UPDATE</Link></button> */}
+          <button onClick={() => handleOrderStatus(_id)}>
+            Update Order Status
+          </button>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AdminOrderCard
+export default AdminOrderCard;

@@ -4,23 +4,22 @@ import Header from "../adminComponents/Header/Header";
 // import { PieChart } from 'react-minimal-pie-chart';
 import { Chart } from "react-google-charts";
 
-import PieChart from 'react-pie-graph-chart';
-import styles from "./home.module.css"
+// import PieChart from "react-pie-graph-chart";
+import styles from "./home.module.css";
+
+import { useEffect, useState } from "react";
+import { allOrders, allProducts, alluser } from "../fetchData/data";
 
 export const data = [
   ["Field", "Amount", { role: "style" }],
   ["Products", 100, "#ffa41c"], // RGB value
   ["Users", 10, "silver"], // English color name
   ["Orders", 3, "gold"],
-   // CSS-style declaration
+  // CSS-style declaration
 ];
+
 export const data1 = [
-  [
-    "Day",
-    "Products",
-    "Orders",
-    "users",
-  ],
+  ["Day", "Products", "Orders", "users"],
   [1, 37.8, 80.8, 41.8],
   [2, 30.9, 69.5, 32.4],
   [3, 25.4, 57, 25.7],
@@ -46,16 +45,12 @@ export const options = {
 export const data2 = [
   ["Field", "Numbers"],
   ["Products", 100],
-  ["orders" , 20]
-  
-  
+  ["orders", 20],
 ];
 export const data3 = [
   ["Field", "Numbers"],
   ["Products", 100],
-  ["users" , 50]
-  
-  
+  ["users", 50],
 ];
 export const options2 = {
   title: "Website Inventories",
@@ -69,50 +64,74 @@ export const options2 = {
   },
 };
 const Home = () => {
- return (
+  const [Allusers, setAllusers] = useState([]);
+  const [allproducts, setAllProducts] = useState(0);
+  const [allOrder, setAllOrder] = useState([]);
+
+
+  useEffect(() => {
+    alluser().then((res) => {
+      setAllusers(res.data.allusers);
+      // console.log(res.data);
+    });
+    allProducts().then((res) => {
+      setAllProducts(res.data.total);
+      // console.log(res.data.total);
+    });
+    allOrders().then((res) => {
+      setAllOrder(res.data.orders);
+    });
+  }, []);
+  
+
+  return (
     <div>
       <div className={styles.navbar}>
-        <AdminNavbar/>
+        <AdminNavbar />
       </div>
-    <div className={styles.home}>
-      <div className={styles.header}>
-        <Header/>
+      <div className={styles.home}>
+        <div className={styles.header}>
+          <Header />
+        </div>
+        <div className={styles.right}>
+          <div className={styles.card}>
+            <Cardcomponent title={"Total Users"} total={Allusers.length} />
+            <Cardcomponent title={"Total Products"} total={allproducts} />
+            <Cardcomponent title={"Total Orders"} total={allOrder.length} />
+          </div>
+          <div className={styles.chart}>
+            <Chart
+              chartType="PieChart"
+              data={data2}
+              options={options2}
+              width={"100%"}
+              height={"400px"}
+            />
+            <Chart
+              chartType="PieChart"
+              data={data3}
+              options={options2}
+              width={"100%"}
+              height={"400px"}
+            />
+          </div>
+          <div className={styles.graphs}>
+            <Chart
+              chartType="Line"
+              width="85%"
+              height="400px"
+              data={data1}
+              options={options}
+            />
+            <Chart
+              chartType="ColumnChart"
+              width="100%"
+              height="400px"
+              data={data}
+            />
+          </div>
+        </div>
       </div>
-    <div className={styles.right}>
-    <div className={styles.card}>
-        <Cardcomponent/>
-        <Cardcomponent/>
-        <Cardcomponent/>
-      </div>
-      <div className={styles.chart}>
-      <Chart
-      chartType="PieChart"
-      data={data2}
-      options={options2}
-      width={"100%"}
-      height={"400px"}
-    />
-    <Chart
-      chartType="PieChart"
-      data={data3}
-      options={options2}
-      width={"100%"}
-      height={"400px"}
-    />
-      </div>
-      <div className={styles.graphs}>
-      <Chart
-      chartType="Line"
-      width="85%"
-      height="400px"
-      data={data1}
-      options={options}
-    />
-<Chart chartType="ColumnChart" width="100%" height="400px" data={data} />
-      </div>
-    </div>
-      
-    </div>
     </div>
   );
 };
