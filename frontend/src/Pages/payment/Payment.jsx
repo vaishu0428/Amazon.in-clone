@@ -5,52 +5,44 @@ import { Box, Button, Divider, Flex, Heading, Image, Text,  Modal,
     ModalFooter,
     ModalBody,
     ModalCloseButton,useDisclosure,FormControl,FormLabel,Input, Checkbox, Grid } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {UnlockIcon,AddIcon} from "@chakra-ui/icons"
 import {Link} from "react-router-dom"
+import axios from 'axios'
+
 const Payment = () => {
+  const [data,setdata]=useState([])
+  const [total,settotal]=useState(0)
 
-  const data=[
-    {
-        "_id": "639f497f97b38063c0ba2599",
-        "imgUrl": "https://www.jcrew.com/s7-img-facade/BG280_KF4708?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-        "name": "Boys' short-sleeve Rolling Stones T-shirt",
-        "description": "More graphic tees, please! Made from comfy, machine-washable cotton, our cool, colorful graphic T-shirts let them show their personality without saying a word.",
-        "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-        "price": 34.5,
-        "discounted_price": 26.99,
-        "type": "clothing",
-        "category": "kids"
-      },
-      {
-        "_id": "639f497f97b38063c0ba259a",
-        "imgUrl": "https://www.jcrew.com/s7-img-facade/AZ940_WY2481?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-        "name": "Boys' cozy pajama pant",
-        "description": "Pj's. Jammies. Jam-jams. Sleepy suits. No matter what you call them, our supersoft and cozy pajamas feel like a dream.",
-        "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-        "price": 39.5,
-        "discounted_price": 31.99,
-        "type": "clothing",
-        "category": "kids"
-      },
-      {
-        "_id": "639f497f97b38063c0ba259b",
-        "imgUrl": "https://www.jcrew.com/s7-img-facade/BC454_BL7286?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540",
-        "name": "Kids' short in towel terry",
-        "description": "Perfect for warm-weather getaways (or any day), these shorts are made from cozy terry cloth that feels like your softest beach towel. The best part? We made a matching hoodie!",
-        "discount": "EXTRA 30% OFF SALE STYLES + EXTRA 15% OFF YOUR PURCHASE WITH CODE SHOPNOW",
-        "price": 39.5,
-        "discounted_price": 31.99,
-        "type": "clothing",
-        "category": "kids"
-      },
-] 
+function handleclick(){
+ let otp= window.prompt("enter otp sent to your phone")
+ if(otp.length!==4){
+  alert("Please enter otp sent to your registered number")
+ }else{
+  alert("order succesfull")
+ }
+}
+
+  async function getdata(){
+    await axios.get(`https://smoggy-woolens-lamb.cyclic.app/cart/get`,{
+      headers:{
+        Authorization:"Bearer "+JSON.parse(localStorage.getItem("token"))
+      }
+    }).then(res=>{
+      console.log(res)
+      settotal(res.data.totalPrice)
+      setdata(res.data.cartItems)}
+      )
+  
+
+  }
+
+     
+  useEffect(()=>{
+    getdata()
+  },[])
 
 
-    function payment(){
-        window.prompt("Enter otp sent to your number")
-        alert("order successfull")
-    }
     function InitialFocus() {
         const { isOpen, onOpen, onClose } = useDisclosure()
       
@@ -156,25 +148,28 @@ Select a payment method</Heading>
 <Checkbox  m="10px 0px">Cash On Delivery/Pay On Delivery</Checkbox>
 <Text>Scan & Pay using Amazon app. Cash, UPI ,Cards also accepted.Know more.</Text>
 
-<Button mt="20px" colorScheme={"yellow"} onClick={payment}>use this method</Button>
+<Button mt="20px" onClick={handleclick
+}>proceed</Button>
 </Box>
 <Heading textAlign={"left"} color="#c56638" m="10px 0px" size="md">3.
 Review your orders</Heading>
 <Grid boxShadow={"md"} >
     
     {data.map((el)=>{
-    return <Box p={"10px"} key={el.id}>
+    return <Box p={"10px"} key={el.product._id}>
       
    
 <Flex flex="8" gap="20px" flexDirection={["column","column","row"]} >
 <Box >
-    <Image src={el.imgUrl} alt="/" width={["150px","150px","200px"]}/>
+    <Image src={el.product.image} alt="/" width={["150px","150px","200px"]}/>
 </Box>
 <Box  textAlign={"left"} >
 <Heading as='h4' fontWeight="medium" size='md'>
-    {el.name}   {/* change to title */}
+    {el.product.title}   {/* change to title */}
   </Heading>
-  <Text>In stock</Text>
+  <Text fontSize={"16px"}>{el.product.name}</Text>
+  <Text fontSize={"14px"}>{el.product.brand}</Text>
+  <Text fontSize={"14px"}>{el.product.category}</Text>
   <Text m={"10px 0px"}>
 Eligible for FREE Shipping</Text>
 <Image src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png" alt="/"></Image>
@@ -205,7 +200,7 @@ Eligible for FREE Shipping</Text>
 
 
 <Box boxShadow={"base"} bg="#ffffff" borderRadius={"8px"} height="fit-content" flex={"2"} p="10px"   ml="10px">
-   <Button colorScheme={"yellow"}>Use this address</Button>
+  
    <Text fontSize={"10px"}>Choose an address to continue checking out. You will still have a chance to review and edit your order before it is final.</Text>
    <Divider orientation='horizontal'  m="10px 0px"  />
    
@@ -220,7 +215,7 @@ Eligible for FREE Shipping</Text>
     <Box>--</Box></Flex>
     <Divider orientation='horizontal'  m="10px 0px"  />
     <Flex justify={"space-between"} color="#c56638"> <Heading size="md">Order Total:</Heading>
-    <Heading  color="#c56638" size="md"> ₹{7898}</Heading></Flex>
+    <Heading  color="#c56638" size="md"> ₹{total}</Heading></Flex>
     <Divider orientation='horizontal'  m="10px 0px"  />
 </Box>
 

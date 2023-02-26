@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Styles from "../login/Login.module.css";
 import axios from "axios";
 import { Flex, Heading, Input } from "@chakra-ui/react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 const Signup = () => {
   const [email, setemail] = useState("");
   const [name, setname] = useState("");

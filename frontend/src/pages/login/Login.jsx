@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./Login.module.css";
 import axios from "axios";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import { Button, Flex, Text, Input, Heading } from "@chakra-ui/react";
 import ForgetPass from "./Forget";
 const LoginPage = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Grid, GridItem, Heading, Image, Link, Text, AspectRatio, Button } from "@chakra-ui/react"
+import { Box, Grid, GridItem, Heading, Image, Link, Text,  Button } from "@chakra-ui/react"
 import SimpleSlider from './HomeComp/Slider2'
 import SimpleSliders from './HomeComp/Slider3'
 import SimpleSliders1 from "./HomeComp/Slider4"

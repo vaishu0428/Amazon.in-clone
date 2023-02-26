@@ -198,8 +198,12 @@ const incrementQuantity = async (req, res) => {
 };
 
 const decrementQuantity = async (req, res) => {
-  const cartItemId = req.params.id;
+  // const cartItemId = req.params.id;
+  const cartItemId = mongoose.Types.ObjectId(req.params.id);
+
   // console.log(cartItemId, "cartItemId");
+
+  
 
   try {
     const cartItem = await cartModel.findOneAndUpdate(
