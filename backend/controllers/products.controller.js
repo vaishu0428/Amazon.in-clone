@@ -178,7 +178,7 @@ const getProducts = async (req, res) => {
     _sort,
     _order,
     page = 1,
-    limit = 20,
+    limit 
   } = req.query;
 
   let products;
@@ -210,6 +210,8 @@ const getProducts = async (req, res) => {
     const startIndex = (parsedPage - 1) * parsedLimit;
 
     // console.log(filter,"filter:- ",sort,"sort")
+
+    // console.log(parsedPage,"req.query page no",parsedLimit,"passsing by req.query" )
 
     products = await productModel
       .find(filter)
