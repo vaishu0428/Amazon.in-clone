@@ -1,0 +1,249 @@
+
+@media all and (min-width : 1024px) and (max-width : 3000px) {
+    .home{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        background-color: 
+        #eaeded;
+    }
+    .header{
+        width: 15%;
+    }
+    .right{
+        width: 85%;
+        /* border: 1px solid red; */
+        
+    }
+    .productcard{
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+    }
+    
+    .card{
+        /* margin-top: 2%; */
+        width: 100%;
+        padding: 2%;
+        
+        display: flex;
+       
+        gap: 1%;
+    }
+    .searchbar{
+        text-align: left;
+        padding-left: 2%;
+    }
+    .searchbar>input{
+        font-family: 'Tilt Warp', cursive;
+        color: #131921;
+        padding: 5px 50px;
+        border-radius: 2px;
+        border: none;
+        margin-right: 5px;
+    }
+    
+    .searchbar>button{
+        font-family: 'Tilt Warp', cursive;
+        margin-right: 10%;
+        /* margin-top: 4%; */
+        padding: 5px 15px;
+        background-color: #ffa41c ;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        transition-duration: 500ms;
+    }
+    .searchbar>button:hover{
+       background-color:
+       #131921 ;
+    }
+}
+@media all and (min-width : 540px) and (max-width : 1024px) {
+    .home{
+        background-color: 
+        #eaeded;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header{
+        width: 15%;
+    }
+    .right{
+        width: 85%;
+        /* border: 1px solid red; */
+        
+    }
+    .productcard{
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+    }
+    
+    .card{
+        /* margin-top: 2%; */
+        width: 100%;
+        padding: 2%;
+        
+        display: flex;
+       
+        gap: 1%;
+    }
+    .searchbar{
+        text-align: left;
+        padding-left: 2%;
+    }
+    
+    .searchbar>input{
+        font-family: 'Tilt Warp', cursive;
+        color: #131921;
+        padding: 5px 15px;
+        border-radius: 2px;
+        border: none;
+        margin-right: 5px;
+    }
+    
+    .searchbar>button{
+        font-family: 'Tilt Warp', cursive;
+        margin-right: 10%;
+        /* margin-top: 4%; */
+        padding: 5px 15px;
+        background-color: #ffa41c ;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        transition-duration: 500ms;
+    }
+    .searchbar>button:hover{
+       background-color:
+       #131921 ;
+    }
+}
+@media all and (min-width : 320px) and (max-width : 540px) {
+    .home{
+        background-color: 
+        #eaeded;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header{
+        width: 20%;
+    }
+    .right{
+        width: 80%;
+        /* border: 1px solid red; */
+        
+    }
+    .productcard{
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+    }
+    
+    .card{
+       
+        width: 100%;
+        padding: 3%;
+
+       
+    }
+    .searchbar{
+        text-align: left;
+        padding-left: 2%;
+    }
+    .searchbar>input{
+        font-family: 'Tilt Warp', cursive;
+        color: #131921;
+        padding: 5px 15px;
+        border-radius: 2px;
+        border: none;
+        margin-right: 5px;
+    }
+    
+    .searchbar>button{
+        font-family: 'Tilt Warp', cursive;
+        margin-right: 10%;
+        /* margin-top: 4%; */
+        padding: 5px 15px;
+        background-color: #ffa41c ;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        transition-duration: 500ms;
+    }
+    .searchbar>button:hover{
+       background-color:
+       #131921 ;
+    }
+}
+@media all and (min-width : 0px) and (max-width : 320px) {
+    .home{
+        background-color: 
+        #eaeded;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header{
+        width: 15%;
+    }
+    .right{
+        width: 85%;
+        border: 1px solid red;
+        
+    }
+    .productcard{
+        border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2%;
+    }
+    
+    .card{
+    
+        width: 100%;
+        padding: 2%;
+       
+    }
+    .searchbar>input{
+        font-family: 'Tilt Warp', cursive;
+        color: #131921;
+        padding: 5px 15px;
+        border-radius: 2px;
+        border: none;
+        margin-right: 5px;
+    }
+    .searchbar{
+        text-align: left;
+        padding-left: 2%;
+    }
+    
+    .searchbar>button{
+        font-family: 'Tilt Warp', cursive;
+        margin-right: 10%;
+        /* margin-top: 4%; */
+        padding: 5px 15px;
+        background-color: #ffa41c ;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        transition-duration: 500ms;
+    }
+    .searchbar>button:hover{
+       background-color:
+       #131921 ;
+    }
+}
