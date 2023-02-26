@@ -39,29 +39,57 @@ const getChildFailureAction = () =>
     return {type:GET_CHILD_FAILURE}
 }
 
-export const menData = (param) => (dispatch) =>
-{
-  dispatch(getMensRequestAction());
-    axios.get("http://localhost:8080/todos",param).then((res)=>
-  {
-    console.log(param)
-    dispatch(getMensSuccessAction(res.data))
+// export const menData = (param) => (dispatch) =>
+// {
+//   dispatch(getMensRequestAction());
+//     axios.get(`http://localhost:8080/product/get?${param}`).then((res)=>
+//   {
+//     // console.log(res.data,"in action")
+   
+//     dispatch(getMensSuccessAction(res.data.products))
    
 
-  }).catch((err)=>
-  {
-    dispatch(getMensDFailureAction())
-  })
-}
+//   }).catch((err)=>
+//   {
+//     dispatch(getMensDFailureAction())
+//   })
+// }
+
+export const menData = (paramObj) => (dispatch) => {
+  dispatch(getMensRequestAction());
+  axios.get("http://localhost:8080/product/get", { params: paramObj.params })
+    .then((res) => {
+      dispatch(getMensSuccessAction(res.data.products));
+    })
+    .catch((err) => {
+      dispatch(getMensDFailureAction());
+    });
+};
+
+
+// export const menData  = (params) => (dispatch) => {
+//   dispatch(getWomensRequestAction());
+//   axios.get("http://localhost:8080/product/get", { params })
+//     .then((res) => {
+//       dispatch(getWomensSuccessAction(res.data.products));
+//       // console.log(res.data.products);
+//     })
+//     .catch((err) => {
+//       dispatch(getWomensDFailureAction());
+//     });
+// }
+
+
 // Women
 export const womenData = (param) => (dispatch) =>
 {
   dispatch(getWomensRequestAction());
-    axios.get("http://localhost:8080/womenProduct",param).then((res)=>
+  //http://localhost:8080/product/get?category=women
+    axios.get("http://localhost:8080/product/get?category=women",{ params: param.params }).then((res)=>
   {
     
-    dispatch(getWomensSuccessAction(res.data))
-   console.log(res.data)
+    dispatch(getWomensSuccessAction(res.data.products))
+  //  console.log(res.data)
 
   }).catch((err)=>
   {
@@ -72,11 +100,11 @@ export const womenData = (param) => (dispatch) =>
 export const childData = (param) => (dispatch) =>
 {
   dispatch(getChildRequestAction());
-    axios.get("http://localhost:8080/childProduct",param).then((res)=>
+  axios.get("http://localhost:8080/product/get?category=kids",{ params: param.params }).then((res)=>
   {
     
-    dispatch(getChildSuccessAction(res.data))
-   console.log(res.data)
+    dispatch(getChildSuccessAction(res.data.products))
+  //  console.log(res.data)
 
   }).catch((err)=>
   {

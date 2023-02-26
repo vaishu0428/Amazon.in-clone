@@ -1,5 +1,4 @@
 const cartModel = require("../model/cart.model");
-
 const decrementProductQuantity = require("./helperDecrementQuantity.controller");
 
 const addToCart = async (req, res) => {
@@ -48,6 +47,8 @@ const addToCart = async (req, res) => {
 
 const getCartData = async (req, res) => {
   const user_id = req.body.userID;
+
+
   try {
     const cartData = await cartModel
       .find({ user: user_id })
@@ -233,4 +234,3 @@ module.exports = {
   incrementQuantity,
   decrementQuantity
 }
-
