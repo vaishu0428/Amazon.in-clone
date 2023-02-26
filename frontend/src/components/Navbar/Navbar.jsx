@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, {  useState } from 'react'
 import Styles from "./Navbar.module.css"
 
 import { Box,Image, Text, Heading, HStack, Input, InputGroup, InputLeftElement, InputRightElement, Show, VStack, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, FormControl, FormLabel, ModalFooter, useDisclosure } from '@chakra-ui/react'
@@ -8,7 +8,7 @@ import { FaRegUser } from "react-icons/fa"
 import { BsSearch } from "react-icons/bs"
 import { SlLocationPin } from "react-icons/sl"
 import {Link} from "react-router-dom"
-import axios from 'axios'
+
 
 
 
@@ -181,7 +181,7 @@ export const NavbarTop = ({ dName }) => {
       <Link to="/cart">
         <HStack>
           <BiCart size="35px" />
-          <Text>Cart {0}</Text>
+          <Text>Cart {JSON.parse(localStorage.getItem("total"))}</Text>
         </HStack>
       </Link>
     </HStack>

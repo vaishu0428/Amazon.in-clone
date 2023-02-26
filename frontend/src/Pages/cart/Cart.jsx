@@ -38,7 +38,11 @@ const Cart = () => {
   }
 
 
-  const decrease = async (id) => {
+  const decrease = async (id,qty) => {
+    if(qty===1){
+      deleteProduct(id)
+      return
+    }
     const token = JSON.parse(localStorage.getItem("token"));
     if (!token) {
       console.log("Please login to add to cart");
@@ -72,6 +76,7 @@ const Cart = () => {
       // console.log(res)
       settotal(res.data.totalPrice)
       setdata(res.data.cartItems)
+      localStorage.setItem("total",JSON.stringify(res.data.cartItems.length))
       getdata()
     }
     )
@@ -125,7 +130,7 @@ const Cart = () => {
                       <Image src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png" alt="/"></Image>
                       <Flex mt={"15px"} >
                         <Box>
-                          <Button onClick={() => decrease(el.product._id)}>-</Button>{el.quantity} <Button onClick={() => increase(el.product._id)}>+</Button>
+                          <Button onClick={() => decrease(el.product._id,el.quantity)}>-</Button>{el.quantity} <Button onClick={() => increase(el.product._id)}>+</Button>
                         </Box>
                         <Box ml={"20px"}><Button size={"sm"} onClick={() => deleteProduct(el.product._id)}>Delete</Button></Box>
 
