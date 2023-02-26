@@ -9,6 +9,7 @@ const {
   forgetPassword,
   usergetProfile,
   userDeleteAddress,
+  ChangePassword,
 } = require("../controllers/user.controller");
 const adminAccesssOnly = require("../middleware/admin.middleware");
 const { authenticateToken } = require("../middleware/userAuth.middleware");
@@ -25,9 +26,10 @@ userRoutes.post("/register", userSignupInputValidate, registerUser);
 userRoutes.post("/login", userLoginInput, userLogin);
 userRoutes.post("/logout", authenticateToken, userLogout)
 userRoutes.get("/address", authenticateToken, usergetProfile)
-userRoutes.patch("/profile", authenticateToken, profileInput, userUpdateProfile)
+userRoutes.patch("/profile", authenticateToken,  userUpdateProfile)
 userRoutes.delete("/delete/address", authenticateToken,userDeleteAddress);
-userRoutes.patch("/forgetPassword", authenticateToken, forgetPassword)
+userRoutes.patch("/password/change", authenticateToken, ChangePassword)
+userRoutes.patch("/forgetPassword",  forgetPassword)
 
 
 module.exports = {
