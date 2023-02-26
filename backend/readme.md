@@ -32,127 +32,99 @@ bracelet:["jCrew"]
 },
 ```
 
+## All Back-end Routes
+### for products 👍👍👍👍👍
+   1. `https://smoggy-woolens-lamb.cyclic.app/product/add` --> Add product (admin)
 
-## Filter
+   2. `https://smoggy-woolens-lamb.cyclic.app/product/get` ---> get products
 
-## Get products by different filteration (Url) 
+      - `https://smoggy-woolens-lamb.cyclic.app/product/get?category=men&brand=levis&type=clothing`
 
-1. `http://localhost:8080/product/get` ---> default 20 data
+      - `Change category` : women , kids
+   
+   3. `https://smoggy-woolens-lamb.cyclic.app/product/get/${productid}` ---> single product
+  
+   4. `https://smoggy-woolens-lamb.cyclic.app/product/update/${productId}` ---> update product (admin) 
 
-2. `http://localhost:8080/product/get?search_query:${value}` ----> search by title
+   5. `https://smoggy-woolens-lamb.cyclic.app/product/delete/${product}` ---> delete product (admin)  
 
-3. `http://localhost:8080/product/get?rating=${value}` ----> get by rating (1 to 5)
+---
+---
 
-4. `http://localhost:8080/product/get?category=${value}` ----> By category (men, women,kids...)
+### for user 👍👍👍👍👍
 
-5. `http://localhost:8080/product/get?brand=${value}` -----> By brand
+   1. `https://smoggy-woolens-lamb.cyclic.app/user/register` ----> register user
 
-6. `http://localhost:8080/product/get?sortBy=${value}&order=${value}` --> sortBy
-   - ex : `http://localhost:8080/product/get?sortBy=price&order=1`
-   - ex: `http://localhost:8080/product/get?sortBy=rating&order=-1`
+   2. `https://smoggy-woolens-lamb.cyclic.app/user/login` ----> login user
 
+   3. `https://smoggy-woolens-lamb.cyclic.app/user` ---> get all user (admin)
+     
+      - `https://smoggy-woolens-lamb.cyclic.app/user?email=sattam@gmail.com`--->search use by email (admin)
 
-7. `http://localhost:8080/product/get?page=${value}&limit=${value}` ---> pagination
-   - ex : `http://localhost:8080/product/get?page=2&limit=20`   
+      - `mobile, name, text_query` ---> search feature
 
+   4. `http://localhost:8080/user/forgetPassword` ---> forget password (`PATCH`)   
 
-8. `http://localhost:8080/product/get?price=${amount}&order=${value}` ----> sortBy price
-   - ex: `http://localhost:8080/product/get?price=400&order=-1`
-      
+   5. `https://smoggy-woolens-lamb.cyclic.app/user/password/change` ---> change password
 
-## Single product
+   6. `https://smoggy-woolens-lamb.cyclic.app/user/logout` ---> logout
 
-- `http://localhost:8080/product/get/${productId}`
-   - ex : `http://localhost:8080/product/get/63f76572b286efb722870609`
+   7. `https://smoggy-woolens-lamb.cyclic.app/user/address` --> get address
 
+   8. `http://localhost:8080/user/profile` ---> update profile 
 
-## CRUD In Products (Admin Only)
+   9. `http://localhost:8080/user/delete/address` ---> delete address
 
-1. `http://localhost:8080/product/add` ----> Create product
-   - required 
-     1. token (Bearer token)
-
-     2. Below fields (`Should stricly follow typeOf`)
-        ```
-            title: {
-               type: String,
-               required: true
-            },
-            image: {
-               type: String,
-               required: true
-            },
-            description: {
-               type: String,
-               required: true
-            },
-            price: {
-               type: Number,
-               required: true
-            },
-            rating: {
-               type: Number,
-               required: true
-            },
-            brand: {
-               type: String,
-               required: true
-            },
-
-            category: {
-               type: String,
-               required: true
-            },
-
-            quantity: {
-               type: Number,
-               required: true
-            },
-        ```
-      3. Method : `POST`
-
-2. `http://localhost:8080/product/update/:id` ---> Update 
-   - required 
-     1. token (Bearer token)
-     2. Method : `PATCH`
-
-3. `http://localhost:8080/product/delete/:id` ---> Delete 
-   - required 
-     1. token (Bearer token)
-     2. Method : `DELETE`
-      
+---
+---
 
 
-##  cart
 
-1. `http://localhost:8080/cart/add` --> add product to cart
+
+
+##  for cart 👍👍👍👍👍
+
+1. `https://smoggy-woolens-lamb.cyclic.app/cart/add` --> add product to cart
    - required 
      1. token (Bearer token)
      2. productId that has been clicked
 
-2. `http://localhost:8080/cart/get`  --> get cart item(s)
+2. `https://smoggy-woolens-lamb.cyclic.app/cart/get`  --> get cart item(s)
    - required 
      1. token (Bearer token)
 
-3. `http://localhost:8080/cart/remove/:id` ---> remove cart item
+3. `https://smoggy-woolens-lamb.cyclic.app/cart/remove/:id` ---> remove cart item
     - required 
      1. token (Bearer token)
      2. cartItem id
-         - ex: `http://localhost:8080/cart/remove/63f76572b286efb72287060c`
+         - ex: `https://smoggy-woolens-lamb.cyclic.app/cart/remove/63f76572b286efb72287060c`
 
-4. `http://localhost:8080/cart/incQty/:id` ---> increment cart quantity
+4. `https://smoggy-woolens-lamb.cyclic.app/cart/incQty/:id` ---> increment cart quantity
     - required 
      1. token (Bearer token)
      2. cartItem id
-        - ex :`http://localhost:8080/cart/incQty/63f76572b286efb72287060c`
+        - ex :`https://smoggy-woolens-lamb.cyclic.app/cart/incQty/63f76572b286efb72287060c`
 
-5. `http://localhost:8080/cart/decQty/:id` ---> decrement cart quantity
+5. `https://smoggy-woolens-lamb.cyclic.app/cart/decQty/:id` ---> decrement cart quantity
     - required 
      1. token (Bearer token)
      2. cartItem id
         - ex :`http://localhost:8080/cart/decQty/63f76572b286efb72287060b`
      3. Note : When quantity reaches to 0 then cartitem will be deleted. for reference see ressponse in the conssole.log
 
-  
-      
+---
+---
+
+### for order 👍👍👍👍👍
+
+1. `https://smoggy-woolens-lamb.cyclic.app/order/admin` ---> get all orders (admin)
+
+2. `https://smoggy-woolens-lamb.cyclic.app/order/get` ---> get user order(s)
+
+3. `https://smoggy-woolens-lamb.cyclic.app/order/add` ---> add order from cart
+
+4. `https://smoggy-woolens-lamb.cyclic.app/order/delete?productId=${productId}` --> delete order until not delivered
+
+5. `https://smoggy-woolens-lamb.cyclic.app/order/update?orderId=${orderId}`--> update order status (admin)
+
 

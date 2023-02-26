@@ -4,7 +4,11 @@ const decrementProductQuantity = require("./helperDecrementQuantity.controller")
 const addToCart = async (req, res) => {
   const user_id = req.body.userID;
   const product_id = req.body.product_id;
-  const qty = req.body.quantity;
+  const qty = req.body.quantity || 1;
+
+  if(!product_id){
+    return res.status(400).send({msg:"product id required"})
+  }
 
   try {
     // check if the user has an existing cart

@@ -71,14 +71,14 @@ const ChildData = () => {
     let paramObj = {
       params: {
         brand: searchParams.getAll("brand"),
-        type: searchParams.getAll("type"),
+        type: searchParams.get("type"),
         _sort: order && "price",
         _order: order,
       }
     }
 
     dispatch(childData(paramObj))
-  }, [location.search])
+  }, [location.search,dispatch,searchParams])
 
   // console.log(Child_product, "Child_product")
 

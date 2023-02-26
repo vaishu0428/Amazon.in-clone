@@ -7,6 +7,7 @@ const ConnectDb = require("./config/db.connect");
 const productRouter = require("./routes/products.route");
 const { userRoutes } = require("./routes/user.route");
 const cartRouter = require("./routes/cart.route");
+const { orderRouter } = require("./routes/order.route");
 // const { authenticateToken } = require("./middleware/userAuth.middleware");
 
 const app = express()
@@ -24,6 +25,7 @@ app.get("/", (req,res)=>{
 app.use("/product",productRouter)
 app.use("/user",userRoutes)
 app.use("/cart", cartRouter)
+app.use("/order", orderRouter)
 
 
 

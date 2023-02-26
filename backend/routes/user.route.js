@@ -7,7 +7,11 @@ const {
   userLogout,
   userUpdateProfile,
   forgetPassword,
+  usergetProfile,
+  userDeleteAddress,
+  ChangePassword,
 } = require("../controllers/user.controller");
+const adminAccesssOnly = require("../middleware/admin.middleware");
 const { authenticateToken } = require("../middleware/userAuth.middleware");
 const {
   userSignupInputValidate,
@@ -17,12 +21,15 @@ const {
 
 const userRoutes = express.Router();
 
-userRoutes.get("/", getAllusers);
+userRoutes.get("/", authenticateToken, adminAccesssOnly, getAllusers);
 userRoutes.post("/register", userSignupInputValidate, registerUser);
 userRoutes.post("/login", userLoginInput, userLogin);
-userRoutes.post("/logout",authenticateToken,userLogout)
-userRoutes.patch("/profile",profileInput,userUpdateProfile)
-userRoutes.patch("/forgetPassword", authenticateToken,forgetPassword)
+userRoutes.post("/logout", authenticateToken, userLogout)
+userRoutes.get("/address", authenticateToken, usergetProfile)
+userRoutes.patch("/profile", authenticateToken,  userUpdateProfile)
+userRoutes.delete("/delete/address", authenticateToken,userDeleteAddress);
+userRoutes.patch("/password/change", authenticateToken, ChangePassword)
+userRoutes.patch("/forgetPassword",  forgetPassword)
 
 
 module.exports = {

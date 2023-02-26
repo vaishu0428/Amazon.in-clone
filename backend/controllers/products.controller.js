@@ -212,7 +212,7 @@ const getProducts = async (req, res) => {
     // console.log(filter,"filter:- ",sort,"sort")
 
     // console.log(parsedPage,"req.query page no",parsedLimit,"passsing by req.query" )
-
+   
     products = await productModel
       .find(filter)
       .sort(sort)

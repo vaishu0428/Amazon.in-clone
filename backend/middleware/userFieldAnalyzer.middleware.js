@@ -93,12 +93,11 @@ const profileInput = (req, res, next) => {
   }
   // Validate address
   if (
-    !address ||
-    !address[0].city ||
-    !address[0].area ||
-    !address[0].district ||
-    !address[0].state ||
-    !address[0].pinCode
+    address ||
+    address[0].city ||
+    address[0].area ||
+    address[0].state ||
+    address[0].pinCode
   ) {
     return res.status(400).json({ error: "Please provide a valid address" });
   }

@@ -28,7 +28,6 @@ const userSchema = mongoose.Schema(
         {
           city: { type: String, default: defaultAddress.city },
           area: { type: String, default: defaultAddress.area },
-          district: { type: String, default: defaultAddress.district },
           state: { type: String, default: defaultAddress.state },
           pinCode: {
             type: Number,
