@@ -11,7 +11,7 @@ import SinglePage from '../Pages/SinglePage'
 import Womens from '../Pages/Womens'
 
 const Pageroutes = () => {
-  // const token=JSON.parse(localStorage.getItem("token"))
+  const token=JSON.parse(localStorage.getItem("token"))
   // console.log(token)
   return (
         <Routes>
@@ -19,7 +19,7 @@ const Pageroutes = () => {
             <Route path="/login" element={<LoginPage/>}></Route>
             <Route path="/signup" element={<Signup/>}></Route>
             <Route path="/cart" element={<Cart/>}></Route>
-            {/* <Route path="/payment" element={token?<Payment/>:<LoginPage/>}></Route> */}
+            <Route path="/payment" element={token?<Payment/>:<LoginPage/>}></Route>
             <Route path="/men" element={<Mens/>}></Route>
             <Route path="/women" element={<Womens/>}/>
             <Route path="/kid" element={<Childs/>}/>
