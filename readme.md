@@ -12,7 +12,14 @@
 4. Prashant kumar
 5. Asif Alisher Shaikh
 
-
+### Tech Stack used:--
+1. HTML
+2. CSS
+3. JavaScript
+4. React
+5. LocalStorage
+6. CharaUI
+7. Redux
 ## Description
 
 
