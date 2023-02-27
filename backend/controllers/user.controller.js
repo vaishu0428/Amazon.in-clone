@@ -102,7 +102,7 @@ const userLogin = async (req, res) => {
           // console.log("login l-101", userExists.isActive);
           userExists.isActive = true;
           await userExists.save();
-          res.status(200).send({ msg: "Login Successfull", token: token ,name:userExists.name});
+          res.status(200).send({ msg: "Login Successfull", token: token ,name:userExists.name,role:userExists.role});
         } else {
           res.status(401).send("Wrong Credntials");
         }
