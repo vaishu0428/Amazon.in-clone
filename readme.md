@@ -18,4 +18,10 @@
 
 <p> Dukaan.in is an online e-Commerce website where user can buy various type of products based on their interest</p>
 <h1>lets have a look on the website pages </h1>
-<br>
+<h1>Homepage </h1>
+<img src="https://user-images.githubusercontent.com/95179001/221505654-6a53685b-0329-4613-91d6-c2724c27e25e.png"  />
+<h1>Cart page </h1>
+<img src="https://user-images.githubusercontent.com/95179001/221505951-c12c7481-4ab4-4b05-b0bc-0e72111c9c48.png"  />
+<h1>Product page </h1>
+<img src="https://user-images.githubusercontent.com/95179001/221506147-5270d21f-b81a-43cd-a23d-54fa355cc666.png"  />
+
