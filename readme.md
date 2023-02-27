@@ -24,4 +24,6 @@
 <img src="https://user-images.githubusercontent.com/95179001/221505951-c12c7481-4ab4-4b05-b0bc-0e72111c9c48.png"  />
 <h1>Product page </h1>
 <img src="https://user-images.githubusercontent.com/95179001/221506147-5270d21f-b81a-43cd-a23d-54fa355cc666.png"  />
+<h1>Admin page </h1>
+<img src="https://user-images.githubusercontent.com/95179001/221509880-0c6fc6cc-768a-4485-ba11-d643f9ac293c.png"  />
 
