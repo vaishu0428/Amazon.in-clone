@@ -1,4 +1,4 @@
-## <center>Welcome to unit 6 group project</center>
+## <center>Welcome to Dukaan.In</center>
 ---
 
 - Project Code : steady-roll-4006
@@ -13,17 +13,9 @@
 5. Asif Alisher Shaikh
 
 
-## Dependencies Installed
-
-1. redux
-2. react-redux
-3. react-router-dom
-4. redux-thunk
-5. axios
-6. chakra-ui
-7. material ui
-8. react-icons
+## Description
 
 
-## backends
-1. nodemon
+<p> Dukaan.in is an online e-Commerce website where user can buy various type of products based on their interest</p>
+<h1>lets have a look on the website pages </h1>
+<br>
